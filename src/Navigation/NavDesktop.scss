@@ -1,7 +1,7 @@
 @import "../SassVariables";
 
 .NavDesktop {
-  height: 80px;
+  height: 170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,15 +11,17 @@
 }
 
 .nav-bg {
-  background-color: $colorMarvelRed;
+  background-color: $colorBackgroundBlue;
 }
 
 .nav-times {
   display: flex;
   border-radius: 15px;
+  font-weight: $fontWeightSmall;
+  font-size: $fontSizeExtraSmall;
   span {
-    margin-top: 5px;
-    width: 180px;
+    margin-top: 10px;
+    width: 140px;
   }
   input {
     width: 350px;

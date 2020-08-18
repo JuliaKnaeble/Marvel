@@ -5,13 +5,13 @@
   flex-direction: column;
   margin-left: 10%;
   margin-right: 55%;
-  height: 650px;
+  height: 600px;
 
   h1 {
     font-size: 3.5rem;
     font-weight: 900;
-    margin: 250px 0 0 0;
-    width: 450px;
+    margin: 150px 0 0 0;
+    width: 550px;
   }
 
   h2 {
@@ -28,5 +28,5 @@
 }
 
 .header-bg {
-  background-color: $colorMarvelRed;
+  background-color: $colorBackgroundBlue;
 }
