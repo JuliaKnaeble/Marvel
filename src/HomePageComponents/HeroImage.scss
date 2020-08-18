@@ -1,0 +1,12 @@
+@import "../SassVariables";
+
+.HeroImage {
+  position: relative;
+  z-index: 10;
+  width: 604px;
+  height: 401px;
+  background-color: white;
+  bottom: 250px;
+  left: 53%;
+  border: 1px solid black;
+}

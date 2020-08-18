@@ -1,0 +1,21 @@
+$generalAppBg: #f8f9fa;
+$generalAppFontFamily: "Montserrat", sans-serif;
+$fontWeightPrimary: 700;
+$fontWeightMedium: 600;
+$fontWeightSecondary: 500;
+$fontWeightSmall: 400;
+$fontSizeExtraSmall: 1rem;
+$fontSizeSmall: 1.5rem;
+$fontSizeMedium: 2rem;
+$fontSizeBig: 2.5rem;
+$fontSizeHuge: 3rem;
+
+$colorMarvelRed: #f0131e;
+
+@mixin buttonStyle($width) {
+  height: 42px;
+  width: $width;
+  margin-left: 20px;
+  border-radius: 15px;
+  font-size: $fontSizeExtraSmall;
+}

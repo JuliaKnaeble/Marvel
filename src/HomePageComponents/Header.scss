@@ -1,0 +1,32 @@
+@import "../SassVariables";
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 55%;
+  height: 650px;
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin: 250px 0 0 0;
+    width: 450px;
+  }
+
+  h2 {
+    width: 550px;
+    font-size: $fontSizeSmall;
+    font-weight: $fontWeightMedium;
+    margin: 35px 0 30px 0;
+  }
+
+  button {
+    @include buttonStyle(200px);
+    margin: 0;
+  }
+}
+
+.header-bg {
+  background-color: $colorMarvelRed;
+}

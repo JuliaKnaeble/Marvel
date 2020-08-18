@@ -1,0 +1,35 @@
+@import "../SassVariables";
+
+.NavDesktop {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: $fontWeightMedium;
+  font-size: $fontSizeSmall;
+  margin: auto 10% auto 10%;
+}
+
+.nav-bg {
+  background-color: $colorMarvelRed;
+}
+
+.nav-times {
+  display: flex;
+  border-radius: 15px;
+  span {
+    margin-top: 5px;
+    width: 180px;
+  }
+  input {
+    width: 350px;
+    height: 40px;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 20px;
+    font-size: $fontSizeExtraSmall;
+  }
+  button {
+    @include buttonStyle(100px);
+  }
+}
