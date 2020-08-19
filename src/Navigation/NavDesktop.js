@@ -1,7 +1,14 @@
 import React from "react";
 import "./NavDesktop.scss";
 
+import axios from "axios";
+
 const NavDesktop = () => {
+  function handleClick() {
+    let privateKey = `9e03dafe762937ad20491330b0bcd5beb486280b`;
+    let publicKey = "5094ba4401702d0e3ae3bcf66339e50a";
+  }
+
   return (
     <div className="nav-bg">
       <div className="NavDesktop">
@@ -17,7 +24,7 @@ const NavDesktop = () => {
               spellCheck="false"
               autoFocus
             />
-            <button>Search</button>
+            <button onClick={handleClick}>Search</button>
           </form>
         </div>
       </div>
