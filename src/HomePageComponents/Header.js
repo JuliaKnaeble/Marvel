@@ -10,7 +10,6 @@ const Header = () => {
           Find out more about your favorite Marvel Heros and get all related
           commics and background stroies.
         </h2>
-        <button>Hero Generator</button>
       </div>
     </div>
   );
