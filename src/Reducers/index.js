@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import reducer from "./fetchHero";
+import hero from "./fetchHero";
 
 const allReducers = combineReducers({
-  reducer,
+  hero,
 });
 
 export default allReducers;

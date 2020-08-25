@@ -5,7 +5,7 @@ const inistalState = {
   error: ``,
 };
 
-const reducer = (state = inistalState, action) => {
+const hero = (state = inistalState, action) => {
   switch (action.type) {
     case `FETCH_HERO_REQUEST`:
       return {
@@ -26,7 +26,9 @@ const reducer = (state = inistalState, action) => {
         hero: [],
         error: action.payload,
       };
+    default:
+      return state;
   }
 };
 
-export default reducer;
+export default hero;

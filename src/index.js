@@ -4,15 +4,16 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import { createStore, applyMiddleware } from "redux";
+import { createStore, compose, applyMiddleware } from "redux";
 import allReducer from "./Reducers/index";
 import { Provider } from "react-redux";
-import Thunk from "redux-thunk";
+import thunk from "redux-thunk";
+
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const myStore = createStore(
-  allReducer(),
-  applyMiddleware(Thunk),
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  allReducer,
+  composeEnhancer(applyMiddleware(thunk))
 );
 
 ReactDOM.render(
