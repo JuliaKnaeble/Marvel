@@ -13,7 +13,11 @@ const HeroImage = () => {
     dispatch(fetchHero());
   });
 
-  return <div className="HeroImage"></div>;
+  return (
+    <div className="HeroImage">
+      <img src={require(`../Assets/portrait_incredible.jpg`)} alt="" />
+    </div>
+  );
 };
 
 export default HeroImage;

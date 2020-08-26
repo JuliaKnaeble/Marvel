@@ -5,6 +5,7 @@
   flex-direction: column;
   margin: 0 55% 0 10%;
   height: 600px;
+  color: $highlightedFontColor;
 
   h1 {
     font-size: 3.5rem;
@@ -19,13 +20,8 @@
     font-weight: $fontWeightMedium;
     margin: 35px 0 30px 0;
   }
-
-  button {
-    @include buttonStyle(200px);
-    margin: 0;
-  }
 }
 
 .header-bg {
-  background-color: $colorBackgroundBlue;
+  background-color: $generalBgColor;
 }

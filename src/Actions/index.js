@@ -12,10 +12,10 @@ const fetchHeroRequest = () => {
   };
 };
 
-const fetchHeroSuccess = (heroName) => {
+const fetchHeroSuccess = (hero) => {
   return {
     type: FETCH_HERO_SUCCESS,
-    payload: heroName,
+    payload: hero,
   };
 };
 

@@ -11,12 +11,14 @@ $fontSizeBig: 2.5rem;
 $fontSizeHuge: 3rem;
 
 $colorMarvelRed: #f0131e;
-$colorBackgroundBlue: #5c50f6;
+$generalBgColor: #212322;
+$highlightedFontColor: #ed4d4b;
 
-@mixin buttonStyle($width) {
-  height: 42px;
-  width: $width;
-  margin-left: 20px;
+@mixin inputForm {
   border-radius: 15px;
+  border-color: $highlightedFontColor;
+  outline: none;
   font-size: $fontSizeExtraSmall;
+  color: $highlightedFontColor;
+  background-color: $generalBgColor;
 }

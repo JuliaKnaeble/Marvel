@@ -7,11 +7,12 @@
   align-items: center;
   font-weight: $fontWeightMedium;
   font-size: $fontSizeSmall;
+  color: $highlightedFontColor;
   margin: 0 10% 0 10%;
 }
 
 .nav-bg {
-  background-color: $colorBackgroundBlue;
+  background-color: $generalBgColor;
 }
 
 .nav-times {
@@ -26,12 +27,16 @@
   input {
     width: 350px;
     height: 40px;
-    border-radius: 15px;
-    outline: none;
     padding-left: 20px;
-    font-size: $fontSizeExtraSmall;
+    @include inputForm;
+    &::placeholder {
+      color: $generalBgColor;
+    }
   }
   button {
-    @include buttonStyle(100px);
+    height: 42px;
+    width: 100px;
+    margin-left: 20px;
+    @include inputForm;
   }
 }

@@ -4,9 +4,15 @@
   position: relative;
   z-index: 10;
   width: 416px;
-  height: 524px;
-  background-color: white;
+  background: $colorMarvelRed;
   bottom: 340px;
   left: 55%;
   border: 1px solid black;
+
+  img {
+    width: 100%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
+  }
 }
