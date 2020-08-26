@@ -1,5 +1,6 @@
 import React from "react";
 import "./NavDesktop.scss";
+import { Link } from "react-router-dom";
 
 //import { fetchHero } from "../Actions";
 
@@ -15,10 +16,22 @@ const NavDesktop = () => {
   return (
     <div className="nav-bg">
       <div className="NavDesktop">
-        <div>HeroSearch</div>
+        <div>
+          <Link to="/" className="link-to">
+            HeroSearch
+          </Link>
+        </div>
         <div className="nav-times">
-          <span>Home</span>
-          <span>Heroes</span>
+          <span>
+            <Link to="/" className="link-to">
+              Home
+            </Link>
+          </span>
+          <span>
+            <Link to="/heroes" className="link-to">
+              Heroes
+            </Link>
+          </span>
           <form>
             <input
               type="text"
