@@ -2,13 +2,13 @@ import React from "react";
 import "./App.scss";
 
 import NavDesktop from "./Navigation/NavDesktop";
-import HomePage from "./HomePageComponents/HomePage";
+import DetailPage from "./DetailPage/DetailPage";
 
 function App() {
   return (
     <div className="App">
       <NavDesktop />
-      <HomePage />
+      <DetailPage />
     </div>
   );
 }

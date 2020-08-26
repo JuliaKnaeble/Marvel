@@ -30,7 +30,7 @@
     padding-left: 20px;
     @include inputForm;
     &::placeholder {
-      color: $generalBgColor;
+      color: $highlightedFontColor;
     }
   }
   button {
