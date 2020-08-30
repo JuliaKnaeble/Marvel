@@ -1,13 +1,11 @@
 import React from "react";
 
-import Header from "./Header";
-import HeroImage from "./HeroImage";
+import DetailNew from "./DetailNew";
 
 const HomePage = () => {
   return (
     <div>
-      <Header />
-      <HeroImage />
+      <DetailNew />
     </div>
   );
 };
