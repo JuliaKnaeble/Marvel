@@ -8,6 +8,7 @@ const NavbarNew = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.requestHero(heroInput);
+    setSearchClicked(!searchClicked);
   };
 
   const updateHero = (event) => {
