@@ -20,3 +20,28 @@
     margin-bottom: 50px;
   }
 }
+
+.menu-opene {
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  background-color: $generalBgColor;
+  opacity: 0.95;
+  input {
+    display: block;
+    margin: 350px auto;
+    width: 600px;
+    height: 90px;
+    padding-left: 35px;
+    border-radius: 50px;
+    border-color: white;
+    outline: none;
+    font-size: $fontSizeSmall;
+    color: $highlightedFontColor;
+    background-color: white;
+    &::placeholder {
+      color: $highlightedFontColor;
+    }
+  }
+}
