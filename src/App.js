@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <Router>
         <NavbarNewContainer />
-        <DetailPageContainer />
+        <Route path="/" exact component={DetailPageContainer} />
       </Router>
     </div>
   );
