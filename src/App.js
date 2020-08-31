@@ -2,17 +2,17 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.scss";
 
-import HomePage from "./HomePage/HomePage";
-import DetailPage from "./DetailPage/DetailPage";
-import NavbarNew from "./Navigation/NavbarNew";
+import HomePage from "./Components/HomePage/HomePage";
+import DetailPageContainer from "./Components/DetailPage/index";
+import NavbarNewContainer from "./Components/Navigation/index";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <NavbarNew />
+        <NavbarNewContainer />
         <Route path="/" exact component={HomePage} />
-        <Route path="/heroes" exact component={DetailPage} />
+        <Route path="/heroes" exact component={DetailPageContainer} />
       </Router>
     </div>
   );

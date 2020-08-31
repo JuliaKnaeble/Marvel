@@ -2,10 +2,10 @@ import React from "react";
 
 import DetailNew from "./DetailNew";
 
-const HomePage = () => {
+const HomePage = (props) => {
   return (
     <div>
-      <DetailNew />
+      {props.error ? <p>{props.error}</p> : <DetailNew hero={props.hero} />}
     </div>
   );
 };

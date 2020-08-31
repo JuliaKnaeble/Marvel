@@ -1,18 +1,13 @@
 //State
 const inistalState = {
   loading: false,
-  hero: [],
+  hero: {},
   error: ``,
 };
 
 const hero = (state = inistalState, action) => {
+  console.log(action);
   switch (action.type) {
-    case `FETCH_HERO_REQUEST`:
-      return {
-        ...state,
-        loading: true,
-      };
-
     case `FETCH_HERO_SUCCESS`:
       return {
         loading: false,
@@ -23,7 +18,7 @@ const hero = (state = inistalState, action) => {
     case `FETCH_HERO_FAILURE`:
       return {
         loading: false,
-        hero: [],
+        hero: {},
         error: action.payload,
       };
     default:

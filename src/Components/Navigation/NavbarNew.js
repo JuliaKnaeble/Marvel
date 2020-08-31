@@ -1,20 +1,31 @@
 import React, { useState } from "react";
 import "./NavbarNew.scss";
 
-const NavbarNew = () => {
+const NavbarNew = (props) => {
   const [searchClicked, setSearchClicked] = useState(false);
+  const [heroInput, setHeroInput] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    props.requestHero(heroInput);
+  };
+
+  const updateHero = (event) => {
+    setHeroInput(event.target.value);
+  };
 
   let menu;
   if (searchClicked) {
     menu = (
       <div className="menu-opene">
-        <form>
+        <form onSubmit={handleSubmit}>
           <input
             type="text"
             placeholder="Search your Hero"
             autoComplete="off"
             spellCheck="false"
             autoFocus
+            onChange={updateHero}
           />
         </form>
       </div>
