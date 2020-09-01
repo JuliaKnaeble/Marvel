@@ -20,17 +20,25 @@ const NavbarNew = (props) => {
   let menu;
   if (searchClicked) {
     menu = (
-      <div className="menu-opene">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Search your Hero"
-            autoComplete="off"
-            spellCheck="false"
-            autoFocus
-            onChange={updateHero}
-          />
-        </form>
+      <div>
+        <div className="menu-opene">
+          <form onSubmit={handleSubmit}>
+            <img
+              className="close"
+              src={require(`../../Assets/close_x.png`)}
+              alt=""
+              onClick={() => setSearchClicked(!searchClicked)}
+            />
+            <input
+              type="text"
+              placeholder="Search your Hero..."
+              autoComplete="off"
+              spellCheck="false"
+              autoFocus
+              onChange={updateHero}
+            />
+          </form>
+        </div>
       </div>
     );
   }
@@ -39,9 +47,17 @@ const NavbarNew = (props) => {
     <div>
       {menu}
       <div className="NavbarNew">
-        <span className="top">1</span>
-        <span onClick={() => setSearchClicked(!searchClicked)}>2</span>
-        <span className="bottom">3</span>
+        <img className="top" src={require(`../../Assets/logo.png`)} alt="" />
+        <img
+          onClick={() => setSearchClicked(!searchClicked)}
+          src={require(`../../Assets/search.png`)}
+          alt=""
+        />
+        <img
+          className="bottom"
+          src={require(`../../Assets/random.png`)}
+          alt=""
+        />
       </div>
     </div>
   );

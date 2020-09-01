@@ -7,14 +7,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: $highlightedFontColor;
-  font-size: 3rem;
   border-right: 1px solid $highlightedFontColor;
-  span {
+  img {
     margin-right: 50px;
+    width: 30px;
+    height: 30px;
   }
   .top {
     margin-top: 50px;
+    width: 35px;
+    height: 35px;
   }
   .bottom {
     margin-bottom: 50px;
@@ -27,21 +29,34 @@
   height: 100vh;
   width: 100%;
   background-color: $generalBgColor;
-  opacity: 0.95;
+  opacity: 0.97;
+  .close {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 50px;
+    left: 90%;
+  }
   input {
     display: block;
-    margin: 350px auto;
-    width: 600px;
+    margin: 250px auto;
+    width: 1000px;
     height: 90px;
     padding-left: 35px;
     border-radius: 50px;
-    border-color: white;
+    border-color: transparent;
     outline: none;
-    font-size: $fontSizeSmall;
-    color: $highlightedFontColor;
-    background-color: white;
+    font-family: $fontStyleOne;
+    font-size: 5rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
     &::placeholder {
-      color: $highlightedFontColor;
+      color: #f8f9fa;
+      opacity: 0.8;
+      font-family: $fontStyleOne;
+      font-size: 5rem;
+      text-transform: uppercase;
     }
   }
 }
