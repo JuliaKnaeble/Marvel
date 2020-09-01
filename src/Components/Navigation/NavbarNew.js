@@ -7,6 +7,14 @@ const NavbarNew = (props) => {
   const [searchClicked, setSearchClicked] = useState(false);
   const [heroInput, setHeroInput] = useState("");
 
+  function getRandomInt(min, max) {
+    min = Math.ceil(9000);
+    max = Math.floor(9999);
+    return props.requestRandomHero(
+      Math.floor(Math.random() * (max - min) + min)
+    );
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault();
     props.requestHero(heroInput);
@@ -15,6 +23,10 @@ const NavbarNew = (props) => {
 
   const updateHero = (event) => {
     setHeroInput(event.target.value);
+  };
+
+  const showRandomHero = () => {
+    getRandomInt();
   };
 
   let menu;
@@ -47,13 +59,14 @@ const NavbarNew = (props) => {
     <div>
       {menu}
       <div className="NavbarNew">
-        <img className="top" src={require(`../../Assets/logo.png`)} alt="" />
+        <img className="logo" src={require(`../../Assets/logo.png`)} alt="" />
         <img
           onClick={() => setSearchClicked(!searchClicked)}
           src={require(`../../Assets/search.png`)}
           alt=""
         />
         <img
+          onClick={showRandomHero}
           className="bottom"
           src={require(`../../Assets/random.png`)}
           alt=""
@@ -64,3 +77,7 @@ const NavbarNew = (props) => {
 };
 
 export default NavbarNew;
+
+//let min = Math.ceil(9000);
+//let max = Math.floor(9999);
+//let number = Math.floor(Math.random() * (max - min) + min);

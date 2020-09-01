@@ -56,3 +56,20 @@ export const requestHero = (hero) => {
         dispatch(fetchHeroFailure(error));
       });
 };
+
+export const requestRandomHero = (number) => {
+  const request = axios.get(
+    `${marvelCharacter}/100${number}?ts=${ts}&apikey=${publicKey}&hash=${md5}`
+  );
+  return (dispatch) =>
+    request
+      .then((response) => {
+        if (response.data.data.count === 0) {
+          return dispatch(fetchHeroFailure("No results"));
+        }
+        return dispatch(fetchHeroSuccess(response.data.data.results[0]));
+      })
+      .catch((error) => {
+        dispatch(fetchHeroFailure(error));
+      });
+};
