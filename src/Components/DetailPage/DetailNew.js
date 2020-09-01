@@ -11,7 +11,11 @@ const DetailNew = (props) => {
           Marvel <span>Justice League</span>
         </p>
         <h1>{props.hero.name}</h1>
-        <h2>{props.hero.description}</h2>
+        <h2>
+          {props.hero.description
+            ? props.hero.description
+            : `Sadly this hero has no description. You will be able to find more information under Marvel.com`}
+        </h2>
       </div>
       <div className="hero-image">
         <img
