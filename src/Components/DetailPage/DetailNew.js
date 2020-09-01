@@ -14,7 +14,14 @@ const DetailNew = (props) => {
         <h2>{props.hero.description}</h2>
       </div>
       <div className="hero-image">
-        <img src={require(`../../Assets/portrait_incredible.jpg`)} alt="" />
+        <img
+          src={
+            props.hero.thumbnail
+              ? `${props.hero.thumbnail.path}/portrait_incredible.${props.hero.thumbnail.extension}`
+              : require(`../../Assets/portrait_incredible.jpg`)
+          }
+          alt=""
+        />
       </div>
     </div>
   );
