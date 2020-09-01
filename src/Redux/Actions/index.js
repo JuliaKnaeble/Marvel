@@ -1,16 +1,9 @@
 import axios from "axios";
 
-const FETCH_HERO_REQUEST = `FETCH_HERO_REQUEST`;
 const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
 const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
 
 //ACTION CREATORES
-
-const fetchHeroRequest = () => {
-  return {
-    type: FETCH_HERO_REQUEST,
-  };
-};
 
 const fetchHeroSuccess = (hero) => {
   return {
@@ -44,6 +37,8 @@ export const fetchHero = () => {
     );
 };
 
+// action that receives parameter (hero)
+
 export const requestHero = (hero) => {
   const request = axios.get(
     `${marvelCharacter}?ts=${ts}&apikey=${publicKey}&hash=${md5}&name=${hero}`
@@ -55,7 +50,7 @@ export const requestHero = (hero) => {
         if (response.data.data.count === 0) {
           return dispatch(fetchHeroFailure("No results"));
         }
-        return dispatch(fetchHeroSuccess(response.data.data.result[0]));
+        return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
       .catch((error) => {
         dispatch(fetchHeroFailure(error));

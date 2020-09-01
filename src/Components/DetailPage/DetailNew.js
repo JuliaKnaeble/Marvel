@@ -1,6 +1,8 @@
 import React from "react";
 import "./DetailNew.scss";
 
+// props coming from DetailPage
+
 const DetailNew = (props) => {
   return (
     <div className="DetailNew">

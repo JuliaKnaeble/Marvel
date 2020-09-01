@@ -2,7 +2,7 @@
 const inistalState = {
   loading: false,
   hero: {},
-  error: ``,
+  error: "",
 };
 
 const hero = (state = inistalState, action) => {
@@ -12,7 +12,7 @@ const hero = (state = inistalState, action) => {
       return {
         loading: false,
         hero: action.payload,
-        error: ``,
+        error: "",
       };
 
     case `FETCH_HERO_FAILURE`:

@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.scss";
 
+//importing the index, container components
+
 import DetailPageContainer from "./Components/DetailPage/index";
 import NavbarNewContainer from "./Components/Navigation/index";
 

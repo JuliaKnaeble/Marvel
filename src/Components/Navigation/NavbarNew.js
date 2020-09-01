@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./NavbarNew.scss";
 
+//props coming from the index (in this case the action requestHero)
+
 const NavbarNew = (props) => {
   const [searchClicked, setSearchClicked] = useState(false);
   const [heroInput, setHeroInput] = useState("");
