@@ -7,11 +7,7 @@ const DetailNew = (props) => {
   let link = (
     <div>
       <a
-        href={
-          props.hero.urls
-            ? `${props.hero.urls[0].url}`
-            : `We do not have a link for this hero`
-        }
+        href={props.hero.urls ? `${props.hero.urls[0].url}` : ``}
         target="_blank"
         rel="noopener noreferrer"
         className="hero-reference-link"
