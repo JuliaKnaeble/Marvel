@@ -1,0 +1,20 @@
+@import "../../SassVariables.scss";
+
+.Comics {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 85%;
+  div {
+    width: 136px;
+    height: 184px;
+    background-color: white;
+  }
+  p {
+    margin-top: 80px;
+    color: $generalFontColor;
+    font-family: $fontStyleOne;
+    font-size: 1rem;
+  }
+}
