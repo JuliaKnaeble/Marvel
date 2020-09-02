@@ -44,7 +44,22 @@
   img {
     height: 100%;
     -webkit-filter: grayscale(100%);
+    margin-bottom: 30px;
     filter: grayscale(100%);
     opacity: 0.5;
   }
+}
+
+.copy-right {
+  color: $highlightedFontColor;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero-reference-link {
+  color: white;
+  text-decoration: none;
+  font-family: $fontStyleTwo;
+  font-weight: $fontWeightMedium;
+  line-height: 40px;
 }

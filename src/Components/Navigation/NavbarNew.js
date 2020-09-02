@@ -8,8 +8,8 @@ const NavbarNew = (props) => {
   const [heroInput, setHeroInput] = useState("");
 
   function getRandomInt(min, max) {
-    min = Math.ceil(9000);
-    max = Math.floor(9999);
+    min = Math.ceil(9150);
+    max = Math.floor(9799);
     return props.requestRandomHero(
       Math.floor(Math.random() * (max - min) + min)
     );

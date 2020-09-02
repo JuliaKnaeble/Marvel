@@ -64,8 +64,8 @@ export const requestRandomHero = (number) => {
   return (dispatch) =>
     request
       .then((response) => {
-        if (response.data.data.count === 0) {
-          return dispatch(fetchHeroFailure("No results"));
+        if (response.data.code === 404) {
+          return dispatch(fetchHeroFailure("Try your luck again"));
         }
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
