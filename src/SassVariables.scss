@@ -1,5 +1,3 @@
-$generalAppBg: #f8f9fa;
-$generalAppFontFamily: "Montserrat", sans-serif;
 $fontWeightPrimary: 700;
 $fontWeightMedium: 600;
 $fontWeightSecondary: 500;
@@ -10,9 +8,10 @@ $fontSizeMedium: 2rem;
 $fontSizeBig: 2.5rem;
 $fontSizeHuge: 3rem;
 
-$colorMarvelRed: #f0131e;
-$generalBgColor: #212322;
-$highlightedFontColor: #ed4d4b;
+$colorMarvelRed: #ec333c;
+$generalBgColor: #2d2f2d;
+$highlightedFontColor: #fd7267;
+$generalFontColor: #f0f4f7;
 
 @mixin inputForm {
   border-radius: 15px;
