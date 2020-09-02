@@ -25,7 +25,7 @@ let publicKey = "5094ba4401702d0e3ae3bcf66339e50a";
 let md = require("md5");
 let md5 = md(`${ts}${privateKey}${publicKey}`);
 let name = "spider-man";
-let marvelCharacter = "http://gateway.marvel.com/v1/public/characters";
+let marvelCharacter = "https://gateway.marvel.com/v1/public/characters";
 
 export const fetchHero = () => {
   const request = axios.get(
