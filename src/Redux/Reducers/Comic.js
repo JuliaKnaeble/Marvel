@@ -1,7 +1,7 @@
 const inistalState = {
   loading: false,
-  comic: {},
-  errorComic: "",
+  comic: [],
+  error: "",
 };
 
 const comic = (state = inistalState, action) => {
@@ -11,7 +11,7 @@ const comic = (state = inistalState, action) => {
       return {
         loading: false,
         comic: action.payload,
-        errorComic: "",
+        error: "",
       };
 
     default:

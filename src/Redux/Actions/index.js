@@ -60,7 +60,7 @@ export const fetchComic = () => {
     );
 };
 
-// action that receives parameter (hero)
+// action that receives parameter (hero(name), comic(characterID))
 
 export const requestHero = (hero) => {
   const request = axios.get(
@@ -107,7 +107,7 @@ export const requestComic = (characterID) => {
         if (response.data.data.count === 0) {
           return dispatch(fetchHeroFailure("Why no work"));
         }
-        return dispatch(fetchComicSuccess(response.data.data.results[0]));
+        return dispatch(fetchComicSuccess(response.data.data.results));
       })
       .catch((error) => {
         dispatch(fetchHeroFailure(error));

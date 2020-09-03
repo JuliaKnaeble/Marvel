@@ -4,16 +4,13 @@ import DetailNew from "./DetailNew";
 // props coming from the index
 
 const DetailPage = (props) => {
-  console.log(props.hero.id);
-  //const [updateComic, setUpdateComic] = useState(props.hero.id);
+  const [updateComic, setUpdateComic] = useState(props.hero.id);
+  if (
+    props.hero.id & (props.hero.id !== updateComic)
+      ? setUpdateComic(props.hero.id) & props.requestComic(props.hero.id)
+      : ""
+  );
 
-  //if (
-  // updateComic === props.hero.id
-  //   ? console.log("?")
-  //   : setUpdateComic(props.requestComic(props.hero.id))
-  // );
-
-  console.log(props);
   return (
     <div>
       {props.error ? (
