@@ -2,8 +2,9 @@ import axios from "axios";
 
 const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
 const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
+const FETCH_COMIC_SUCCESS = `FETCH_COMIC_SUCCESS`;
 
-//ACTION CREATORES
+//ACTION CREATORES HERO
 
 const fetchHeroSuccess = (hero) => {
   return {
@@ -19,17 +20,29 @@ const fetchHeroFailure = (error) => {
   };
 };
 
+// ACTION CREATORES COMICS
+
+const fetchComicSuccess = (comic) => {
+  return {
+    type: FETCH_COMIC_SUCCESS,
+    payload: comic,
+  };
+};
+
+// HTTPS REQUESTS
+
 let ts = "blobby";
 let privateKey = `9e03dafe762937ad20491330b0bcd5beb486280b`;
 let publicKey = "5094ba4401702d0e3ae3bcf66339e50a";
 let md = require("md5");
 let md5 = md(`${ts}${privateKey}${publicKey}`);
 let name = "spider-man";
-let marvelCharacter = "https://gateway.marvel.com/v1/public/characters";
+let characterID = `1009351`;
+let marvel = "https://gateway.marvel.com/v1/public/characters";
 
 export const fetchHero = () => {
   const request = axios.get(
-    `${marvelCharacter}?ts=${ts}&apikey=${publicKey}&hash=${md5}&name=${name}`
+    `${marvel}?ts=${ts}&apikey=${publicKey}&hash=${md5}&name=${name}`
   );
   return (dispatch) =>
     request.then((response) =>
@@ -37,11 +50,21 @@ export const fetchHero = () => {
     );
 };
 
+export const fetchComic = () => {
+  const request = axios.get(
+    `${marvel}/${characterID}/comics?ts=${ts}&apikey=${publicKey}&hash=${md5}`
+  );
+  return (dispatch) =>
+    request.then((response) =>
+      dispatch(fetchComicSuccess(response.data.data.results[0]))
+    );
+};
+
 // action that receives parameter (hero)
 
 export const requestHero = (hero) => {
   const request = axios.get(
-    `${marvelCharacter}?ts=${ts}&apikey=${publicKey}&hash=${md5}&name=${hero}`
+    `${marvel}?ts=${ts}&apikey=${publicKey}&hash=${md5}&name=${hero}`
   );
 
   return (dispatch) =>
@@ -59,7 +82,7 @@ export const requestHero = (hero) => {
 
 export const requestRandomHero = (number) => {
   const request = axios.get(
-    `${marvelCharacter}/100${number}?ts=${ts}&apikey=${publicKey}&hash=${md5}`
+    `${marvel}/100${number}?ts=${ts}&apikey=${publicKey}&hash=${md5}`
   );
   return (dispatch) =>
     request
@@ -68,6 +91,23 @@ export const requestRandomHero = (number) => {
           return dispatch(fetchHeroFailure("Try your luck again"));
         }
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
+      })
+      .catch((error) => {
+        dispatch(fetchHeroFailure(error));
+      });
+};
+
+export const requestComic = (characterID) => {
+  const request = axios.get(
+    `${marvel}/${characterID}/comics?ts=${ts}&apikey=${publicKey}&hash=${md5}`
+  );
+  return (dispatch) =>
+    request
+      .then((response) => {
+        if (response.data.data.count === 0) {
+          return dispatch(fetchHeroFailure("Why no work"));
+        }
+        return dispatch(fetchComicSuccess(response.data.data.results[0]));
       })
       .catch((error) => {
         dispatch(fetchHeroFailure(error));

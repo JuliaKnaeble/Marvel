@@ -77,7 +77,3 @@ const NavbarNew = (props) => {
 };
 
 export default NavbarNew;
-
-//let min = Math.ceil(9000);
-//let max = Math.floor(9999);
-//let number = Math.floor(Math.random() * (max - min) + min);

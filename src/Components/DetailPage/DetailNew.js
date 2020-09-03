@@ -32,7 +32,7 @@ const DetailNew = (props) => {
             : `Sadly this hero has no description. If you are interessted in finding out more about ${props.hero.name}, you can do so here:`}
           {link}
         </h2>
-        <Comics />
+        <Comics hero={props.hero} comic={props.comic} />
       </div>
       <div className="hero-image">
         <img
