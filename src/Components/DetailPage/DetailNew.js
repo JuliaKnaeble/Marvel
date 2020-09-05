@@ -23,7 +23,10 @@ const DetailNew = (props) => {
     <div className="DetailNew">
       <div className="hero-description">
         <p className="lable">
-          Marvel <span>Justice League</span>
+          <span>Marvel</span>
+          <span className="lable-creator">
+            {props.comic[0] ? props.comic[0].creators.items[0].name : "Unknown"}
+          </span>
         </p>
         <h1>{props.hero.name}</h1>
         <h2>

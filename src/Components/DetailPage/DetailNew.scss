@@ -12,13 +12,18 @@
   display: flex;
   flex-direction: column;
   .lable {
-    color: $highlightedFontColor;
+    color: #f0f4f7;
     font-size: 1.1rem;
     margin: 0 0 15px 0;
     font-family: $fontStyleOne;
     text-transform: uppercase;
   }
   span {
+    background-color: $highlightedFontColor;
+    padding: 1px 10px;
+    border-radius: 15px;
+  }
+  .lable-creator {
     margin-left: 25px;
   }
   h1 {
