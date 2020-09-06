@@ -76,7 +76,7 @@ export const requestHero = (hero) => {
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
       .catch((error) => {
-        dispatch(fetchHeroFailure(error));
+        dispatch(fetchHeroFailure(error.message));
       });
 };
 
@@ -87,13 +87,14 @@ export const requestRandomHero = (number) => {
   return (dispatch) =>
     request
       .then((response) => {
-        if (response.data.code === 404) {
-          return dispatch(fetchHeroFailure("Try your luck again"));
-        }
+        // João: This is not working. I tried to catch the error in many different wasy but no success.
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
       .catch((error) => {
-        dispatch(fetchHeroFailure(error));
+        if (error.response.data.code === 404) {
+          return dispatch(fetchHeroFailure("Bad luck. Try again!"));
+        }
+        return dispatch(fetchHeroFailure(error.response.data.status));
       });
 };
 
@@ -110,6 +111,6 @@ export const requestComic = (characterID) => {
         return dispatch(fetchComicSuccess(response.data.data.results));
       })
       .catch((error) => {
-        dispatch(fetchHeroFailure(error));
+        dispatch(fetchHeroFailure(error.message));
       });
 };
