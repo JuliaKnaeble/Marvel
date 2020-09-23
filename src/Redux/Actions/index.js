@@ -1,4 +1,7 @@
+import React from "react";
 import axios from "axios";
+
+import Error from "../../Components/Error/Error";
 
 const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
 const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
@@ -71,7 +74,7 @@ export const requestHero = (hero) => {
     request
       .then((response) => {
         if (response.data.data.count === 0) {
-          return dispatch(fetchHeroFailure("No results"));
+          return dispatch(fetchHeroFailure(<Error />));
         }
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
@@ -92,7 +95,7 @@ export const requestRandomHero = (number) => {
       })
       .catch((error) => {
         if (error.response.data.code === 404) {
-          return dispatch(fetchHeroFailure("Bad luck. Try again!"));
+          return dispatch(fetchHeroFailure(<Error />));
         }
         return dispatch(fetchHeroFailure(error.response.data.status));
       });

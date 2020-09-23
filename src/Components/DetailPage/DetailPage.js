@@ -7,6 +7,7 @@ const DetailPage = (props) => {
   // João: I am sure this is NO GOOD and should be done different!
   // I basically tried to make it only run once the hero.id changes but this is surely not the way to do it!!
   const [updateComic, setUpdateComic] = useState(props.hero.id);
+
   if (props.hero.id && props.hero.id !== updateComic) {
     setUpdateComic(props.hero.id) && props.requestComic(props.hero.id);
   }
@@ -30,11 +31,3 @@ const DetailPage = (props) => {
 };
 
 export default DetailPage;
-
-//const DetailPage = ({hero}) => {
-//  return (
-//    <div>
-//     <DetailNew hero={hero} />
-//    </div>
-//  );
-//};

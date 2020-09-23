@@ -1,0 +1,14 @@
+@import "../../SassVariables.scss";
+
+.Error {
+  height: 100vh;
+  display: flex;
+  margin: 0 5% 0 10%;
+
+  p {
+    font-family: $fontStyleOne;
+    font-size: 5rem;
+    color: $generalFontColor;
+    text-transform: uppercase;
+  }
+}
