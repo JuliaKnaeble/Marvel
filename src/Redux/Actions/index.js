@@ -108,9 +108,6 @@ export const requestComic = (characterID) => {
   return (dispatch) =>
     request
       .then((response) => {
-        if (response.data.data.count === 0) {
-          return dispatch(fetchHeroFailure("Why no work"));
-        }
         return dispatch(fetchComicSuccess(response.data.data.results));
       })
       .catch((error) => {
