@@ -1,6 +1,6 @@
 import React from "react";
 import "./DetailNew.scss";
-import Comics from "../Comics/Comics";
+import ComicsContainer from "../Comics/index";
 
 // props coming from DetailPage
 
@@ -35,7 +35,7 @@ const DetailNew = (props) => {
             : `Sadly this hero has no description. If you are interessted in finding out more about ${props.hero.name}, you can do so here:`}
           {link}
         </h2>
-        <Comics />
+        <ComicsContainer />
       </div>
       <div className="hero-image">
         <img
