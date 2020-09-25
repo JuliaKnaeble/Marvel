@@ -7,7 +7,7 @@ const DetailPage = (props) => {
   return (
     <div>
       {props.error ? (
-        <p>{props.error}</p>
+        props.error
       ) : (
         <DetailNew hero={props.hero} comic={props.comic} />
       )}

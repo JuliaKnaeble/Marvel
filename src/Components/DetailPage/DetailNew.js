@@ -19,9 +19,6 @@ const DetailNew = (props) => {
     </div>
   );
 
-  //João: The creator name (className="lable-creator") only works for a first succesfull randomHeroSearch. After that I get a `cannot read property name of undefinde`.
-  // On a manual search this is leading directly to an error.
-
   return (
     <div className="DetailNew">
       <div className="hero-description">

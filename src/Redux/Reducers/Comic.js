@@ -5,7 +5,6 @@ const inistalState = {
 };
 
 const comic = (state = inistalState, action) => {
-  console.log(action);
   switch (action.type) {
     case `FETCH_COMIC_SUCCESS`:
       return {
