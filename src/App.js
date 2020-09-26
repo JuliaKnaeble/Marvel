@@ -7,13 +7,15 @@ import "./App.scss";
 import DetailPageContainer from "./Components/DetailPage/index";
 import NavbarNewContainer from "./Components/Navigation/index";
 import ComicsDetail from "./Components/ComicsDetail/ComicsDetail";
+import Home from "./Components/HomePage/Home";
 
 function App() {
   return (
     <div className="App">
       <Router>
         <NavbarNewContainer />
-        <Route path="/" exact component={DetailPageContainer} />
+        <Route path="/" exact component={Home} />
+        <Route path="/hero" exact component={DetailPageContainer} />
         <Route path="/comics" exact component={ComicsDetail} />
       </Router>
     </div>

@@ -20,6 +20,7 @@ const NavbarNew = (props) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     props.requestHero(heroInput);
+    history.push("/hero");
     setSearchClicked(!searchClicked);
   };
 
@@ -29,6 +30,10 @@ const NavbarNew = (props) => {
 
   const showRandomHero = () => {
     getRandomInt();
+    history.push("/hero");
+  };
+
+  const showHome = () => {
     history.push("/");
   };
 
@@ -62,7 +67,12 @@ const NavbarNew = (props) => {
     <div>
       {menu}
       <div className="NavbarNew">
-        <img className="logo" src={require(`../../Assets/logo.png`)} alt="" />
+        <img
+          className="logo"
+          onClick={showHome}
+          src={require(`../../Assets/logo.png`)}
+          alt=""
+        />
         <img
           onClick={() => setSearchClicked(!searchClicked)}
           src={require(`../../Assets/search.png`)}
