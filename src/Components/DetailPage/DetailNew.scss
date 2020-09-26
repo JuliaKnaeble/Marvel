@@ -32,6 +32,9 @@
     font-family: $fontStyleOne;
     font-size: 5rem;
     margin: 0;
+    @media (max-width: 1800px) {
+      font-size: 4rem;
+    }
   }
   h2 {
     color: $generalFontColor;
@@ -40,6 +43,9 @@
     font-weight: $fontWeightSmall;
     font-size: 20px;
     line-height: 36px;
+    @media (max-width: 1800px) {
+      font-size: 18px;
+    }
   }
 }
 
