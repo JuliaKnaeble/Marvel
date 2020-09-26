@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 
 import "./Comics.scss";
 
 const Comics = ({ comic, requestComic, hero }) => {
   const [heroID, setHeroID] = useState(null);
+  const history = useHistory();
 
   useEffect(() => {
     if (hero.id && hero.id !== heroID) {
@@ -11,6 +13,10 @@ const Comics = ({ comic, requestComic, hero }) => {
       setHeroID(hero.id);
     }
   }, [comic, hero, heroID, requestComic]);
+
+  const showComicDetail = () => {
+    history.push("/comics");
+  };
 
   return (
     <div className="Comics">
@@ -21,6 +27,7 @@ const Comics = ({ comic, requestComic, hero }) => {
               key={index}
               src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
               alt={item.title}
+              onClick={showComicDetail}
             />
           );
         }

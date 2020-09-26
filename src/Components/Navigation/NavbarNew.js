@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./NavbarNew.scss";
 
 //props coming from the index (in this case the action requestHero)
@@ -6,6 +7,7 @@ import "./NavbarNew.scss";
 const NavbarNew = (props) => {
   const [searchClicked, setSearchClicked] = useState(false);
   const [heroInput, setHeroInput] = useState("");
+  const history = useHistory();
 
   function getRandomInt(min, max) {
     min = Math.ceil(9150);
@@ -27,6 +29,7 @@ const NavbarNew = (props) => {
 
   const showRandomHero = () => {
     getRandomInt();
+    history.push("/");
   };
 
   let menu;

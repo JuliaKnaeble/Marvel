@@ -3,8 +3,8 @@ import "./ComicsDetail.scss";
 
 const ComicsDetail = () => {
   return (
-    <div>
-      <p></p>
+    <div className="ComicsDetail">
+      <p>Hallo new Detail Page 🙃</p>
     </div>
   );
 };

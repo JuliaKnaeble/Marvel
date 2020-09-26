@@ -6,6 +6,7 @@ import "./App.scss";
 
 import DetailPageContainer from "./Components/DetailPage/index";
 import NavbarNewContainer from "./Components/Navigation/index";
+import ComicsDetail from "./Components/ComicsDetail/ComicsDetail";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Router>
         <NavbarNewContainer />
         <Route path="/" exact component={DetailPageContainer} />
+        <Route path="/comics" exact component={ComicsDetail} />
       </Router>
     </div>
   );
