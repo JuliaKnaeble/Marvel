@@ -13,4 +13,10 @@
     font-family: $fontStyleOne;
     font-size: 1rem;
   }
+  @media (max-width: 1400px) {
+    img {
+      width: 80px;
+      height: auto;
+    }
+  }
 }
