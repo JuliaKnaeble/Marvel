@@ -12,9 +12,11 @@
     color: $generalFontColor;
     font-family: $fontStyleOne;
     font-size: 1rem;
+    cursor: pointer;
   }
-  @media (max-width: 1800px) {
-    img {
+  img {
+    cursor: pointer;
+    @media (max-width: 1800px) {
       width: 80px;
       height: auto;
     }
