@@ -3,17 +3,17 @@
 .ComicsDetail {
   @include contentFrame;
   background-color: $generalBgColor;
-  p {
-    color: $highlightedFontColor;
-    font-size: 1.25rem;
-    font-family: $fontStyleOne;
-    font-weight: bold;
-    letter-spacing: -1px;
-    margin-bottom: 15%;
-  }
   .comic-image {
-    margin-top: 6%;
+    margin-top: 5%;
     height: 68vh;
+    p {
+      color: $highlightedFontColor;
+      font-size: 1.25rem;
+      font-family: $fontStyleOne;
+      font-weight: bold;
+      letter-spacing: -1px;
+      margin-bottom: 15%;
+    }
     img {
       height: 100%;
     }
