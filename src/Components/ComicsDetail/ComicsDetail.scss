@@ -4,7 +4,7 @@
   @include contentFrame;
   background-color: $generalBgColor;
   .comic-image {
-    margin-top: 4%;
+    margin-top: 3%;
     height: 68vh;
     p {
       color: $highlightedFontColor;
@@ -12,7 +12,7 @@
       font-family: $fontStyleOne;
       font-weight: bold;
       letter-spacing: -1px;
-      margin-bottom: 13%;
+      margin-bottom: 10%;
     }
     img {
       height: 100%;
