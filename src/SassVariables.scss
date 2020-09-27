@@ -2,27 +2,11 @@ $fontWeightPrimary: 700;
 $fontWeightMedium: 600;
 $fontWeightSecondary: 500;
 $fontWeightSmall: 400;
-$fontSizeExtraSmall: 1rem;
-$fontSizeSmall: 1.5rem;
-$fontSizeMedium: 2rem;
-$fontSizeBig: 2.5rem;
-$fontSizeHuge: 3rem;
 
 $colorMarvelRed: #f0131e;
 $generalBgColor: #2d2f2d;
 $highlightedFontColor: #fd7267;
 $generalFontColor: #f0f4f7;
-
-@mixin inputForm {
-  border-radius: 15px;
-  border-color: $highlightedFontColor;
-  outline: none;
-  font-size: $fontSizeExtraSmall;
-  color: $highlightedFontColor;
-  background-color: $generalBgColor;
-}
-
-/// new style
 
 $fontStyleOne: "Alata", sans-serif;
 $fontStyleTwo: "Libre Baskerville", serif;
