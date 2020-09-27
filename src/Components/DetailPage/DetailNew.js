@@ -12,7 +12,7 @@ const DetailNew = (props) => {
       rel="noopener noreferrer"
       className="hero-reference-link"
     >
-      here
+      here.
     </a>
   );
 

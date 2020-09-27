@@ -14,10 +14,6 @@ const Comics = ({ comic, requestComic, hero }) => {
     }
   }, [comic, hero, heroID, requestComic]);
 
-  const showComicDetail = () => {
-    history.push("/comics");
-  };
-
   return (
     <div className="Comics">
       {comic.map((item, index) => {
@@ -27,7 +23,7 @@ const Comics = ({ comic, requestComic, hero }) => {
               key={index}
               src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
               alt={item.title}
-              onClick={showComicDetail}
+              onClick={() => history.push("/comics")}
             />
           );
         }
@@ -39,5 +35,3 @@ const Comics = ({ comic, requestComic, hero }) => {
 };
 
 export default Comics;
-
-// <p>+{hero.comics ? hero.comics.available : `0`} MORE</p>
