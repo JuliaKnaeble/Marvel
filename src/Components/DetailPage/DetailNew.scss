@@ -1,9 +1,7 @@
 @import "../../SassVariables.scss";
 
 .DetailNew {
-  height: 100vh;
-  display: flex;
-  margin: 0 5% 0 10%;
+  @include contentFrame;
 }
 
 .hero-description {
@@ -15,7 +13,7 @@
     margin-top: 8%;
   }
   .lable {
-    color: #f0f4f7;
+    color: $generalFontColor;
     font-size: 1.1rem;
     margin: 0 0 15px 0;
     font-family: $fontStyleOne;
