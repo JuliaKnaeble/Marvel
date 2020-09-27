@@ -6,17 +6,14 @@ import ComicsContainer from "../Comics/index";
 
 const DetailNew = (props) => {
   let link = (
-    <div>
-      <a
-        href={props.hero.urls ? `${props.hero.urls[0].url}` : ``}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="hero-reference-link"
-      >
-        MARVEL
-      </a>
-      <br></br>
-    </div>
+    <a
+      href={props.hero.urls ? `${props.hero.urls[0].url}` : ``}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hero-reference-link"
+    >
+      here
+    </a>
   );
 
   return (
@@ -31,8 +28,9 @@ const DetailNew = (props) => {
         <h1>{props.hero.name}</h1>
         <h2>
           {props.hero.description
-            ? `${props.hero.description} Find out more under:`
-            : `Sadly this hero has no description. If you are interessted in finding out more about ${props.hero.name}, you can do so here:`}
+            ? `${props.hero.description} Find out more`
+            : `Sadly this hero has no description. If you are interessted in finding out more about ${props.hero.name}, you can do so`}
+          {` `}
           {link}
         </h2>
         <ComicsContainer />

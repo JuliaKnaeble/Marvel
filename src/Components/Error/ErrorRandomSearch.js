@@ -3,7 +3,7 @@ import "./Error.scss";
 
 const ErrorRandomSearch = () => {
   return (
-    <div>
+    <div className="Error">
       <p>
         Bad Luck
         <br />

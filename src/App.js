@@ -4,10 +4,10 @@ import "./App.scss";
 
 //importing the index, container components
 
-import DetailPageContainer from "./Components/DetailPage/index";
-import NavbarNewContainer from "./Components/Navigation/index";
-import ComicsDetail from "./Components/ComicsDetail/ComicsDetail";
 import Home from "./Components/HomePage/Home";
+import NavbarNewContainer from "./Components/Navigation/index";
+import DetailPageContainer from "./Components/DetailPage/index";
+import ComicsDetailContainer from "./Components/ComicsDetail/index";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
         <NavbarNewContainer />
         <Route path="/" exact component={Home} />
         <Route path="/hero" exact component={DetailPageContainer} />
-        <Route path="/comics" exact component={ComicsDetail} />
+        <Route path="/comics" exact component={ComicsDetailContainer} />
       </Router>
     </div>
   );

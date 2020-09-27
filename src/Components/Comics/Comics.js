@@ -33,9 +33,11 @@ const Comics = ({ comic, requestComic, hero }) => {
         }
         return null;
       })}
-      <p>+{hero.comics ? hero.comics.available : `0`} MORE</p>
+      <p>{hero.comics && hero.comics.available > 5 ? `SEE ALL` : ``}</p>
     </div>
   );
 };
 
 export default Comics;
+
+// <p>+{hero.comics ? hero.comics.available : `0`} MORE</p>

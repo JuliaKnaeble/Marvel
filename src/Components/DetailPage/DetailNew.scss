@@ -70,9 +70,13 @@
 }
 
 .hero-reference-link {
-  color: $generalFontColor;
-  text-decoration: none;
+  color: $highlightedFontColor;
   font-family: $fontStyleTwo;
-  font-weight: $fontWeightMedium;
-  line-height: 40px;
+  font-weight: $fontWeightSmall;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 36px;
+  @media (max-width: 1800px) {
+    font-size: 18px;
+  }
 }
