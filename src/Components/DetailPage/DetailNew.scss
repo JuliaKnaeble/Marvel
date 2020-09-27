@@ -13,17 +13,12 @@
     margin-top: 8%;
   }
   .lable {
-    color: $generalFontColor;
-    font-size: 1.1rem;
-    margin: 0 0 15px 0;
-    font-family: $fontStyleOne;
-    text-transform: uppercase;
+    @include lable;
   }
   span {
-    background-color: $highlightedFontColor;
-    padding: 1px 10px;
-    border-radius: 15px;
+    @include lableBG;
   }
+
   .lable-creator {
     margin-left: 25px;
   }
