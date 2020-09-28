@@ -19,16 +19,16 @@
       height: 100%;
     }
   }
-  .comic-description {
+  .comic-details {
     margin-top: 7%;
     margin-left: 10%;
     display: flex;
     flex-direction: column;
     .lable {
       @include lable;
-    }
-    span {
-      @include lableBG;
+      span {
+        @include lableBG;
+      }
     }
   }
   h3 {
@@ -36,10 +36,36 @@
     color: $generalFontColor;
     text-transform: uppercase;
     font-family: $fontStyleOne;
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0;
     @media (max-width: 1800px) {
-      font-size: 4rem;
+      font-size: 3rem;
+    }
+  }
+  h4 {
+    color: $generalFontColor;
+    font-family: $fontStyleTwo;
+    font-weight: $fontWeightSmall;
+    font-size: 20px;
+    line-height: 36px;
+    @media (max-width: 1800px) {
+      font-size: 18px;
+    }
+  }
+  .comic-dates {
+    display: flex;
+    flex-direction: row;
+    color: $generalFontColor;
+    span {
+      color: $highlightedFontColor;
+      font-size: 1.25rem;
+      font-family: $fontStyleOne;
+      font-weight: bold;
+      margin-right: 40px;
+      .detail {
+        margin-left: 8px;
+        color: $generalFontColor;
+      }
     }
   }
 }
