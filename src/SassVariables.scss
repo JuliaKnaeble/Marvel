@@ -12,7 +12,7 @@ $fontStyleOne: "Alata", sans-serif;
 $fontStyleTwo: "Libre Baskerville", serif;
 
 @mixin contentFrame {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   margin: 0 5% 0 10%;
 }
