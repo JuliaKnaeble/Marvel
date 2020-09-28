@@ -68,4 +68,12 @@
       }
     }
   }
+  .contributions {
+    p {
+      color: $highlightedFontColor;
+      font-size: 1.25rem;
+      font-family: $fontStyleOne;
+      font-weight: bold;
+    }
+  }
 }

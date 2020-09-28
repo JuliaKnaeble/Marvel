@@ -42,6 +42,9 @@ const ComicsDetail = ({ comic, hero }) => {
             </span>
           </p>
         </div>
+        <div className="contributions">
+          <p>CONTRIBUTORS:</p>
+        </div>
       </div>
     </div>
   );
