@@ -2,7 +2,9 @@ import React from "react";
 import "./ComicsDetail.scss";
 
 const ComicsDetail = ({ comic, hero }) => {
-  console.log(comic);
+  let date = comic[0].dates[0].date;
+  const year = date.substring(0, 4);
+
   return (
     <div className="ComicsDetail">
       <div className="comic-image">
@@ -38,7 +40,7 @@ const ComicsDetail = ({ comic, hero }) => {
             </span>
             <span className="lable-border">
               DATE:
-              <span className="detail"></span>
+              <span className="detail">{year}</span>
             </span>
             <span className="lable-border">
               PAGES:
