@@ -15,7 +15,7 @@
   .lable {
     @include lable;
   }
-  span {
+  .lable-border {
     @include lableBG;
   }
   .lable-creator {

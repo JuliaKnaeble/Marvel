@@ -19,12 +19,15 @@ const Comics = ({ comic, requestComic, hero }) => {
       {comic.map((item, index) => {
         if (index < 5) {
           return (
-            <img
-              key={index}
-              src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
-              alt={item.title}
-              onClick={() => history.push("/comics")}
-            />
+            <div className="comic-container">
+              <img
+                key={index}
+                src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
+                alt={item.title}
+                onClick={() => history.push("/comics")}
+              />
+              <p className="more">READ MORE</p>
+            </div>
           );
         }
         return null;

@@ -14,11 +14,34 @@
     font-size: 1rem;
     cursor: pointer;
   }
-  img {
-    cursor: pointer;
-    @media (max-width: 1800px) {
-      width: 80px;
-      height: auto;
+  .comic-container {
+    img {
+      position: absolute;
+      cursor: pointer;
+      @media (max-width: 1800px) {
+        width: 80px;
+        height: auto;
+      }
+    }
+    .more {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      font-size: 0.5rem;
+      font-weight: bold;
+      top: 50px;
+      left: 5px;
+      padding: 1px 10px;
+      border-radius: 15px;
+      color: transparent;
+    }
+    &:hover {
+      -webkit-filter: grayscale(70%);
+      filter: grayscale(70%);
+      .more {
+        background-color: black;
+        color: $generalFontColor;
+      }
     }
   }
 }

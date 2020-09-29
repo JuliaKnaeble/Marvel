@@ -28,7 +28,7 @@ const ComicsDetail = ({ comic, hero }) => {
         </h4>
         <div className="comic-dates">
           <p>
-            <span>
+            <span className="lable-border">
               ORIGINAL PRICE:
               <span className="detail">
                 {comic[0].prices[0].price && comic[0].prices[0].price > 0
@@ -36,11 +36,11 @@ const ComicsDetail = ({ comic, hero }) => {
                   : `⎻⎻`}
               </span>
             </span>
-            <span>
+            <span className="lable-border">
               DATE:
               <span className="detail"></span>
             </span>
-            <span>
+            <span className="lable-border">
               PAGES:
               <span className="detail">
                 {comic[0].pageCount && comic[0].pageCount > 0
