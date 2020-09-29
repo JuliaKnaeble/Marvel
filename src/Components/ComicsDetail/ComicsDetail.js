@@ -1,14 +1,16 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./ComicsDetail.scss";
 
 const ComicsDetail = ({ comic, hero }) => {
+  const history = useHistory();
   let date = comic[0].dates[0].date;
   const year = date.substring(0, 4);
 
   return (
     <div className="ComicsDetail">
       <div className="comic-image">
-        <p> ◁ BACK TO PROFILE</p>
+        <p onClick={() => history.push("/hero")}> ◁ BACK TO PROFILE</p>
         <img
           src={
             comic[0].thumbnail

@@ -3,8 +3,8 @@ import "./AllComics.scss";
 
 const AllComics = ({ comic }) => {
   return (
-    <div>
-      <p>All Comics</p>
+    <div className="AllComics">
+      <p>Hallo all you amazing Comics</p>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import Home from "./Components/HomePage/Home";
 import NavbarNewContainer from "./Components/Navigation/index";
 import DetailPageContainer from "./Components/DetailPage/index";
 import ComicsDetailContainer from "./Components/ComicsDetail/index";
+import AllComicsContainer from "./Components/AllComics/index";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" exact component={Home} />
         <Route path="/hero" exact component={DetailPageContainer} />
         <Route path="/comics" exact component={ComicsDetailContainer} />
+        <Route path="/allcomics" exact component={AllComicsContainer} />
       </Router>
     </div>
   );

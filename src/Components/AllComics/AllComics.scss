@@ -1,1 +1,10 @@
 @import "../../SassVariables.scss";
+
+.AllComics {
+  @include contentFrame;
+  background-color: $generalBgColor;
+  p {
+    font-size: 4rem;
+    color: $highlightedFontColor;
+  }
+}

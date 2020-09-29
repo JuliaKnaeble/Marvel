@@ -4,7 +4,7 @@
   @include contentFrame;
   background-color: $generalBgColor;
   p {
-    color: palevioletred;
+    color: $highlightedFontColor;
     font-size: 3rem;
   }
 }
