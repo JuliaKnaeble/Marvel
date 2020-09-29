@@ -51,15 +51,35 @@ const ComicsDetail = ({ comic, hero }) => {
           </p>
         </div>
         <div className="contributions">
-          <p>CONTRIBUTORS:</p>
-          {comic[0].creators.items.map((item, index) => {
-            return (
-              <span className="contributors-items" key={index}>
-                {item.role}:{` `}
-                {item.name}
-              </span>
-            );
-          })}
+          <p className="list-header">CONTRIBUTORS:</p>
+          <div className="corntributors-container">
+            <div className="names">
+              {comic[0].creators.items.map((item, index) => {
+                if (index < 6) {
+                  return (
+                    <p className="contributors-items" key={index}>
+                      {item.role}:{` `}
+                      {item.name}
+                    </p>
+                  );
+                }
+                return null;
+              })}
+            </div>
+            <div className="names">
+              {comic[0].creators.items.map((item, index) => {
+                if (index > 6 && index < 13) {
+                  return (
+                    <p className="contributors-items" key={index}>
+                      {item.role}:{` `}
+                      {item.name}
+                    </p>
+                  );
+                }
+                return null;
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -67,3 +87,14 @@ const ComicsDetail = ({ comic, hero }) => {
 };
 
 export default ComicsDetail;
+
+//    if (index > 6 && index < 12) {
+//      return (
+//        <div className="contributors-items">
+//         <span key={index}>
+//           {item.role}:{` `}
+//          {item.name}
+//        </span>
+//       </div>
+//      );
+//    }//

@@ -69,7 +69,7 @@
     }
   }
   .contributions {
-    p {
+    .list-header {
       color: $highlightedFontColor;
       font-size: 1.25rem;
       font-family: $fontStyleOne;
@@ -77,14 +77,25 @@
       margin-bottom: 0;
       line-height: 36px;
     }
-    .contributors-items {
+    .corntributors-container {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       color: $generalFontColor;
       text-transform: uppercase;
       line-height: 36px;
       font-family: $fontStyleOne;
       font-weight: bold;
+      margin-right: 15%;
+      padding-bottom: 60px;
+      .names {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
     }
   }
 }
