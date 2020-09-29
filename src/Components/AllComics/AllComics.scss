@@ -3,8 +3,11 @@
 .AllComics {
   @include contentFrame;
   background-color: $generalBgColor;
-  p {
-    font-size: 4rem;
-    color: $highlightedFontColor;
+  .all-comics-container {
+    margin-top: 7%;
+    height: 68vh;
+    .back {
+      @include backTo;
+    }
   }
 }

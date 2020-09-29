@@ -10,7 +10,10 @@ const ComicsDetail = ({ comic, hero }) => {
   return (
     <div className="ComicsDetail">
       <div className="comic-image">
-        <p onClick={() => history.push("/hero")}> ◁ BACK TO PROFILE</p>
+        <p onClick={() => history.push("/hero")} className="back">
+          {" "}
+          ◁ BACK TO PROFILE
+        </p>
         <img
           src={
             comic[0].thumbnail

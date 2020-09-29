@@ -6,14 +6,8 @@
   .comic-image {
     margin-top: 7%;
     height: 68vh;
-    p {
-      color: $highlightedFontColor;
-      font-size: 1.25rem;
-      font-family: $fontStyleOne;
-      font-weight: bold;
-      letter-spacing: -1px;
-      margin: 0;
-      cursor: pointer;
+    .back {
+      @include backTo;
     }
     img {
       padding-top: 60px;
