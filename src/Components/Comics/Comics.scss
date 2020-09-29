@@ -22,6 +22,9 @@
         width: 80px;
         height: auto;
       }
+      &:hover {
+        opacity: 0.5;
+      }
     }
     .more {
       position: relative;
@@ -30,16 +33,13 @@
       font-size: 0.5rem;
       font-weight: bold;
       top: 50px;
-      left: 5px;
-      padding: 1px 10px;
-      border-radius: 15px;
+      left: 15px;
       color: transparent;
     }
     &:hover {
       -webkit-filter: grayscale(70%);
       filter: grayscale(70%);
       .more {
-        background-color: black;
         color: $generalFontColor;
       }
     }
