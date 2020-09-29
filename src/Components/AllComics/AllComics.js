@@ -1,7 +1,7 @@
 import React from "react";
 import "./AllComics.scss";
 
-const AllComics = () => {
+const AllComics = ({ comic }) => {
   return (
     <div>
       <p>All Comics</p>
