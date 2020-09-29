@@ -52,6 +52,14 @@ const ComicsDetail = ({ comic, hero }) => {
         </div>
         <div className="contributions">
           <p>CONTRIBUTORS:</p>
+          {comic[0].creators.items.map((item, index) => {
+            return (
+              <span className="contributors-items" key={index}>
+                {item.role}:{` `}
+                {item.name}
+              </span>
+            );
+          })}
         </div>
       </div>
     </div>
