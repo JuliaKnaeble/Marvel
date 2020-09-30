@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./ComicsDetail.scss";
 
-const ComicsDetail = ({ comic, hero }) => {
+const ComicsDetail = ({ comic, hero, indexKey }) => {
   const history = useHistory();
   let date = comic[0].dates[0].date;
   const year = date.substring(0, 4);

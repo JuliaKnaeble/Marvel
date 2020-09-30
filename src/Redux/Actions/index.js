@@ -71,7 +71,7 @@ export const requestHero = (hero) => {
     request
       .then((response) => {
         if (response.data.data.count === 0) {
-          return dispatch(fetchHeroFailure(`SOME_OTHER_ERROR`));
+          return dispatch(fetchHeroFailure(`ERROR_HERO_SEARCH`));
         }
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
@@ -87,12 +87,11 @@ export const requestRandomHero = (number) => {
   return (dispatch) =>
     request
       .then((response) => {
-        // João: This is not working. I tried to catch the error in many different wasy but no success.
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
       .catch((error) => {
         if (error.response.data.code === 404) {
-          return dispatch(fetchHeroFailure(`NOT_FOUND`));
+          return dispatch(fetchHeroFailure(`ERROR_RANDOM_SEARCH`));
         }
         return dispatch(fetchHeroFailure(error.response.data.status));
       });

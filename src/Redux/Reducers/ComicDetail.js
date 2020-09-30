@@ -1,6 +1,6 @@
 const inistalState = {
   loading: false,
-  comic: [],
+  indexKey: {},
   error: "",
 };
 
@@ -9,7 +9,7 @@ const comicDetail = (state = inistalState, action) => {
     case `FETCH_COMIC_DETAIL_SUCCESS`:
       return {
         loading: false,
-        comic: action.payload,
+        indexKey: action.payload,
         error: "",
       };
 

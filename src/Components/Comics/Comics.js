@@ -14,8 +14,8 @@ const Comics = ({ comic, requestComic, hero }) => {
     }
   }, [hero, heroID, requestComic]);
 
-  const showComicDetail = (key) => {
-    console.log(key);
+  const showComicDetail = (indexKey) => {
+    console.log(indexKey);
     history.push("/comics");
   };
 

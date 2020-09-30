@@ -9,7 +9,7 @@ const DetailPage = (props) => {
   return (
     <div>
       {props.error ? (
-        props.error === `NOT_FOUND` ? (
+        props.error === `ERROR_RANDOM_SEARCH` ? (
           <ErrorRandomSearch />
         ) : (
           <ErrorHeroSearch />
