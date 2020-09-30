@@ -15,18 +15,6 @@
     cursor: pointer;
   }
   .comic-container {
-    img {
-      position: absolute;
-      cursor: pointer;
-      @media (max-width: 1800px) {
-        width: 80px;
-        height: auto;
-      }
-      &:hover {
-        opacity: 0.5;
-        transition: 0.5s ease;
-      }
-    }
     .more {
       position: relative;
       margin: 0;
@@ -37,13 +25,25 @@
       left: 15px;
       color: transparent;
     }
+    img {
+      position: absolute;
+      cursor: pointer;
+      @media (max-width: 1800px) {
+        width: 80px;
+        height: auto;
+      }
+    }
     &:hover {
-      -webkit-filter: grayscale(70%);
-      filter: grayscale(70%);
-      transition: 0.5s ease;
       .more {
         color: $generalFontColor;
-        transition: 0.5s ease;
+        z-index: 10;
+        transition: 0.2s ease;
+      }
+      img {
+        opacity: 0.4;
+        -webkit-filter: grayscale(70%);
+        filter: grayscale(70%);
+        transition: 0.2s ease;
       }
     }
   }
