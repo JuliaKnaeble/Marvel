@@ -12,19 +12,23 @@ const Comics = ({ comic, requestComic, hero }) => {
       requestComic(hero.id);
       setHeroID(hero.id);
     }
-  }, [comic, hero, heroID, requestComic]);
+  }, [hero, heroID, requestComic]);
+
+  const showComicDetail = (key) => {
+    console.log(key);
+    history.push("/comics");
+  };
 
   return (
     <div className="Comics">
       {comic.map((item, index) => {
         if (index < 5) {
           return (
-            <div className="comic-container">
+            <div className="comic-container" key={index}>
               <img
-                key={index}
                 src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
                 alt={item.title}
-                onClick={() => history.push("/comics")}
+                onClick={() => showComicDetail(index)}
               />
               <p className="more">READ MORE</p>
             </div>

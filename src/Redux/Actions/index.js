@@ -1,8 +1,4 @@
-import React from "react";
 import axios from "axios";
-
-import ErrorRandomSearch from "../../Components/Error/ErrorRandomSearch";
-import ErrorHeroSearch from "../../Components/Error/ErrorHeroSearch";
 
 const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
 const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
@@ -75,7 +71,7 @@ export const requestHero = (hero) => {
     request
       .then((response) => {
         if (response.data.data.count === 0) {
-          return dispatch(fetchHeroFailure(<ErrorHeroSearch />));
+          return dispatch(fetchHeroFailure(`SOME_OTHER_ERROR`));
         }
         return dispatch(fetchHeroSuccess(response.data.data.results[0]));
       })
@@ -96,7 +92,7 @@ export const requestRandomHero = (number) => {
       })
       .catch((error) => {
         if (error.response.data.code === 404) {
-          return dispatch(fetchHeroFailure(<ErrorRandomSearch />));
+          return dispatch(fetchHeroFailure(`NOT_FOUND`));
         }
         return dispatch(fetchHeroFailure(error.response.data.status));
       });
