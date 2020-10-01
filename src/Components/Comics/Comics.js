@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 
 import "./Comics.scss";
 
-const Comics = ({ comic, requestComic, hero }) => {
+const Comics = ({ comic, requestComic, hero, requestComicDetail }) => {
   const [heroID, setHeroID] = useState(null);
   const history = useHistory();
 
@@ -15,7 +15,7 @@ const Comics = ({ comic, requestComic, hero }) => {
   }, [hero, heroID, requestComic]);
 
   const showComicDetail = (indexKey) => {
-    console.log(indexKey);
+    requestComicDetail(indexKey);
     history.push("/comics");
   };
 

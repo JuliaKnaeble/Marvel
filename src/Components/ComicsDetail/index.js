@@ -1,6 +1,5 @@
 // wrapper that connects the component to the sate
 // connect reducer with component
-
 import { connect } from "react-redux";
 import ComicsDetail from "./ComicsDetail";
 
@@ -8,7 +7,7 @@ export const mapStateToProps = (state, ownProps) => {
   return {
     hero: state.hero.hero,
     comic: state.comic.comic,
-    indexKey: state,
+    indexKey: state.comicDetail.indexKey,
   };
 };
 

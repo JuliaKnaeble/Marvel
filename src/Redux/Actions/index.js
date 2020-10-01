@@ -3,8 +3,9 @@ import axios from "axios";
 const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
 const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
 const FETCH_COMIC_SUCCESS = `FETCH_COMIC_SUCCESS`;
+const FETCH_COMIC_DETAIL_SUCCESS = `FETCH_COMIC_DETAIL_SUCCESS`;
 
-//ACTION CREATORES HERO
+//ACTION CREATORS HERO
 
 const fetchHeroSuccess = (hero) => {
   return {
@@ -20,12 +21,21 @@ const fetchHeroFailure = (error) => {
   };
 };
 
-// ACTION CREATORES COMICS
+// ACTION CREATORS COMICS
 
 const fetchComicSuccess = (comic) => {
   return {
     type: FETCH_COMIC_SUCCESS,
     payload: comic,
+  };
+};
+
+// ACTION CREATORS COMIC DETAIL
+
+export const requestComicDetail = (indexKey) => {
+  return {
+    type: FETCH_COMIC_DETAIL_SUCCESS,
+    payload: indexKey,
   };
 };
 

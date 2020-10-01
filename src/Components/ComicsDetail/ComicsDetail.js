@@ -4,7 +4,7 @@ import "./ComicsDetail.scss";
 
 const ComicsDetail = ({ comic, hero, indexKey }) => {
   const history = useHistory();
-  let date = comic[0].dates[0].date;
+  let date = comic[indexKey].dates[0].date;
   const year = date.substring(0, 4);
 
   return (
@@ -16,8 +16,8 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
         </p>
         <img
           src={
-            comic[0].thumbnail
-              ? `${comic[0].thumbnail.path}/portrait_incredible.${comic[0].thumbnail.extension}`
+            comic[indexKey].thumbnail
+              ? `${comic[indexKey].thumbnail.path}/portrait_incredible.${comic[indexKey].thumbnail.extension}`
               : require(`../../Assets/portrait_incredible.jpg`)
           }
           alt=""
