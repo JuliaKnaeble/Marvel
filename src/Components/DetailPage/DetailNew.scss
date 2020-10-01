@@ -2,75 +2,75 @@
 
 .DetailNew {
   @include contentFrame;
-}
 
-.hero-description {
-  margin-top: 10%;
-  margin-right: 10%;
-  display: flex;
-  flex-direction: column;
-  @media (max-width: 1800px) {
-    margin-top: 8%;
-  }
-  .lable {
-    @include lable;
-  }
-  .lable-border {
-    @include lableBG;
-  }
-  .lable-creator {
-    margin-left: 25px;
-  }
-  h1 {
-    color: $generalFontColor;
-    text-transform: uppercase;
-    font-family: $fontStyleOne;
-    font-size: 5rem;
-    margin: 0;
+  .hero-description {
+    margin-top: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
     @media (max-width: 1800px) {
-      font-size: 4rem;
+      margin-top: 8%;
+    }
+    .lable {
+      @include lable;
+    }
+    .lable-border {
+      @include lableBG;
+    }
+    .lable-creator {
+      margin-left: 25px;
+    }
+    h1 {
+      color: $generalFontColor;
+      text-transform: uppercase;
+      font-family: $fontStyleOne;
+      font-size: 5rem;
+      margin: 0;
+      @media (max-width: 1800px) {
+        font-size: 4rem;
+      }
+    }
+    h2 {
+      color: $generalFontColor;
+      margin: 15px 0 0 0;
+      font-family: $fontStyleTwo;
+      font-weight: $fontWeightSmall;
+      font-size: 20px;
+      line-height: 36px;
+      @media (max-width: 1800px) {
+        font-size: 18px;
+      }
     }
   }
-  h2 {
-    color: $generalFontColor;
-    margin: 15px 0 0 0;
+
+  .hero-image {
+    margin-top: 6%;
+    background: $colorMarvelRed;
+    height: 80vh;
+    img {
+      height: 100%;
+      -webkit-filter: grayscale(100%);
+      margin-bottom: 20px;
+      filter: grayscale(100%);
+      opacity: 0.5;
+    }
+  }
+
+  .copy-right {
+    color: $highlightedFontColor;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .hero-reference-link {
+    color: $highlightedFontColor;
     font-family: $fontStyleTwo;
     font-weight: $fontWeightSmall;
+    text-decoration: none;
     font-size: 20px;
     line-height: 36px;
     @media (max-width: 1800px) {
       font-size: 18px;
     }
-  }
-}
-
-.hero-image {
-  margin-top: 6%;
-  background: $colorMarvelRed;
-  height: 80vh;
-  img {
-    height: 100%;
-    -webkit-filter: grayscale(100%);
-    margin-bottom: 20px;
-    filter: grayscale(100%);
-    opacity: 0.5;
-  }
-}
-
-.copy-right {
-  color: $highlightedFontColor;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.hero-reference-link {
-  color: $highlightedFontColor;
-  font-family: $fontStyleTwo;
-  font-weight: $fontWeightSmall;
-  text-decoration: none;
-  font-size: 20px;
-  line-height: 36px;
-  @media (max-width: 1800px) {
-    font-size: 18px;
   }
 }

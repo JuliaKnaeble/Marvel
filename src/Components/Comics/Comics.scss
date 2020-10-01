@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
+  padding-bottom: 60px;
   width: 85%;
   background-color: $generalBgColor;
   p {
@@ -15,7 +16,6 @@
     cursor: pointer;
   }
   .comic-container {
-    margin-bottom: 60px;
     .more {
       position: relative;
       margin: 0;
