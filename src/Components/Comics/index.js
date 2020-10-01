@@ -9,7 +9,6 @@ export const mapStateToProps = (state, ownProps) => {
   return {
     hero: state.hero.hero,
     comic: state.comic.comic,
-    indexKey: state.comicDetail.indexKey,
   };
 };
 

@@ -5,9 +5,20 @@
   background-color: $generalBgColor;
   .all-comics-container {
     margin-top: 7%;
-    height: 68vh;
     .back {
       @include backTo;
+    }
+  }
+  .all-comics-img-container {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .all-comics-img {
+      margin-bottom: 60px;
+      img {
+        flex: 0 0 33.333333%;
+      }
     }
   }
 }
