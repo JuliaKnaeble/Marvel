@@ -40,3 +40,19 @@ $fontStyleTwo: "Libre Baskerville", serif;
   margin: 0;
   cursor: pointer;
 }
+
+@mixin imgHoverEffect {
+  &:hover {
+    .more {
+      color: $generalFontColor;
+      z-index: 10;
+      transition: 0.2s ease;
+    }
+    img {
+      opacity: 0.4;
+      -webkit-filter: grayscale(70%);
+      filter: grayscale(70%);
+      transition: 0.2s ease;
+    }
+  }
+}
