@@ -2,8 +2,14 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./AllComics.scss";
 
-const AllComics = ({ hero, comic }) => {
+const AllComics = ({ hero, comic, requestComicDetail }) => {
   const history = useHistory();
+
+  const showComicDetail = (indexKey) => {
+    requestComicDetail(indexKey);
+    history.push("/comics");
+  };
+
   return (
     <div className="AllComics">
       <div className="all-comics-container">
@@ -23,6 +29,7 @@ const AllComics = ({ hero, comic }) => {
                   <img
                     src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
                     alt={item.title}
+                    onClick={() => showComicDetail(index)}
                   />
                   <p>{item.title}</p>
                 </div>
