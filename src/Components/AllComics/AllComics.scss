@@ -5,12 +5,22 @@
   background-color: $generalBgColor;
   .all-comics-container {
     margin-top: 7%;
+    .all-comics-available {
+      color: $generalFontColor;
+      text-transform: uppercase;
+      font-family: $fontStyleOne;
+      font-size: 2rem;
+      margin: 0;
+      letter-spacing: -1px;
+      padding-top: 20px;
+      font-weight: bold;
+    }
     .back {
       @include backTo;
     }
   }
   .all-comics-img-container {
-    padding-top: 60px;
+    padding-top: 40px;
     display: flex;
     flex-wrap: wrap;
     .all-comics-img {

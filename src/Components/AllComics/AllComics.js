@@ -11,6 +11,9 @@ const AllComics = ({ hero, comic }) => {
           {" "}
           ◁ BACK TO PROFILE
         </p>
+        <p className="all-comics-available">
+          All comics: {hero.name} [{hero.comics.available}]
+        </p>
         <div className="all-comics-img-container">
           {comic.map((item, index) => {
             if (index < 8) {
