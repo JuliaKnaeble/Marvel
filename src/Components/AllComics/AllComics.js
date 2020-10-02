@@ -31,6 +31,7 @@ const AllComics = ({ hero, comic }) => {
             return null;
           })}
         </div>
+        <p className="load-more">LOAD MORE</p>
       </div>
     </div>
   );

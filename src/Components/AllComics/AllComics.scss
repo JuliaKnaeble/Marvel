@@ -31,6 +31,7 @@
         color: $generalFontColor;
         font-size: 1.1rem;
         font-family: $fontStyleTwo;
+        padding-left: 3px;
       }
       .more {
         position: relative;
@@ -47,5 +48,16 @@
       }
       @include imgHoverEffect;
     }
+  }
+  .load-more {
+    padding: 10px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    color: $highlightedFontColor;
+    font-size: 2rem;
+    position: relative;
+    right: 35px;
+    font-weight: bold;
+    cursor: pointer;
   }
 }
