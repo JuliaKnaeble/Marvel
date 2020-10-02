@@ -1,7 +1,7 @@
 @import "../../SassVariables.scss";
 
 .Error {
-  @include contentFrame;
+  @include contentFrame(0 5% 0 10%);
 
   p {
     font-family: $fontStyleOne;

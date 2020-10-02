@@ -1,7 +1,7 @@
 @import "../../SassVariables.scss";
 
 .DetailNew {
-  @include contentFrame;
+  @include contentFrame(0 5% 0 10%);
 
   .hero-description {
     margin-top: 10%;

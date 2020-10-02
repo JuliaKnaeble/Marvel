@@ -20,6 +20,7 @@ const AllComics = ({ hero, comic }) => {
                     src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
                     alt={item.title}
                   />
+                  <p>{item.title}</p>
                 </div>
               );
             }

@@ -1,7 +1,7 @@
 @import "../../SassVariables.scss";
 
 .ComicsDetail {
-  @include contentFrame;
+  @include contentFrame(0 5% 0 10%);
   background-color: $generalBgColor;
   .comic-image {
     margin-top: 7%;

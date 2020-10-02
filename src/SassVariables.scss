@@ -11,10 +11,10 @@ $generalFontColor: #f0f4f7;
 $fontStyleOne: "Alata", sans-serif;
 $fontStyleTwo: "Libre Baskerville", serif;
 
-@mixin contentFrame {
+@mixin contentFrame($margin) {
   min-height: 100vh;
   display: flex;
-  margin: 0 5% 0 10%;
+  margin: $margin;
 }
 
 @mixin lable {
