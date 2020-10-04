@@ -25,14 +25,14 @@ const DetailNew = (props) => {
             {props.comic[0] ? props.comic[0].creators.items[0].name : "Unknown"}
           </span>
         </p>
-        <h1>{props.hero.name}</h1>
-        <h2>
+        <h2>{props.hero.name}</h2>
+        <p className="hero-description-title">
           {props.hero.description
             ? `${props.hero.description} Find out more`
             : `Sadly this hero has no description. If you are interessted in finding out more about ${props.hero.name}, you can do so`}
           {` `}
           {link}
-        </h2>
+        </p>
         <ComicsContainer />
       </div>
       <div className="hero-image">

@@ -1,10 +1,38 @@
 @import "../../SassVariables.scss";
 
 .Home {
-  @include contentFrame(0 5% 0 10%);
+  min-height: 100vh;
+  margin: 0 5% 0 10%;
   background-color: $generalBgColor;
-  p {
-    color: $highlightedFontColor;
-    font-size: 3rem;
+  .info {
+    padding-top: 4%;
+    display: flex;
+    a {
+      color: $generalFontColor;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 2rem;
+      font-family: $fontStyleOne;
+    }
+  }
+  h1 {
+    color: $generalFontColor;
+    font-family: $fontStyleOne;
+    font-size: 5.5rem;
+    padding-top: 5%;
+    margin: 0;
+    @media (max-width: 1800px) {
+      font-size: 4.5rem;
+    }
+  }
+  .home-description {
+    color: $generalFontColor;
+    font-family: $fontStyleTwo;
+    font-size: 2rem;
+    width: 1000px;
+    @media (max-width: 1800px) {
+      font-size: 1.5rem;
+      width: 800px;
+    }
   }
 }
