@@ -12,6 +12,13 @@ const Home = () => {
         >
           API
         </a>
+        <a
+          href="https://github.com/JuliaKnaeble"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ABOUT
+        </a>
       </div>
       <div>
         <h1>
