@@ -28,13 +28,22 @@
     }
   }
   .home-description {
+    padding-top: 1%;
     color: $generalFontColor;
     font-family: $fontStyleTwo;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 1000px;
+    line-height: 36px;
     @media (max-width: 1800px) {
-      font-size: 1.5rem;
+      font-size: 1rem;
       width: 800px;
     }
+  }
+  .start-search {
+    padding-top: 8%;
+    color: $highlightedFontColor;
+    font-family: $fontStyleOne;
+    font-weight: bold;
+    font-size: 2rem;
   }
 }

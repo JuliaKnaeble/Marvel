@@ -31,6 +31,7 @@ const Home = () => {
           randomizer if you feel like being surprised with a hero you've never
           even heard of.
         </p>
+        <p className="start-search">START YOUR SEARCH ▷</p>
       </div>
     </div>
   );
