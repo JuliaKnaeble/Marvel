@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./AllComics.scss";
 
 const AllComics = ({ hero, comic, requestComicDetail }) => {
   const history = useHistory();
+  const [loadMore, setLoadMore] = useState(false);
 
   const showComicDetail = (indexKey) => {
     requestComicDetail(indexKey);
     history.push("/comics");
   };
+
+  let moreComics;
+  if (loadMore) {
+    moreComics = (
+      <div className="work">
+        <p>Hallo Hallo</p>
+      </div>
+    );
+  }
 
   return (
     <div className="AllComics">
@@ -37,11 +47,21 @@ const AllComics = ({ hero, comic, requestComicDetail }) => {
             }
             return null;
           })}
+          {moreComics}
         </div>
-        <p className="load-more">LOAD MORE</p>
+        <p
+          className="load-more"
+          onClick={() => {
+            setLoadMore(!loadMore);
+          }}
+        >
+          LOAD MORE
+        </p>
       </div>
     </div>
   );
 };
 
 export default AllComics;
+
+// to set a useState that has the index, that increases with each click.
