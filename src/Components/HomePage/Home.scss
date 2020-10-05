@@ -71,5 +71,29 @@
       padding: 6px 20px 5px 20px;
       border-radius: 30px;
     }
+    .browse-characters {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      color: $generalFontColor;
+      font-weight: 700;
+      color: $generalFontColor;
+      opacity: 0.2;
+      font-size: 3.5rem;
+      margin: 0;
+      @media (max-width: 1800px) {
+        font-size: 2.5rem;
+      }
+    }
+    .vertical-line {
+      margin: 40px 0 40px 0;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      span {
+        border-left: 1px solid $highlightedFontColor;
+        height: 100px;
+      }
+    }
   }
 }

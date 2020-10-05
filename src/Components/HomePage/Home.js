@@ -35,6 +35,13 @@ const Home = () => {
           </p>
           <button className="start-search">START YOUR SEARCH</button>
         </div>
+        <div className="vertical-line">
+          <span></span>
+        </div>
+        <p className="browse-characters">BROWSE OVER 7,000 CHARACTERS</p>
+        <div className="vertical-line">
+          <span></span>
+        </div>
       </div>
     </div>
   );
