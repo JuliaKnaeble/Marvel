@@ -21,10 +21,11 @@ const Home = () => {
             ABOUT
           </a>
         </div>
-        <div>
+        <div className="header">
+          <p className="marvel-lable">MARVEL</p>
           <h1>
-            WELCOME TO THE <br />
-            MARVEL COMIC ARCHIVE
+            MARVEL COMICS <br />
+            CHARACTER ARCHIVE
           </h1>
           <p className="home-description">
             Browse from over 70 years worth of Marvel comic history. Look up
@@ -32,7 +33,7 @@ const Home = () => {
             use the randomizer if you feel like being surprised with a hero
             you've never even heard of.
           </p>
-          <p className="start-search">START YOUR SEARCH ▶︎</p>
+          <button className="start-search">START YOUR SEARCH</button>
         </div>
       </div>
     </div>
