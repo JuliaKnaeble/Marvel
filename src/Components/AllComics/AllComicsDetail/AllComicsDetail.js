@@ -13,17 +13,19 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
   return (
     <div className="AllComics">
       <div className="all-comics-img-container">
-        {comicsToRender.map((item, index) => (
-          <div key={index} className="all-comics-img">
-            <p className="more">READ MORE</p>
-            <img
-              src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
-              alt={item.title}
-              onClick={() => showComicDetail(index)}
-            />
-            <p>{item.title}</p>
-          </div>
-        ))}
+        {comicsToRender.map((item, index) => {
+          return (
+            <div key={index} className="all-comics-img">
+              <p className="more">READ MORE</p>
+              <img
+                src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
+                alt={item.title}
+                onClick={() => showComicDetail(index)}
+              />
+              <p>{item.title}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
