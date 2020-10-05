@@ -8,13 +8,15 @@ const AllComics = ({ hero, comic }) => {
   const history = useHistory();
   const [comicsToShow, setComicsToShow] = useState([]);
   const comicsPerLoad = 8;
-  let arrayForHoldingComics = [];
   const ref = useRef(comicsPerLoad);
 
   const loopWithSlice = (start, end) => {
+    let arrayForHoldingComics = [];
+    // `changing` startpoint instead of adding more items to the loop?
+    // issue with concatination?
     const slicedComics = comic.slice(start, end);
-    arrayForHoldingComics = arrayForHoldingComics.concat(slicedComics);
-    setComicsToShow(arrayForHoldingComics);
+    let arrayConcat = arrayForHoldingComics.concat(slicedComics);
+    setComicsToShow(arrayConcat);
   };
 
   useEffect(() => {
