@@ -1,0 +1,39 @@
+import React from "react";
+import { useHistory } from "react-router-dom";
+import "./AllComicsDetail.scss";
+
+const AllComics = ({ comic, requestComicDetail }) => {
+  const history = useHistory();
+
+  const showComicDetail = (indexKey) => {
+    requestComicDetail(indexKey);
+    history.push("/comics");
+  };
+
+  return (
+    <div className="AllComics">
+      <div className="all-comics-img-container">
+        {comic.map((item, index) => {
+          if (index < 8) {
+            return (
+              <div key={index} className="all-comics-img">
+                <p className="more">READ MORE</p>
+                <img
+                  src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
+                  alt={item.title}
+                  onClick={() => showComicDetail(index)}
+                />
+                <p>{item.title}</p>
+              </div>
+            );
+          }
+          return null;
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default AllComics;
+
+// to set a useState that has the index, that increases with each click.
