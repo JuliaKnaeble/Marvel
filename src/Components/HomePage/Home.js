@@ -1,4 +1,5 @@
 import React from "react";
+import Heroes from "./Heroes.json";
 import "./Home.scss";
 
 const Home = () => {
@@ -53,8 +54,19 @@ const Home = () => {
               their comic history. Watch out, you might learn something new.
             </p>
           </div>
-          <div>
-            <p>LEARN MORE ABOUT MARVEL'S</p>
+          <div className="hero-suggestions">
+            {Heroes.map((item, index) => {
+              return (
+                <div className="circle-hero-container" key={index}>
+                  <img
+                    className="circle-hero-images"
+                    src={require(`../../Assets/HeroesHome/${item.image}`)}
+                    alt={item.name}
+                  />
+                  <p className="circle-hero-name">{item.name}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

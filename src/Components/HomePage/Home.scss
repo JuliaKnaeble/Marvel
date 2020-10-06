@@ -113,6 +113,25 @@
           font-size: 1rem;
         }
       }
+      .hero-suggestions {
+        margin-left: 200px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .circle-hero-container {
+          .circle-hero-images {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid $highlightedFontColor;
+            margin: 0px 25px 0px 25px;
+          }
+          .circle-hero-name {
+            justify-content: center;
+            text-align: center;
+          }
+        }
+      }
     }
   }
 }

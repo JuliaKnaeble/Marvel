@@ -8,6 +8,7 @@ const NavbarNew = (props) => {
   const [searchClicked, setSearchClicked] = useState(false);
   const [heroInput, setHeroInput] = useState("");
   const history = useHistory();
+  document.body.style.overflow = "visible";
 
   function getRandomInt(min, max) {
     min = Math.ceil(9150);
@@ -39,6 +40,7 @@ const NavbarNew = (props) => {
 
   let menu;
   if (searchClicked) {
+    document.body.style.overflow = "hidden";
     menu = (
       <div>
         <div className="menu-opene">
