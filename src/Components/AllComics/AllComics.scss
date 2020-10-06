@@ -1,6 +1,6 @@
 @import "../../SassVariables.scss";
 
-.AllComics {
+.LoadMore {
   @include contentFrame(0 2% 0 10%);
   background-color: $generalBgColor;
   .all-comics-container {
@@ -15,36 +15,6 @@
     }
     .back {
       @include backTo;
-    }
-  }
-  .all-comics-img-container {
-    padding-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    .all-comics-img {
-      margin-bottom: 40px;
-      padding-right: 4%;
-      max-width: 300px;
-      p {
-        color: $generalFontColor;
-        font-size: 1.1rem;
-        font-family: $fontStyleTwo;
-        padding-left: 3px;
-      }
-      .more {
-        font-family: $fontStyleOne;
-        position: relative;
-        margin: 0;
-        padding: 0;
-        font-size: 2rem;
-        top: 200px;
-        left: 100px;
-        color: transparent;
-      }
-      img {
-        cursor: pointer;
-      }
-      @include imgHoverEffect;
     }
   }
   .load-more {
