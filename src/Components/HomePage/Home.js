@@ -23,7 +23,11 @@ const Home = () => {
           </a>
         </div>
         <div className="header">
-          <p className="marvel-lable">MARVEL</p>
+          <img
+            className="marvel-lable"
+            src={require(`../../Assets/marvel_logo.png`)}
+            alt="MARVEL"
+          />
           <h1>
             MARVEL COMICS <br />
             CHARACTER ARCHIVE
