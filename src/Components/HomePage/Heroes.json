@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "image": "captain_america.png",
+    "name": "Captain America",
+    "search": "Captain America"
+  },
+  {
+    "id": 2,
+    "image": "jean.png",
+    "name": "Jean Grey",
+    "search": "Jean Grey"
+  },
+  {
+    "id": 3,
+    "image": "hulk.png",
+    "name": "Hulk",
+    "search": "Hulk"
+  },
+  {
+    "id": 4,
+    "image": "iron_man.png",
+    "name": "Iron Man",
+    "search": "Iron Man"
+  },
+  {
+    "id": 5,
+    "image": "spider_man.png",
+    "name": "Spider Man",
+    "search": "Spider-Man"
+  },
+  {
+    "id": 6,
+    "image": "thor.png",
+    "name": "Thor",
+    "search": "Thor"
+  },
+  {
+    "id": 7,
+    "image": "deadpool.png",
+    "name": "Deadpool",
+    "search": "Deadpool"
+  },
+  {
+    "id": 8,
+    "image": "storm.png",
+    "name": "Storm",
+    "search": "Storm"
+  },
+  {
+    "id": 9,
+    "image": "magneto.png",
+    "name": "Magneto",
+    "search": "Magneto"
+  },
+  {
+    "id": 10,
+    "image": "scarlet_witch.png",
+    "name": "Scarlet Witch",
+    "search": "Scarlet Witch"
+  },
+  {
+    "id": 11,
+    "image": "black_panther.png",
+    "name": "Black Panther",
+    "search": "Black Panther"
+  },
+  {
+    "id": 12,
+    "image": "thanos.png",
+    "name": "Thanos",
+    "search": "Thanos"
+  },
+  {
+    "id": 13,
+    "image": "professorx.png",
+    "name": "Professor X",
+    "search": "Professor X"
+  },
+  {
+    "id": 14,
+    "image": "venom.png",
+    "name": "Venom",
+    "search": "?"
+  },
+  {
+    "id": 15,
+    "image": "dr_doom.png",
+    "name": "Dr. Doom",
+    "search": "Doctor Doom"
+  },
+  {
+    "id": 16,
+    "image": "captain_marvel.png",
+    "name": "Captain Marvel",
+    "search": "Carol Danvers"
+  },
+  {
+    "id": 17,
+    "image": "daredavil.png",
+    "name": "Daredevil",
+    "search": "Daredevil"
+  },
+  {
+    "id": 18,
+    "image": "nightcrawler.png",
+    "name": "Nightcrawler",
+    "search": "Nightcrawler"
+  }
+]
