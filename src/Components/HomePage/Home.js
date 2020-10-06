@@ -42,6 +42,21 @@ const Home = () => {
         <div className="vertical-line">
           <span></span>
         </div>
+        <div className="home-heroes">
+          <div className="learn-more">
+            <p className="header-learn">
+              LEARN MORE ABOUT MARVEL'S MOST POPULAR CHARACTERS
+            </p>
+            <p className="paragraph-learn">
+              Think you know everything about your favorite character? Check out
+              more information about Marvel's most popular characters and browse
+              their comic history. Watch out, you might learn something new.
+            </p>
+          </div>
+          <div>
+            <p>LEARN MORE ABOUT MARVEL'S</p>
+          </div>
+        </div>
       </div>
     </div>
   );

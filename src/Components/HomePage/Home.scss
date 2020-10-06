@@ -32,14 +32,17 @@
         font-weight: 700;
       }
       h1 {
-        padding-top: 20px;
+        padding-top: 50px;
+        line-height: 130px;
         font-family: $fontStyleOne;
         font-weight: 400;
         color: $generalFontColor;
-        font-size: 6rem;
+        font-size: 8rem;
         margin: 0;
         @media (max-width: 1800px) {
-          font-size: 5rem;
+          padding-top: 35px;
+          font-size: 7rem;
+          line-height: 120px;
         }
       }
       .home-description {
@@ -47,7 +50,7 @@
         color: $generalFontColor;
         font-family: $fontStyleTwo;
         font-size: 1.5rem;
-        line-height: 36px;
+        line-height: 25px;
         @media (max-width: 1800px) {
           font-size: 1rem;
         }
@@ -72,11 +75,11 @@
       color: $generalFontColor;
       font-family: $fontStyleOne;
       font-weight: 400;
-      opacity: 0.2;
-      font-size: 3.5rem;
+      opacity: 0.15;
+      font-size: 5.5rem;
       margin: 0;
       @media (max-width: 1800px) {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
       }
     }
     .vertical-line {
@@ -87,6 +90,28 @@
       span {
         border-left: 1px solid $highlightedFontColor;
         height: 100px;
+      }
+    }
+    .home-heroes {
+      display: flex;
+      flex-direction: row;
+      color: $generalFontColor;
+      .learn-more {
+        width: 340px;
+        .header-learn {
+          line-height: 50px;
+          font-family: $fontStyleOne;
+          font-weight: 400;
+          font-size: 3rem;
+          margin: 0;
+        }
+        .paragraph-learn {
+          line-height: 25px;
+          padding-top: 20px;
+          margin: 0;
+          font-family: $fontStyleTwo;
+          font-size: 1rem;
+        }
       }
     }
   }
