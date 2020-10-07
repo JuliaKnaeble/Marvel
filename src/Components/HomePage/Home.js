@@ -57,6 +57,7 @@ const Home = () => {
               more information about Marvel's most popular characters and browse
               their comic history. Watch out, you might learn something new.
             </p>
+            <button className="someone-random">SHOW ME SOMEONE RANDOM</button>
           </div>
           <div className="hero-suggestions">
             {Heroes.map((item, index) => {

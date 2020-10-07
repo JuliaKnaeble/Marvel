@@ -54,3 +54,17 @@ $fontStyleTwo: "Libre Baskerville", serif;
     }
   }
 }
+
+@mixin homeButtons($margin) {
+  display: block;
+  margin: $margin;
+  color: $highlightedFontColor;
+  font-family: $fontStyleOne;
+  font-weight: 400;
+  font-size: 1.75rem;
+  background-color: transparent;
+  border: 3px solid $highlightedFontColor;
+  padding: 6px 20px 5px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+}

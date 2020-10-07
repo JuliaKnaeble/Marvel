@@ -54,16 +54,7 @@
       }
     }
     .start-search {
-      display: block;
-      margin: 0 auto;
-      color: $highlightedFontColor;
-      font-family: $fontStyleOne;
-      font-weight: 400;
-      font-size: 1.75rem;
-      background-color: transparent;
-      border: 3px solid $highlightedFontColor;
-      padding: 6px 20px 5px 20px;
-      border-radius: 30px;
+      @include homeButtons(0 auto);
     }
     .browse-characters {
       display: flex;
@@ -92,10 +83,16 @@
     .home-heroes {
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       color: $generalFontColor;
+      padding: 80px 0 200px 0;
+      @media (min-width: 1800px) {
+        padding: 80px 10% 200px 10%;
+      }
       .learn-more {
-        width: 340px;
+        padding-top: 15px;
         .header-learn {
+          width: 340px;
           line-height: 50px;
           font-family: $fontStyleOne;
           font-weight: 400;
@@ -103,15 +100,19 @@
           margin: 0;
         }
         .paragraph-learn {
+          width: 340px;
           line-height: 25px;
-          padding-top: 20px;
+          padding: 20px 0 45px 0;
           margin: 0;
           font-family: $fontStyleTwo;
           font-size: 1rem;
         }
+        .someone-random {
+          @include homeButtons(0);
+        }
       }
       .hero-suggestions {
-        margin-left: 200px;
+        width: 1000px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
