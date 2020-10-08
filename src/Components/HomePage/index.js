@@ -3,7 +3,7 @@
 
 import { connect } from "react-redux";
 // imports the action neededs
-import { requestHero } from "../../Redux/Actions";
+import { requestHero, requestRandomHero } from "../../Redux/Actions";
 import Home from "./Home";
 
 export const mapStateToProps = (state, ownProps) => {
@@ -17,6 +17,7 @@ export const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = {
   requestHero,
+  requestRandomHero,
 };
 
 // mapDispatchToProps, for importing the action

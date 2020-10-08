@@ -3,11 +3,22 @@ import Heroes from "./Heroes.json";
 import { useHistory } from "react-router-dom";
 import "./Home.scss";
 
-const Home = ({ requestHero }) => {
+const Home = ({ requestHero, requestRandomHero }) => {
   const history = useHistory();
 
   const showHero = (newHero) => {
     requestHero(newHero);
+    history.push("/hero");
+  };
+
+  function getRandomInt(min, max) {
+    min = Math.ceil(9150);
+    max = Math.floor(9799);
+    return requestRandomHero(Math.floor(Math.random() * (max - min) + min));
+  }
+
+  const setRandomHero = () => {
+    getRandomInt();
     history.push("/hero");
   };
 
@@ -65,7 +76,9 @@ const Home = ({ requestHero }) => {
               more information about Marvel's most popular characters and browse
               their comic history. Watch out, you might learn something new.
             </p>
-            <button className="someone-random">SHOW ME SOMEONE RANDOM</button>
+            <button className="someone-random" onClick={() => setRandomHero()}>
+              SHOW ME SOMEONE RANDOM
+            </button>
           </div>
           <div className="hero-suggestions">
             {Heroes.map((item, index) => {
