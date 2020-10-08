@@ -1,8 +1,16 @@
 import React from "react";
 import Heroes from "./Heroes.json";
+import { useHistory } from "react-router-dom";
 import "./Home.scss";
 
-const Home = () => {
+const Home = ({ requestHero }) => {
+  const history = useHistory();
+
+  const showHero = (newHero) => {
+    requestHero(newHero);
+    history.push("/hero");
+  };
+
   return (
     <div className="Home">
       <div className="home-container">
@@ -67,6 +75,7 @@ const Home = () => {
                     className="circle-hero-images"
                     src={require(`../../Assets/HeroesHome/${item.image}`)}
                     alt={item.name}
+                    onClick={() => showHero(item.search)}
                   />
                   <p className="circle-hero-name">{item.name}</p>
                 </div>

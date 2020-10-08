@@ -32,5 +32,3 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
 };
 
 export default AllComics;
-
-// to set a useState that has the index, that increases with each click.
