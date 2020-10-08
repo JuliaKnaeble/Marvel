@@ -3,6 +3,7 @@
 .AllComics {
   .all-comics-img-container {
     padding-top: 40px;
+    padding-left: 5%;
     display: flex;
     flex-wrap: wrap;
     .all-comics-img {
@@ -16,13 +17,13 @@
         padding-left: 3px;
       }
       .more {
+        font-family: $fontStyleOne;
         position: relative;
         margin: 0;
         padding: 0;
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-size: 3rem;
         top: 200px;
-        left: 65px;
+        left: 62px;
         color: transparent;
       }
       img {

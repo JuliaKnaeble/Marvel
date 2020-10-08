@@ -42,15 +42,11 @@
   }
   input {
     display: block;
-    margin: 250px auto;
-    width: 1000px;
-    height: 90px;
-    padding-left: 35px;
-    border-radius: 50px;
+    margin: 20% 15% auto auto;
     border-color: transparent;
     outline: transparent;
     font-family: $fontStyleOne;
-    font-size: 5rem;
+    font-size: 8rem;
     text-transform: uppercase;
     color: $generalFontColor;
     background-color: transparent;
@@ -58,7 +54,7 @@
       color: $generalFontColor;
       opacity: 0.4;
       font-family: $fontStyleOne;
-      font-size: 5rem;
+      font-size: 8rem;
       text-transform: uppercase;
     }
   }
