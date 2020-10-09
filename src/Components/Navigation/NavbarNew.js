@@ -70,19 +70,20 @@ const NavbarNew = (props) => {
       {menu}
       <div className="NavbarNew">
         <img
-          className="logo"
+          className="logo nav-items"
           onClick={showHome}
           src={require(`../../Assets/logo.png`)}
           alt=""
         />
         <img
+          className="nav-items"
           onClick={() => setSearchClicked(!searchClicked)}
           src={require(`../../Assets/search.png`)}
           alt=""
         />
         <img
           onClick={showRandomHero}
-          className="bottom"
+          className="bottom nav-items"
           src={require(`../../Assets/random.png`)}
           alt=""
         />
