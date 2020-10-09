@@ -50,6 +50,10 @@
     top: 50px;
     left: 95%;
     cursor: pointer;
+    @media (max-width: 1600px) {
+      width: 30px;
+      height: 30px;
+    }
   }
   input {
     display: block;
@@ -61,12 +65,19 @@
     text-transform: uppercase;
     color: $generalFontColor;
     background-color: transparent;
+    @media (max-width: 1600px) {
+      margin: 20% 10% auto auto;
+      font-size: 6rem;
+    }
     &::placeholder {
       color: $generalFontColor;
       opacity: 0.4;
       font-family: $fontStyleOne;
       font-size: 8rem;
       text-transform: uppercase;
+      @media (max-width: 1600px) {
+        font-size: 6rem;
+      }
     }
   }
 }
