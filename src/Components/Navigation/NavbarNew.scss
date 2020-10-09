@@ -57,7 +57,7 @@
   }
   input {
     display: block;
-    margin: 20% 15% auto auto;
+    margin: 15% 12% auto auto;
     border-color: transparent;
     outline: transparent;
     font-family: $fontStyleOne;
@@ -66,7 +66,7 @@
     color: $generalFontColor;
     background-color: transparent;
     @media (max-width: 1600px) {
-      margin: 20% 10% auto auto;
+      margin: 15% 10% auto auto;
       font-size: 6rem;
     }
     &::placeholder {
