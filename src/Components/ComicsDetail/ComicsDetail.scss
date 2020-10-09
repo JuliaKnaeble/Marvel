@@ -38,14 +38,7 @@
     }
   }
   h4 {
-    color: $generalFontColor;
-    font-family: $fontStyleTwo;
-    font-weight: $fontWeightSmall;
-    font-size: 20px;
-    line-height: 36px;
-    @media (max-width: 1800px) {
-      font-size: 18px;
-    }
+    @include hero-ComicDescription;
   }
   .comic-dates {
     display: flex;

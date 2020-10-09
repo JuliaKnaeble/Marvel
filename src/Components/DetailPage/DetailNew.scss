@@ -8,7 +8,7 @@
     margin-right: 10%;
     display: flex;
     flex-direction: column;
-    @media (max-width: 1800px) {
+    @media (max-width: 1600px) {
       margin-top: 8%;
     }
     .lable {
@@ -26,20 +26,17 @@
       font-family: $fontStyleOne;
       font-size: 5rem;
       margin: 0;
-      @media (max-width: 1800px) {
+      @media (max-width: 1600px) {
         font-size: 4rem;
       }
     }
     .hero-description-title {
-      color: $generalFontColor;
+      @include hero-ComicDescription;
       margin: 15px 0 0 0;
-      font-family: $fontStyleTwo;
-      font-weight: $fontWeightSmall;
-      font-size: 20px;
-      line-height: 35px;
-      @media (max-width: 1800px) {
-        font-size: 18px;
-      }
+    }
+    .hero-reference-link {
+      color: $highlightedFontColor;
+      text-decoration: none;
     }
   }
 
@@ -60,17 +57,5 @@
     color: $highlightedFontColor;
     display: flex;
     justify-content: flex-end;
-  }
-
-  .hero-reference-link {
-    color: $highlightedFontColor;
-    font-family: $fontStyleTwo;
-    font-weight: $fontWeightSmall;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 36px;
-    @media (max-width: 1800px) {
-      font-size: 18px;
-    }
   }
 }
