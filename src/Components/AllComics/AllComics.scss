@@ -1,7 +1,7 @@
 @import "../../SassVariables.scss";
 
 .LoadMore {
-  @include contentFrame(0 2% 0 10%);
+  @include contentFrame(0 1% 0 10%);
   background-color: $generalBgColor;
   .all-comics-container {
     margin-top: 7%;

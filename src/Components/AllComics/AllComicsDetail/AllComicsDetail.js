@@ -18,6 +18,7 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
             <div key={index} className="all-comics-img">
               <p className="more">READ MORE</p>
               <img
+                className="comic-images"
                 src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
                 alt={item.title}
                 onClick={() => showComicDetail(index)}

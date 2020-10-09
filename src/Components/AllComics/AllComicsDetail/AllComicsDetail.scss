@@ -2,19 +2,71 @@
 
 .AllComics {
   .all-comics-img-container {
-    padding-top: 40px;
-    padding-left: 5%;
+    padding-top: 5px;
     display: flex;
     flex-wrap: wrap;
+    @media (max-width: 1500px) {
+      padding-top: 3px;
+    }
     .all-comics-img {
-      margin-bottom: 40px;
-      padding-right: 4%;
-      max-width: 300px;
+      margin-bottom: 35px;
+      @media (max-width: 1440px) {
+        margin-bottom: 15px;
+      }
+      @media (max-width: 1130px) {
+        margin-bottom: 5px;
+      }
+      .comic-images {
+        width: 300px;
+        height: auto;
+        padding-right: 120px;
+        @media (max-width: 1890px) {
+          width: 250px;
+        }
+        @media (max-width: 1670px) {
+          padding-right: 80px;
+        }
+        @media (max-width: 1500px) {
+          padding-right: 120px;
+          width: 200px;
+        }
+        @media (max-width: 1440px) {
+          padding-right: 80px;
+        }
+        @media (max-width: 1265px) {
+          padding-right: 50px;
+        }
+        @media (max-width: 1130px) {
+          width: 150px;
+          padding-right: 80px;
+        }
+        @media (max-width: 1130px) {
+          padding-right: 50px;
+        }
+      }
       p {
         color: $generalFontColor;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         font-family: $fontStyleTwo;
-        padding-left: 3px;
+        padding: 25px 0 0 3px;
+        width: 300px;
+        margin: 0;
+        @media (max-width: 1890px) {
+          width: 250px;
+          font-size: 1.25rem;
+          padding-top: 20px;
+        }
+        @media (max-width: 1500px) {
+          width: 200px;
+        }
+        @media (max-width: 1440px) {
+          padding: 5px 0 0 1px;
+          font-size: 1rem;
+        }
+        @media (max-width: 1130px) {
+          width: 150px;
+          font-size: 0.75rem;
+        }
       }
       .more {
         font-family: $fontStyleOne;
@@ -25,6 +77,18 @@
         top: 200px;
         left: 62px;
         color: transparent;
+        @media (max-width: 1890px) {
+          left: 50px;
+        }
+        @media (max-width: 1500px) {
+          font-size: 2rem;
+          top: 125px;
+        }
+        @media (max-width: 1130px) {
+          font-size: 1.75rem;
+          top: 100px;
+          left: 32px;
+        }
       }
       img {
         cursor: pointer;

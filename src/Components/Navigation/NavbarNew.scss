@@ -56,8 +56,10 @@
     }
   }
   input {
+    caret-color: transparent;
     display: block;
-    margin: 15% 12% auto auto;
+    text-align: center;
+    margin: 15% 20% auto auto;
     border-color: transparent;
     outline: transparent;
     font-family: $fontStyleOne;
@@ -66,7 +68,7 @@
     color: $generalFontColor;
     background-color: transparent;
     @media (max-width: 1600px) {
-      margin: 15% 10% auto auto;
+      margin: 15% 18% auto auto;
       font-size: 6rem;
     }
     &::placeholder {
