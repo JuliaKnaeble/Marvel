@@ -27,6 +27,7 @@ const Home = ({ requestHero, requestRandomHero }) => {
       <div className="home-container">
         <div className="info">
           <a
+            className="api"
             href="https://developer.marvel.com/"
             target="_blank"
             rel="noopener noreferrer"

@@ -13,17 +13,25 @@
   }
   .home-container {
     min-height: 100vh;
-    margin: 0 5% 0 5%;
+    margin: 0 7% 0 5%;
     .info {
       padding-top: 4%;
       display: flex;
       justify-content: flex-end;
       a {
-        padding-right: 40px;
         color: $generalFontColor;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-family: $fontStyleOne;
+        &:hover {
+          opacity: 0.5;
+        }
+        @media (max-width: 1400px) {
+          font-size: 1.5rem;
+        }
+      }
+      .api {
+        padding-right: 40px;
       }
     }
     .header {
@@ -39,27 +47,38 @@
         height: auto;
       }
       h1 {
-        padding-top: 50px;
-        line-height: 130px;
+        padding-top: 40px;
+        line-height: 120px;
         font-family: $fontStyleOne;
         font-weight: 400;
         color: $generalFontColor;
         font-size: 8rem;
         margin: 0;
         @media (max-width: 1800px) {
-          padding-top: 35px;
+          padding-top: 30px;
           font-size: 7rem;
-          line-height: 120px;
+          line-height: 105px;
+        }
+        @media (max-width: 1400px) {
+          padding-top: 30px;
+          font-size: 6rem;
+          line-height: 95px;
         }
       }
       .home-description {
-        padding: 0 25% 3% 25%;
+        margin: 0;
+        padding: 1% 20% 3% 20%;
         color: $generalFontColor;
         font-family: $fontStyleTwo;
-        font-size: 1.5rem;
-        line-height: 25px;
+        font-size: 1.75rem;
+        line-height: 35px;
         @media (max-width: 1800px) {
+          font-size: 1.5rem;
+          line-height: 30px;
+        }
+        @media (max-width: 1400px) {
           font-size: 1rem;
+          line-height: 25px;
         }
       }
     }
@@ -74,10 +93,13 @@
       font-family: $fontStyleOne;
       font-weight: 400;
       opacity: 0.15;
-      font-size: 5.5rem;
+      font-size: 6rem;
       margin: 0;
       @media (max-width: 1800px) {
-        font-size: 4.5rem;
+        font-size: 5rem;
+      }
+      @media (max-width: 1400px) {
+        font-size: 4rem;
       }
     }
     .vertical-line {

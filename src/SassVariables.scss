@@ -67,7 +67,11 @@ $fontStyleTwo: "Libre Baskerville", serif;
   padding: 6px 20px 5px 20px;
   border-radius: 30px;
   outline: transparent;
-  cursor: pointer;
+  transition: 0.5s ease-out;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
 }
 
 @mixin hero-ComicDescription {
