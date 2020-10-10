@@ -29,6 +29,9 @@
         @media (max-width: 1400px) {
           font-size: 1.5rem;
         }
+        @media (max-width: 1300px) {
+          font-size: 1.25rem;
+        }
       }
       .api {
         padding-right: 40px;
@@ -45,6 +48,9 @@
         padding: 2px 5px 0 5px;
         width: 100px;
         height: auto;
+        @media (max-width: 1400px) {
+          width: 80px;
+        }
       }
       h1 {
         padding-top: 40px;
@@ -64,6 +70,11 @@
           font-size: 6rem;
           line-height: 95px;
         }
+        @media (max-width: 1300px) {
+          padding-top: 20px;
+          font-size: 5rem;
+          line-height: 80px;
+        }
       }
       .home-description {
         margin: 0;
@@ -79,6 +90,10 @@
         @media (max-width: 1400px) {
           font-size: 1rem;
           line-height: 25px;
+        }
+        @media (max-width: 1300px) {
+          font-size: 0.9rem;
+          padding: 1% 22% 3% 22%;
         }
       }
     }
@@ -101,15 +116,24 @@
       @media (max-width: 1400px) {
         font-size: 4rem;
       }
+      @media (max-width: 1300px) {
+        font-size: 3.25rem;
+      }
     }
     .vertical-line {
       margin: 40px 0 40px 0;
       display: flex;
       justify-content: center;
       text-align: center;
+      @media (max-width: 1300px) {
+        margin: 25px 0 25px 0;
+      }
       span {
         border-left: 1px solid $highlightedFontColor;
         height: 100px;
+        @media (max-width: 1300px) {
+          height: 80px;
+        }
       }
     }
     .home-heroes {
@@ -117,28 +141,86 @@
       flex-direction: row;
       justify-content: space-between;
       color: $generalFontColor;
-      padding: 80px 0 200px 0;
+      padding: 70px 0 200px 0;
       cursor: pointer;
-      @media (min-width: 1800px) {
-        padding: 80px 10% 200px 10%;
+      @media (max-width: 1780px) {
+        padding: 55px 0 150px 0;
+      }
+      @media (max-width: 1570px) {
+        padding: 45px 0 150px 0;
+      }
+      @media (max-width: 1430px) {
+        padding: 35px 0 100px 0;
       }
       .learn-more {
-        padding-top: 15px;
+        padding-top: 10px;
+        padding-left: 60px;
+        @media (max-width: 1870px) {
+          padding-left: 40px;
+        }
+        @media (max-width: 1780px) {
+          padding-left: 30px;
+        }
         .header-learn {
-          width: 340px;
-          line-height: 50px;
+          width: 450px;
+          line-height: 63px;
           font-family: $fontStyleOne;
           font-weight: 400;
-          font-size: 3rem;
+          font-size: 4rem;
           margin: 0;
+          @media (max-width: 1870px) {
+            font-size: 3.75rem;
+          }
+          @media (max-width: 1780px) {
+            font-size: 3.5rem;
+            width: 400px;
+            line-height: 60px;
+          }
+          @media (max-width: 1570px) {
+            font-size: 3rem;
+            width: 350px;
+            line-height: 55px;
+          }
+          @media (max-width: 1430px) {
+            font-size: 2.75rem;
+            line-height: 50px;
+            width: 300px;
+          }
+          @media (max-width: 1300px) {
+            font-size: 2rem;
+            line-height: 35px;
+            width: 240px;
+          }
         }
         .paragraph-learn {
-          width: 340px;
-          line-height: 25px;
+          width: 500px;
           padding: 20px 0 45px 0;
           margin: 0;
           font-family: $fontStyleTwo;
-          font-size: 1rem;
+          font-size: 1.5rem;
+          line-height: 33px;
+          @media (max-width: 1870px) {
+            font-size: 1.25rem;
+            width: 485px;
+          }
+          @media (max-width: 1780px) {
+            font-size: 1rem;
+            width: 440px;
+            line-height: 30px;
+          }
+          @media (max-width: 1570px) {
+            width: 380px;
+          }
+          @media (max-width: 1430px) {
+            padding: 15px 0 35px 0;
+            font-size: 0.9rem;
+            line-height: 25px;
+          }
+          @media (max-width: 1300px) {
+            font-size: 0.75rem;
+            line-height: 20px;
+            width: 260px;
+          }
         }
         .someone-random {
           @include homeButtons(0);
@@ -149,6 +231,12 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        @media (max-width: 1780px) {
+          width: 850px;
+        }
+        @media (max-width: 1430px) {
+          width: 700px;
+        }
         .circle-hero-container {
           .circle-hero-images {
             width: 100px;
@@ -156,12 +244,35 @@
             border-radius: 50%;
             border: 4px solid $highlightedFontColor;
             margin: 0px 25px 0px 25px;
+            @media (max-width: 1780px) {
+              width: 80px;
+              height: 80px;
+            }
+            @media (max-width: 1570px) {
+              margin: 0px 20px 0px 20px;
+            }
+            @media (max-width: 1430px) {
+              width: 60px;
+              height: 60px;
+            }
           }
           .circle-hero-name {
             justify-content: center;
             text-align: center;
             margin: 0;
-            padding: 8px 0 40px 0;
+            padding: 15px 0 65px 0;
+            @media (max-width: 1870px) {
+              padding: 15px 0 60px 0;
+            }
+            @media (max-width: 1570px) {
+              font-size: 0.9rem;
+            }
+            @media (max-width: 1430px) {
+              font-size: 0.75rem;
+            }
+            @media (max-width: 1300px) {
+              padding: 10px 0 40px 0;
+            }
           }
         }
       }

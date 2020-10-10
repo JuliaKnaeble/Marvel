@@ -72,6 +72,9 @@ $fontStyleTwo: "Libre Baskerville", serif;
     cursor: pointer;
     opacity: 0.6;
   }
+  @media (max-width: 1300px) {
+    font-size: 1.25rem;
+  }
 }
 
 @mixin hero-ComicDescription {
