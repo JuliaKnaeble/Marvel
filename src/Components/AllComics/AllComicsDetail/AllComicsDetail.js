@@ -23,7 +23,7 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
                 alt={item.title}
                 onClick={() => showComicDetail(index)}
               />
-              <p>{item.title}</p>
+              <p className="comic-title">{item.title}</p>
             </div>
           );
         })}
