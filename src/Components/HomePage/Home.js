@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Heroes from "./Heroes.json";
 import { useHistory } from "react-router-dom";
 import "./Home.scss";
+import ActiveSearchContainer from "../Navigation/ActiveState/index";
 
 const Home = ({ requestHero, requestRandomHero }) => {
+  const [searchClicked, setSearchClicked] = useState(false);
   const history = useHistory();
 
   const showHero = (newHero) => {
@@ -21,6 +23,10 @@ const Home = ({ requestHero, requestRandomHero }) => {
     getRandomInt();
     history.push("/hero");
   };
+
+  if (searchClicked) {
+    return <ActiveSearchContainer />;
+  }
 
   return (
     <div className="Home">
@@ -58,7 +64,12 @@ const Home = ({ requestHero, requestRandomHero }) => {
             use the randomizer if you feel like being surprised with a hero
             you've never even heard of.
           </p>
-          <button className="start-search">START YOUR SEARCH</button>
+          <button
+            className="start-search"
+            onClick={() => setSearchClicked(!searchClicked)}
+          >
+            START YOUR SEARCH
+          </button>
         </div>
         <div className="vertical-line">
           <span></span>
