@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "./ActiveSearch.scss";
 
-const ActiveSearch = () => {
+const ActiveSearch = (props) => {
+  const [searchClicked, setSearchClicked] = useState(false);
+  const [heroInput, setHeroInput] = useState("");
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    props.requestHero(heroInput);
+    history.push("/hero");
+    setSearchClicked(!searchClicked);
+  };
+
+  const updateHero = (event) => {
+    setHeroInput(event.target.value);
+  };
   return (
     <div>
       <div className="menu-opene">
