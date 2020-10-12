@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ActiveSearch.scss";
+
 const ActiveSearch = () => {
   return (
     <div>

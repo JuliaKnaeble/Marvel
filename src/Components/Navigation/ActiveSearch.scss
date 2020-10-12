@@ -1,0 +1,49 @@
+@import "../../SassVariables.scss";
+
+.menu-opene {
+  position: absolute;
+  z-index: 10;
+  height: 100vh;
+  width: 100%;
+  background-color: $generalBgColor;
+  opacity: 0.97;
+  .close {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 50px;
+    left: 95%;
+    cursor: pointer;
+    @media (max-width: 1600px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  input {
+    caret-color: transparent;
+    display: block;
+    text-align: center;
+    margin: 15% 20% auto auto;
+    border-color: transparent;
+    outline: transparent;
+    font-family: $fontStyleOne;
+    font-size: 8rem;
+    text-transform: uppercase;
+    color: $generalFontColor;
+    background-color: transparent;
+    @media (max-width: 1600px) {
+      margin: 15% 18% auto auto;
+      font-size: 6rem;
+    }
+    &::placeholder {
+      color: $generalFontColor;
+      opacity: 0.4;
+      font-family: $fontStyleOne;
+      font-size: 8rem;
+      text-transform: uppercase;
+      @media (max-width: 1600px) {
+        font-size: 6rem;
+      }
+    }
+  }
+}
