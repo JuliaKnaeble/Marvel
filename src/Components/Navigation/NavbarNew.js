@@ -34,10 +34,6 @@ const NavbarNew = (props) => {
     history.push("/hero");
   };
 
-  const showHome = () => {
-    history.push("/");
-  };
-
   let menu;
   if (searchClicked) {
     document.body.style.overflow = "hidden";
@@ -71,7 +67,7 @@ const NavbarNew = (props) => {
       <div className="NavbarNew">
         <img
           className="logo nav-items"
-          onClick={showHome}
+          onClick={() => history.push("/")}
           src={require(`../../Assets/logo.png`)}
           alt=""
         />
