@@ -14,6 +14,7 @@ const ActiveSearch = (props) => {
     props.requestHero(heroInput);
     history.push("/hero");
     setSearchClicked(!searchClicked);
+    document.body.style.overflow = "visible";
   };
 
   const updateHero = (event) => {

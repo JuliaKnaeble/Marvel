@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Heroes from "./Heroes.json";
 import { useHistory } from "react-router-dom";
 import "./Home.scss";
-import ActiveSearchContainer from "../Navigation/ActiveState/index";
+import ActiveSearchContainer from "../Navigation/ActiveStateSearch/index";
 
 const Home = ({ requestHero, requestRandomHero }) => {
   const [searchClicked, setSearchClicked] = useState(false);
