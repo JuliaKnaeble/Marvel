@@ -17,9 +17,6 @@ const ActiveSearch = (props) => {
     document.body.style.overflow = "visible";
   };
 
-  const updateHero = (event) => {
-    setHeroInput(event.target.value);
-  };
   return (
     <div>
       <div className="menu-opene">
@@ -36,7 +33,7 @@ const ActiveSearch = (props) => {
             autoComplete="off"
             spellCheck="false"
             autoFocus
-            onChange={updateHero}
+            onChange={(event) => setHeroInput(event.target.value)}
           />
         </form>
       </div>

@@ -5,16 +5,14 @@ import "./NavbarNew.scss";
 
 //props coming from the index (in this case the action requestHero)
 
-const NavbarNew = (props) => {
+const NavbarNew = ({ requestRandomHero }) => {
   const [searchClicked, setSearchClicked] = useState(false);
   const history = useHistory();
 
   function getRandomInt(min, max) {
     min = Math.ceil(9150);
     max = Math.floor(9799);
-    return props.requestRandomHero(
-      Math.floor(Math.random() * (max - min) + min)
-    );
+    return requestRandomHero(Math.floor(Math.random() * (max - min) + min));
   }
 
   const showRandomHero = () => {
