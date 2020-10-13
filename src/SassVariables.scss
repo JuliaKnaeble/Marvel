@@ -37,6 +37,10 @@ $fontStyleTwo: "Libre Baskerville", serif;
   font-family: $fontStyleOne;
   margin: 0;
   cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  &:hover {
+    color: $generalFontColor;
+  }
 }
 
 @mixin imgHoverEffect {
