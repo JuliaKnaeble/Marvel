@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import Search from "../../Assets/NavSvg/Search";
+import Random from "../../Assets/NavSvg/Random";
 import "./NavbarNew.scss";
 
 //props coming from the index (in this case the action requestHero)
@@ -71,18 +73,12 @@ const NavbarNew = (props) => {
           src={require(`../../Assets/logo.png`)}
           alt=""
         />
-        <img
-          className="nav-items"
-          onClick={() => setSearchClicked(!searchClicked)}
-          src={require(`../../Assets/search.png`)}
-          alt=""
-        />
-        <img
-          onClick={showRandomHero}
-          className="bottom nav-items"
-          src={require(`../../Assets/random.png`)}
-          alt=""
-        />
+        <div onClick={() => setSearchClicked(!searchClicked)}>
+          <Search className="nav-items" />
+        </div>
+        <div onClick={showRandomHero}>
+          <Random className="bottom nav-items" />
+        </div>
       </div>
     </div>
   );
