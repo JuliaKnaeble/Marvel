@@ -23,7 +23,7 @@
         text-decoration: none;
         font-size: 1.5rem;
         font-family: $fontStyleOne;
-        transition: all 0.4s ease-in;
+        transition: all 0.2s ease-in;
         &:hover {
           color: $generalFontColor;
         }
@@ -245,7 +245,7 @@
             border-radius: 50%;
             border: 4px solid $highlightedFontColor;
             margin: 0px 25px 0px 25px;
-            transition: all 0.4s ease-in-out;
+            transition: all 0.2s ease-in-out;
             &:hover {
               border: 4px solid $generalFontColor;
             }
