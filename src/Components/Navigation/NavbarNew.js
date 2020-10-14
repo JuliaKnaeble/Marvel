@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
+import HomeButton from "../../Assets/NavSvg/HomeButton";
 import Search from "../../Assets/NavSvg/Search";
 import Random from "../../Assets/NavSvg/Random";
 import "./NavbarNew.scss";
@@ -67,12 +68,9 @@ const NavbarNew = (props) => {
     <div>
       {menu}
       <div className="NavbarNew">
-        <img
-          className="logo nav-items"
-          onClick={() => history.push("/")}
-          src={require(`../../Assets/logo.png`)}
-          alt=""
-        />
+        <div onClick={() => history.push("/")}>
+          <HomeButton className="logo nav-items" />
+        </div>
         <div onClick={() => setSearchClicked(!searchClicked)}>
           <Search className="nav-items" />
         </div>
