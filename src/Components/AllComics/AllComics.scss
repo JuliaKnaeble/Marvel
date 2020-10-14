@@ -27,5 +27,9 @@
     position: relative;
     right: 35px;
     cursor: pointer;
+    transition: all 0.2 ease-in-out;
+    &:hover {
+      color: $generalFontColor;
+    }
   }
 }

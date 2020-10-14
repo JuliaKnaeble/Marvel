@@ -12,11 +12,16 @@
     width: 80px;
   }
   .nav-items {
+    color: $highlightedFontColor;
     display: block;
     margin: 0 auto;
     width: 30px;
     height: 30px;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: $generalFontColor;
+    }
     @media (max-width: 1600px) {
       width: 23px;
       height: 23px;
