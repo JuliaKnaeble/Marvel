@@ -11,6 +11,7 @@ import "./NavbarNew.scss";
 const NavbarNew = ({ requestRandomHero }) => {
   const [searchClicked, setSearchClicked] = useState(false);
   const history = useHistory();
+  document.body.style.overflow = "visible";
 
   function getRandomInt(min, max) {
     min = Math.ceil(9150);
@@ -24,7 +25,8 @@ const NavbarNew = ({ requestRandomHero }) => {
   };
 
   if (searchClicked) {
-    return <ActiveSearchContainer />;
+    document.body.style.overflow = "hidden";
+    return <ActiveSearchContainer clicked={searchClicked} />;
   }
 
   return (

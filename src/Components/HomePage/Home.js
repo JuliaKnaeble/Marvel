@@ -7,6 +7,7 @@ import ActiveSearchContainer from "../Navigation/ActiveStateSearch/index";
 const Home = ({ requestHero, requestRandomHero }) => {
   const [searchClicked, setSearchClicked] = useState(false);
   const history = useHistory();
+  document.body.style.overflow = "visible";
 
   const showHero = (newHero) => {
     requestHero(newHero);
@@ -25,7 +26,8 @@ const Home = ({ requestHero, requestRandomHero }) => {
   };
 
   if (searchClicked) {
-    return <ActiveSearchContainer />;
+    document.body.style.overflow = "hidden";
+    return <ActiveSearchContainer clicked={searchClicked} />;
   }
 
   return (
