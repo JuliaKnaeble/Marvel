@@ -3,11 +3,16 @@
 
 import { connect } from "react-redux";
 // imports the action neededs
-import { requestHero, requestRandomHero } from "../../Redux/Actions";
+import {
+  requestHero,
+  requestRandomHero,
+  requestSearch,
+} from "../../Redux/Actions";
 import Home from "./Home";
 
 export const mapStateToProps = (state, ownProps) => {
   return {
+    clickedTwo: state.search.clicked,
     // state = from the store, ownProps = props coming from the component
   };
 };
@@ -18,6 +23,7 @@ export const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = {
   requestHero,
   requestRandomHero,
+  requestSearch,
 };
 
 // mapDispatchToProps, for importing the action
