@@ -9,7 +9,7 @@ import "./NavbarNew.scss";
 //props coming from the index (in this case the action requestHero)
 
 const NavbarNew = ({ requestRandomHero }) => {
-  const [searchClicked, setSearchClicked] = useState(false);
+  const [clickedNav, setClickedNav] = useState(false);
   const history = useHistory();
   document.body.style.overflow = "visible";
 
@@ -24,18 +24,14 @@ const NavbarNew = ({ requestRandomHero }) => {
     history.push("/hero");
   };
 
-  if (searchClicked) {
-    document.body.style.overflow = "hidden";
-    return <ActiveSearchContainer clicked={searchClicked} />;
-  }
-
   return (
     <div>
+      <ActiveSearchContainer searchClicked={clickedNav} />
       <div className="NavbarNew">
         <div onClick={() => history.push("/")}>
           <HomeButton className="logo nav-items" />
         </div>
-        <div onClick={() => setSearchClicked(!searchClicked)}>
+        <div onClick={() => setClickedNav(true)}>
           <Search className="nav-items" />
         </div>
         <div onClick={showRandomHero}>
