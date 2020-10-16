@@ -2,7 +2,6 @@ import React from "react";
 import Heroes from "./Heroes.json";
 import { useHistory } from "react-router-dom";
 import "./Home.scss";
-import ActiveSearchContainer from "../Navigation/ActiveStateSearch/index";
 
 const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
   const history = useHistory();
@@ -26,7 +25,6 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
 
   return (
     <div>
-      <ActiveSearchContainer />
       <div className="Home">
         <div className="home-container">
           <div className="info">

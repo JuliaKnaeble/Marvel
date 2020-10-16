@@ -8,16 +8,16 @@ const ActiveSearch = ({ requestHero, clicked, requestSearch }) => {
   const history = useHistory();
 
   const handleSubmit = (event) => {
+    document.body.style.overflow = "visible";
     event.preventDefault();
     requestHero(heroInput);
-    history.push("/hero");
-    document.body.style.overflow = "visible";
     requestSearch(false);
+    history.push("/hero");
   };
 
   const closeMenu = () => {
-    requestSearch(false);
     document.body.style.overflow = "visible";
+    requestSearch(false);
   };
 
   if (clicked) {
