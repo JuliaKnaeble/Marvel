@@ -3,7 +3,11 @@
 
 import { connect } from "react-redux";
 // imports the action neededs
-import { requestHero, requestRandomHero } from "../../Redux/Actions";
+import {
+  requestHero,
+  requestRandomHero,
+  requestSearch,
+} from "../../Redux/Actions";
 import NavbarNew from "./NavbarNew";
 
 export const mapStateToProps = (state, ownProps) => {
@@ -18,6 +22,7 @@ export const mapStateToProps = (state, ownProps) => {
 const mapDispatchToProps = {
   requestHero,
   requestRandomHero,
+  requestSearch,
 };
 
 // mapDispatchToProps, for importing the action

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useHistory } from "react-router-dom";
-import ActiveSearchContainer from "./ActiveStateSearch";
 import HomeButton from "../../Assets/NavSvg/HomeButton";
 import Search from "../../Assets/NavSvg/Search";
 import Random from "../../Assets/NavSvg/Random";
@@ -8,8 +7,7 @@ import "./NavbarNew.scss";
 
 //props coming from the index (in this case the action requestHero)
 
-const NavbarNew = ({ requestRandomHero }) => {
-  const [clickedNav, setClickedNav] = useState(false);
+const NavbarNew = ({ requestRandomHero, requestSearch }) => {
   const history = useHistory();
   document.body.style.overflow = "visible";
 
@@ -26,12 +24,11 @@ const NavbarNew = ({ requestRandomHero }) => {
 
   return (
     <div>
-      <ActiveSearchContainer searchClicked={clickedNav} />
       <div className="NavbarNew">
         <div onClick={() => history.push("/")}>
           <HomeButton className="logo nav-items" />
         </div>
-        <div onClick={() => setClickedNav(true)}>
+        <div onClick={() => requestSearch(true)}>
           <Search className="nav-items" />
         </div>
         <div onClick={showRandomHero}>

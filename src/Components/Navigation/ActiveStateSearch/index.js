@@ -5,9 +5,7 @@ import ActiveSearch from "./ActiveSearch";
 
 export const mapStateToProps = (state, ownProps) => {
   return {
-    searchClicked: ownProps.searchClicked,
-    buttonClicked: ownProps.buttonClicked,
-    clickedTwo: state.search.clicked,
+    clicked: state.search.clicked,
     // state = from the store, ownProps = props coming from the component
   };
 };

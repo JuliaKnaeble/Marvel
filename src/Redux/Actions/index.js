@@ -11,7 +11,7 @@ const FETCH_SEARCH = `FETCH_SEARCH`;
 export const requestSearch = (clicked) => {
   return {
     type: FETCH_SEARCH,
-    palyload: clicked,
+    payload: clicked,
   };
 };
 

@@ -12,7 +12,7 @@ import Home from "./Home";
 
 export const mapStateToProps = (state, ownProps) => {
   return {
-    clickedTwo: state.search.clicked,
+    clicked: state.search.clicked,
     // state = from the store, ownProps = props coming from the component
   };
 };

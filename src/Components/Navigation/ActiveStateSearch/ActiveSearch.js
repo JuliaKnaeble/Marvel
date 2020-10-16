@@ -3,10 +3,7 @@ import { useHistory } from "react-router-dom";
 
 import "./ActiveSearch.scss";
 
-const ActiveSearch = ({ requestHero, buttonClicked, searchClicked }) => {
-  const [searchActive, setSearchActive] = useState(buttonClicked);
-  const [searchButtonActive, setSearchButtonActive] = useState(searchClicked);
-  console.log(searchClicked);
+const ActiveSearch = ({ requestHero, clicked, requestSearch }) => {
   const [heroInput, setHeroInput] = useState("");
   const history = useHistory();
 
@@ -15,18 +12,15 @@ const ActiveSearch = ({ requestHero, buttonClicked, searchClicked }) => {
     requestHero(heroInput);
     history.push("/hero");
     document.body.style.overflow = "visible";
-    setSearchActive(false);
-    setSearchButtonActive(false);
+    requestSearch(false);
   };
 
   const closeMenu = () => {
-    setSearchActive(false);
-    setSearchButtonActive(false);
+    requestSearch(false);
     document.body.style.overflow = "visible";
   };
 
-  if (searchActive || searchButtonActive) {
-    console.log("yes");
+  if (clicked) {
     document.body.style.overflow = "hidden";
     return (
       <div>
@@ -51,7 +45,6 @@ const ActiveSearch = ({ requestHero, buttonClicked, searchClicked }) => {
       </div>
     );
   } else {
-    console.log("no");
     return null;
   }
 };

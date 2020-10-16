@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import Heroes from "./Heroes.json";
 import { useHistory } from "react-router-dom";
 import "./Home.scss";
 import ActiveSearchContainer from "../Navigation/ActiveStateSearch/index";
 
-const Home = ({ requestHero, requestRandomHero }) => {
-  const [clickedHome, setClickedHome] = useState(false);
+const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
   const history = useHistory();
   document.body.style.overflow = "visible";
 
@@ -27,7 +26,7 @@ const Home = ({ requestHero, requestRandomHero }) => {
 
   return (
     <div>
-      <ActiveSearchContainer buttonClicked={clickedHome} />;
+      <ActiveSearchContainer />
       <div className="Home">
         <div className="home-container">
           <div className="info">
@@ -65,7 +64,7 @@ const Home = ({ requestHero, requestRandomHero }) => {
             </p>
             <button
               className="start-search"
-              onClick={() => setClickedHome(true)}
+              onClick={() => requestSearch(true)}
             >
               START YOUR SEARCH
             </button>
