@@ -4,6 +4,16 @@ const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
 const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
 const FETCH_COMIC_SUCCESS = `FETCH_COMIC_SUCCESS`;
 const FETCH_COMIC_DETAIL_SUCCESS = `FETCH_COMIC_DETAIL_SUCCESS`;
+const FETCH_SEARCH = `FETCH_SEARCH`;
+
+// ACTION CREATOR SEARCH
+
+export const requestSearch = (clicked) => {
+  return {
+    type: FETCH_SEARCH,
+    payload: clicked,
+  };
+};
 
 //ACTION CREATORS HERO
 

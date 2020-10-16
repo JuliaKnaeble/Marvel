@@ -1,17 +1,11 @@
-// wrapper that connects the component to the sate
-// connect reducer with component
-
 import { connect } from "react-redux";
 // imports the action neededs
-import {
-  requestHero,
-  requestRandomHero,
-  requestSearch,
-} from "../../Redux/Actions";
-import NavbarNew from "./NavbarNew";
+import { requestHero, requestSearch } from "../../../Redux/Actions";
+import ActiveSearch from "./ActiveSearch";
 
 export const mapStateToProps = (state, ownProps) => {
   return {
+    clicked: state.search.clicked,
     // state = from the store, ownProps = props coming from the component
   };
 };
@@ -21,17 +15,16 @@ export const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = {
   requestHero,
-  requestRandomHero,
   requestSearch,
 };
 
 // mapDispatchToProps, for importing the action
 
-const NavbarNewContainer = connect(
+const ActiveSearchContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(NavbarNew);
+)(ActiveSearch);
 
 // connecting mapState and mapDispatch to the relavant component
 
-export default NavbarNewContainer;
+export default ActiveSearchContainer;

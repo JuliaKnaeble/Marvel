@@ -9,11 +9,13 @@ import NavbarNewContainer from "./Components/Navigation/index";
 import DetailPageContainer from "./Components/DetailPage/index";
 import ComicsDetailContainer from "./Components/ComicsDetail/index";
 import AllComicsContainer from "./Components/AllComics/index";
+import ActiveSearchContainer from "./Components/Navigation/ActiveStateSearch/index";
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <ActiveSearchContainer />
         <NavbarNewContainer />
         <Route path="/" exact component={HomeContainer} />
         <Route path="/hero" exact component={DetailPageContainer} />
