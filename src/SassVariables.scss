@@ -17,7 +17,7 @@ $fontStyleTwo: "Libre Baskerville", serif;
   margin: $margin;
 }
 
-@mixin lable {
+@mixin label {
   color: $generalFontColor;
   font-size: 1.1rem;
   margin: 0 0 15px 0;
@@ -25,7 +25,7 @@ $fontStyleTwo: "Libre Baskerville", serif;
   text-transform: uppercase;
 }
 
-@mixin lableBG {
+@mixin labelBG {
   background-color: $highlightedFontColor;
   padding: 1px 10px;
   border-radius: 15px;

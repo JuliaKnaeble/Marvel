@@ -1,8 +1,8 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import HomeButton from "../../Assets/NavSvg/HomeButton";
-import Search from "../../Assets/NavSvg/Search";
-import Random from "../../Assets/NavSvg/Random";
+import HomeButtonIcon from "../../Assets/NavSvg/HomeButtonIcon";
+import SearchIcon from "../../Assets/NavSvg/SearchIcon";
+import RandomIcon from "../../Assets/NavSvg/RandomIcon";
 import "./NavbarNew.scss";
 
 //props coming from the index (in this case the action requestHero)
@@ -26,13 +26,13 @@ const NavbarNew = ({ requestRandomHero, requestSearch }) => {
     <div>
       <div className="NavbarNew">
         <div onClick={() => history.push("/")}>
-          <HomeButton className="logo nav-items" />
+          <HomeButtonIcon className="logo nav-items" />
         </div>
         <div onClick={() => requestSearch(true)}>
-          <Search className="nav-items" />
+          <SearchIcon className="nav-items" />
         </div>
         <div onClick={showRandomHero}>
-          <Random className="bottom nav-items" />
+          <RandomIcon className="bottom nav-items" />
         </div>
       </div>
     </div>

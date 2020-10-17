@@ -1,6 +1,6 @@
 import React from "react";
 
-const Random = ({ className }) => {
+const RandomIcon = ({ className }) => {
   return (
     <svg
       className={className}
@@ -33,4 +33,4 @@ const Random = ({ className }) => {
   );
 };
 
-export default Random;
+export default RandomIcon;

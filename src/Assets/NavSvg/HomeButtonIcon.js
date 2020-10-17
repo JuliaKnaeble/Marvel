@@ -1,6 +1,6 @@
 import React from "react";
 
-const HomeButton = ({ className }) => {
+const HomeButtonIcon = ({ className }) => {
   return (
     <svg
       className={className}
@@ -28,4 +28,4 @@ const HomeButton = ({ className }) => {
   );
 };
 
-export default HomeButton;
+export default HomeButtonIcon;

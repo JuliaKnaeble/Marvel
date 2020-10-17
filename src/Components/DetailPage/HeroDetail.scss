@@ -11,13 +11,13 @@
     @media (max-width: 1600px) {
       margin-top: 8%;
     }
-    .lable {
-      @include lable;
+    .label {
+      @include label;
     }
-    .lable-border {
-      @include lableBG;
+    .label-border {
+      @include labelBG;
     }
-    .lable-creator {
+    .label-creator {
       margin-left: 25px;
     }
     h2 {

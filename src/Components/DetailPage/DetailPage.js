@@ -1,7 +1,7 @@
 import React from "react";
 import ErrorHeroSearch from "../Error/ErrorHeroSearch";
 import ErrorRandomSearch from "../Error/ErrorRandomSearch";
-import DetailNew from "./DetailNew";
+import HeroDetail from "./HeroDetail";
 
 // props coming from the index
 
@@ -15,7 +15,7 @@ const DetailPage = (props) => {
           <ErrorHeroSearch />
         )
       ) : (
-        <DetailNew hero={props.hero} comic={props.comic} />
+        <HeroDetail hero={props.hero} comic={props.comic} />
       )}
     </div>
   );

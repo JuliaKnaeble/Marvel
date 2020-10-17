@@ -19,10 +19,10 @@
     margin-left: 10%;
     display: flex;
     flex-direction: column;
-    .lable {
-      @include lable;
+    .label {
+      @include label;
       span {
-        @include lableBG;
+        @include labelBG;
       }
     }
   }
@@ -44,7 +44,7 @@
     display: flex;
     flex-direction: row;
     color: $generalFontColor;
-    .lable-border {
+    .label-border {
       color: $highlightedFontColor;
       font-size: 1.25rem;
       font-family: $fontStyleOne;

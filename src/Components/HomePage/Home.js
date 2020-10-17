@@ -46,7 +46,7 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
           </div>
           <div className="header">
             <img
-              className="marvel-lable"
+              className="marvel-label"
               src={require(`../../Assets/marvel_logo.png`)}
               alt="MARVEL"
             />
