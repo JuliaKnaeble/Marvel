@@ -24,7 +24,7 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
         ></img>
       </div>
       <div className="comic-details">
-        <p className="lable">
+        <p className="label">
           <span>{hero.name}</span>
         </p>
         <h3>{comic[indexKey].title}</h3>
@@ -35,7 +35,7 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
         </h4>
         <div className="comic-dates">
           <p>
-            <span className="lable-border">
+            <span className="label-border">
               ORIGINAL PRICE:
               <span className="detail">
                 {comic[indexKey].prices[0].price &&
@@ -44,11 +44,11 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
                   : `⎻⎻`}
               </span>
             </span>
-            <span className="lable-border">
+            <span className="label-border">
               DATE:
               <span className="detail">{year}</span>
             </span>
-            <span className="lable-border">
+            <span className="label-border">
               PAGES:
               <span className="detail">
                 {comic[indexKey].pageCount && comic[indexKey].pageCount > 0
@@ -60,7 +60,7 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
         </div>
         <div className="contributions">
           <p className="list-header">CONTRIBUTORS:</p>
-          <div className="corntributors-container">
+          <div className="contributors-container">
             <div className="names">
               {comic[indexKey].creators.items.map((item, index) => {
                 if (index < 6) {
