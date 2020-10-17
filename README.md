@@ -6,9 +6,9 @@ Browse from over 70 years worth of Marvel comic history. Look up your favorite h
 
 ## HOW IS IT DONE
 
-_ React.js
-_ Redux
-_ Ajax / Axios
-_ Scss
-_ React Routing
-_ Official Marvel Api
+- React.js
+- Redux
+- Ajax / Axios
+- Scss
+- React Routing
+- Official Marvel Api
