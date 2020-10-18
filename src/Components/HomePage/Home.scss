@@ -162,6 +162,10 @@
         @media (max-width: 1780px) {
           padding-left: 30px;
         }
+        @media (max-width: 1230px) {
+          padding-right: 30px;
+        }
+
         .header-learn {
           width: 450px;
           line-height: 63px;
@@ -192,6 +196,11 @@
             line-height: 35px;
             width: 240px;
           }
+          @media (max-width: 1055px) {
+            font-size: 1.5rem;
+            line-height: 30px;
+            width: 200px;
+          }
         }
         .paragraph-learn {
           width: 500px;
@@ -221,6 +230,11 @@
             font-size: 0.75rem;
             line-height: 20px;
             width: 260px;
+          }
+          @media (max-width: 1055px) {
+            font-size: 0.5rem;
+            line-height: 18px;
+            width: 230px;
           }
         }
         .someone-random {
@@ -260,6 +274,13 @@
               width: 60px;
               height: 60px;
             }
+            @media (max-width: 1185px) {
+              width: 50px;
+              height: 50px;
+            }
+            @media (max-width: 1115px) {
+              margin: 0px 15px 0px 15px;
+            }
           }
           .circle-hero-name {
             justify-content: center;
@@ -277,6 +298,12 @@
             }
             @media (max-width: 1300px) {
               padding: 10px 0 40px 0;
+            }
+            @media (max-width: 1115px) {
+              font-size: 0.5rem;
+            }
+            @media (max-width: 1055px) {
+              padding: 5px 0 35px 0;
             }
           }
         }
