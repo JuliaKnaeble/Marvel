@@ -11,11 +11,12 @@ const NavbarNew = ({ requestRandomHero, requestSearch }) => {
   const history = useHistory();
 
   const showRandomHero = (min, max) => {
-    min = Math.ceil(9150);
-    max = Math.floor(9799);
+    min = Math.ceil(9146);
+    max = Math.floor(9742);
     history.push("/hero");
     return requestRandomHero(Math.floor(Math.random() * (max - min) + min));
   };
+
 
   return (
     <div>

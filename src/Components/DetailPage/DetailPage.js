@@ -1,11 +1,12 @@
 import React from "react";
-import ErrorHeroSearch from "../Error/ErrorHeroSearch";
 import ErrorRandomSearch from "../Error/ErrorRandomSearch";
+import ErrorHeroSearch from "../Error/ErrorHeroSearch";
 import HeroDetail from "./HeroDetail";
 
 // props coming from the index
 
 const DetailPage = ({hero, comic, error}) => {
+
   return (
     <div>
       {error ? (
