@@ -27,11 +27,11 @@ const mapDispatchToProps = {
 
 // mapDispatchToProps, for importing the action
 
-const NavbarNewContainer = connect(
+const NavbarContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(NavbarNew);
 
 // connecting mapState and mapDispatch to the relevant component
 
-export default NavbarNewContainer;
+export default NavbarContainer;
