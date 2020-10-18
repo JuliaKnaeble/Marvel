@@ -24,6 +24,6 @@ const AllComicsContainer = connect(
   mapDispatchToProps
 )(AllComics);
 
-// connecting mapState and mapDispatch to the relavant component
+// connecting mapState and mapDispatch to the relevant component
 
 export default AllComicsContainer;

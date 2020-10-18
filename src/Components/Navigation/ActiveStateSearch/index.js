@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-// imports the action neededs
+// imports the action needs
 import { requestHero, requestSearch } from "../../../Redux/Actions";
 import ActiveSearch from "./ActiveSearch";
 
@@ -25,6 +25,6 @@ const ActiveSearchContainer = connect(
   mapDispatchToProps
 )(ActiveSearch);
 
-// connecting mapState and mapDispatch to the relavant component
+// connecting mapState and mapDispatch to the relevant component
 
 export default ActiveSearchContainer;

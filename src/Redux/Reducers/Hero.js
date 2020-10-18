@@ -1,11 +1,11 @@
 //State
-const inistalState = {
+const initialState = {
   loading: false,
   hero: {},
   error: "",
 };
 
-const hero = (state = inistalState, action) => {
+const hero = (state = initialState, action) => {
   console.log(action);
   switch (action.type) {
     case `FETCH_HERO_SUCCESS`:

@@ -1,10 +1,10 @@
-const inistalState = {
+const initialState = {
   loading: false,
   comic: [],
   error: "",
 };
 
-const comic = (state = inistalState, action) => {
+const comic = (state = initialState, action) => {
   switch (action.type) {
     case `FETCH_COMIC_SUCCESS`:
       return {

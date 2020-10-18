@@ -2,7 +2,7 @@
 // connect reducer with component
 
 import { connect } from "react-redux";
-// imports the action neededs
+// imports the action needs
 import {
   requestHero,
   requestRandomHero,
@@ -32,6 +32,6 @@ const NavbarNewContainer = connect(
   mapDispatchToProps
 )(NavbarNew);
 
-// connecting mapState and mapDispatch to the relavant component
+// connecting mapState and mapDispatch to the relevant component
 
 export default NavbarNewContainer;

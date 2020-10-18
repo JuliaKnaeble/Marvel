@@ -2,7 +2,7 @@
 // connect reducer with component
 
 import { connect } from "react-redux";
-// imports the action neededs
+// imports the action needs
 import {
   requestHero,
   requestRandomHero,
@@ -30,6 +30,6 @@ const mapDispatchToProps = {
 
 const HomeContainer = connect(mapStateToProps, mapDispatchToProps)(Home);
 
-// connecting mapState and mapDispatch to the relavant component
+// connecting mapState and mapDispatch to the relevant component
 
 export default HomeContainer;

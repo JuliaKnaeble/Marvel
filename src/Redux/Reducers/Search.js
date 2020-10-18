@@ -1,8 +1,8 @@
-const inistalState = {
+const initialState = {
   clicked: false,
 };
 
-const searchClicked = (state = inistalState, action) => {
+const searchClicked = (state = initialState, action) => {
   switch (action.type) {
     case `FETCH_SEARCH`:
       return {

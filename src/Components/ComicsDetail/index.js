@@ -16,6 +16,6 @@ export const mapStateToProps = (state, ownProps) => {
 
 const ComicsDetailContainer = connect(mapStateToProps)(ComicsDetail);
 
-// connecting mapState and mapDispatch to the relavant component
+// connecting mapState and mapDispatch to the relevant component
 
 export default ComicsDetailContainer;
