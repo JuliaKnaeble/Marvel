@@ -11,15 +11,11 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
     history.push("/hero");
   };
 
-  function getRandomInt(min, max) {
+  const showRandomHero = (min, max) => {
     min = Math.ceil(9150);
     max = Math.floor(9799);
-    return requestRandomHero(Math.floor(Math.random() * (max - min) + min));
-  }
-
-  const setRandomHero = () => {
-    getRandomInt();
     history.push("/hero");
+    return requestRandomHero(Math.floor(Math.random() * (max - min) + min));
   };
 
   return (
@@ -86,7 +82,7 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
               </p>
               <button
                 className="someone-random"
-                onClick={() => setRandomHero()}
+                onClick={() => showRandomHero()}
               >
                 SHOW ME SOMEONE RANDOM
               </button>

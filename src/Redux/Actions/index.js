@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
 const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
 const FETCH_COMIC_SUCCESS = `FETCH_COMIC_SUCCESS`;
@@ -116,6 +117,7 @@ export const requestRandomHero = (number) => {
         return dispatch(fetchHeroFailure(error.response.data.status));
       });
 };
+
 
 export const requestComic = (characterID) => {
   const request = axios.get(

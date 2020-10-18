@@ -10,15 +10,11 @@ import "./NavbarNew.scss";
 const NavbarNew = ({ requestRandomHero, requestSearch }) => {
   const history = useHistory();
 
-  function getRandomInt(min, max) {
+  const showRandomHero = (min, max) => {
     min = Math.ceil(9150);
     max = Math.floor(9799);
-    return requestRandomHero(Math.floor(Math.random() * (max - min) + min));
-  }
-
-  const showRandomHero = () => {
-    getRandomInt();
     history.push("/hero");
+    return requestRandomHero(Math.floor(Math.random() * (max - min) + min));
   };
 
   return (
