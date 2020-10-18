@@ -9,7 +9,6 @@ import "./NavbarNew.scss";
 
 const NavbarNew = ({ requestRandomHero, requestSearch }) => {
   const history = useHistory();
-  document.body.style.overflow = "visible";
 
   function getRandomInt(min, max) {
     min = Math.ceil(9150);
