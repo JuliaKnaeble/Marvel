@@ -5,7 +5,7 @@ const ErrorRandomSearch = () => {
 
   return (
     <div className="Error">
-         <p>
+      <p>
         Bad Luck
         <br />
         on your random search.

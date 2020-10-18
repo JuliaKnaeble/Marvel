@@ -24,7 +24,7 @@ const ActiveSearch = ({ requestHero, clicked, requestSearch }) => {
     document.body.style.overflow = "hidden";
     return (
       <div>
-        <div className="menu-opene">
+        <div className="menu-open">
           <form onSubmit={handleSubmit}>
             <img
               className="close"

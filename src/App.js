@@ -9,7 +9,7 @@ import NavbarContainer from "./Components/Navigation/index";
 import DetailPageContainer from "./Components/DetailPage/index";
 import ComicsDetailContainer from "./Components/ComicsDetail/index";
 import AllComicsContainer from "./Components/AllComics/index";
-import ActiveSearchContainer from "./Components/Navigation/ActiveStateSearch/index";
+import ActiveSearchContainer from "./Components/Navigation/InteractiveStates/index";
 
 function App() {
   return (
