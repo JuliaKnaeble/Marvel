@@ -5,7 +5,6 @@ import "./Home.scss";
 
 const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
   const history = useHistory();
-  document.body.style.overflow = "visible";
 
   const showHero = (newHero) => {
     requestHero(newHero);
