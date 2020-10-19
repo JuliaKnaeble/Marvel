@@ -101,6 +101,8 @@ export const requestHero = (hero) => {
       });
 };
 
+// request Random Hero
+
 export const requestRandomHero = (number) => {
   const request = axios.get(
     `${marvel}/100${number}?ts=${ts}&apikey=${publicKey}&hash=${md5}`
@@ -118,6 +120,7 @@ export const requestRandomHero = (number) => {
       });
 };
 
+// request Comics
 
 export const requestComic = (characterID) => {
   const request = axios.get(
