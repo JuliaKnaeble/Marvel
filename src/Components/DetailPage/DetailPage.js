@@ -5,8 +5,7 @@ import HeroDetail from "./HeroDetail";
 
 // props coming from the index
 
-const DetailPage = ({hero, comic, error}) => {
-
+const DetailPage = ({error, hero, comic}) => {
   return (
     <div>
       {error ? (

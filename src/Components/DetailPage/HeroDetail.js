@@ -22,7 +22,7 @@ const HeroDetail = ({hero, comic}) => {
         <p className="label">
           <span className="label-border">Marvel</span>
           <span className="label-border label-creator">
-            {comic[0] ? comic[0].creators.items[0].name : "Unknown"}
+            {comic[0] && comic[0].creators.items[0] ? comic[0].creators.items[0].name : "Unknown"}
           </span>
         </p>
         <h2>{hero.name}</h2>
