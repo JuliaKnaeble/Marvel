@@ -5,17 +5,17 @@ import HeroDetail from "./HeroDetail";
 
 // props coming from the index
 
-const DetailPage = (props) => {
+const DetailPage = ({error, hero, comic}) => {
   return (
     <div>
-      {props.error ? (
-        props.error === `ERROR_RANDOM_SEARCH` ? (
+      {error ? (
+        error === `ERROR_RANDOM_SEARCH` ? (
           <ErrorRandomSearch />
         ) : (
           <ErrorHeroSearch />
         )
       ) : (
-        <HeroDetail hero={props.hero} comic={props.comic} />
+        <HeroDetail hero={hero} comic={comic} />
       )}
     </div>
   );
