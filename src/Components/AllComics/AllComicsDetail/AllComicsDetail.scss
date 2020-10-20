@@ -5,37 +5,39 @@
   flex-wrap: wrap;
   margin-top: 0;
 
-  .all-comics-container {
+  .all-comics-title-container {
     margin-right: 108px;
-    margin-bottom: 500px;
+    .all-comics-container {
+      margin-bottom: 500px;
+      height: 35px;
 
-    .more {
-      font-family: $fontStyleOne;
-      position: relative;
-      top: 200px;
-      left: 58px;
-      margin: 0;
-      padding: 0;
-      font-size: 3.5rem;
-      color: transparent;
+      .more {
+        font-family: $fontStyleOne;
+        position: relative;
+        top: 200px;
+        left: 58px;
+        margin: 0;
+        padding: 0;
+        font-size: 3.5rem;
+        color: transparent;
+      }
+
+      .comic-images {
+        width: 300px;
+        height: auto;
+        position: absolute;
+      }
+      @include imgHoverEffect;
     }
 
-    .comic-images {
+    .comic-title {
       width: 300px;
-      height: auto;
-      position: absolute;
+      color: $generalFontColor;
+      font-size: 1.25rem;
+      line-height: 25px;
+      font-family: $fontStyleTwo;
+      padding: 0;
+      margin: 0;
     }
-    @include imgHoverEffect;
-  }
-  .comic-title {
-    width: 300px;
-    position: relative;
-    color: $generalFontColor;
-    font-size: 1.25rem;
-    line-height: 25px;
-    font-family: $fontStyleTwo;
-    padding: 0;
-    margin: 0;
-    top: 470px;
   }
 }
