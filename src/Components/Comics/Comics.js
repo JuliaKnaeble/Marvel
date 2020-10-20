@@ -36,7 +36,7 @@ const Comics = ({ comic, requestComic, hero, requestComicDetail }) => {
         }
         return null;
       })}
-      <p onClick={() => history.push("/allcomics")}>
+      <p className="see-all" onClick={() => history.push("/allcomics")}>
         {hero.comics && hero.comics.available > 5 ? `SEE ALL` : ``}
       </p>
     </div>

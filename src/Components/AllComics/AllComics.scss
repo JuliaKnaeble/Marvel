@@ -3,33 +3,31 @@
 .LoadMore {
   @include contentFrame(0 1% 0 10%);
   background-color: $generalBgColor;
-  .all-comics-container {
-    margin-top: 7%;
-    .all-comics-available {
-      color: $generalFontColor;
-      text-transform: uppercase;
-      font-family: $fontStyleOne;
-      font-size: 2rem;
-      margin: 0;
-      padding-top: 20px;
-    }
-    .back {
-      @include backTo;
-    }
-  }
-  .load-more {
-    padding: 10px 0 50px 0;
-    display: flex;
-    justify-content: center;
+  padding-top: 7%;
+  .all-comics-available {
+    color: $generalFontColor;
+    text-transform: uppercase;
     font-family: $fontStyleOne;
-    color: $highlightedFontColor;
-    font-size: 3rem;
-    position: relative;
-    right: 35px;
-    cursor: pointer;
-    transition: all 0.2 ease-in-out;
-    &:hover {
-      color: $generalFontColor;
-    }
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 20px;
+  }
+  .back {
+    @include backTo;
+  }
+}
+.load-more {
+  padding: 10px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  font-family: $fontStyleOne;
+  color: $highlightedFontColor;
+  font-size: 3rem;
+  position: relative;
+  right: 35px;
+  cursor: pointer;
+  transition: all 0.2 ease-in-out;
+  &:hover {
+    color: $generalFontColor;
   }
 }
