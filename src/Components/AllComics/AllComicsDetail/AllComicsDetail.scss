@@ -7,9 +7,23 @@
 
   .all-comics-title-container {
     margin-right: 108px;
+    @media (max-width: 1920px) {
+      margin-right: 90px;
+    }
+    @media (max-width: 1840px) {
+      margin-right: 120px;
+    }
+    @media (max-width: 1750px) {
+      margin-right: 100px;
+    }
     .all-comics-container {
-      margin-bottom: 500px;
-      height: 35px;
+      margin-bottom: 470px;
+      @media (max-width: 1840px) {
+        margin-bottom: 395px;
+      }
+      @media (max-width: 1650px) {
+        margin-bottom: 355px;
+      }
 
       .more {
         font-family: $fontStyleOne;
@@ -26,6 +40,12 @@
         width: 300px;
         height: auto;
         position: absolute;
+        @media (max-width: 1840px) {
+          width: 250px;
+        }
+        @media (max-width: 1650px) {
+          width: 225px;
+        }
       }
       @include imgHoverEffect;
     }
@@ -33,11 +53,20 @@
     .comic-title {
       width: 300px;
       color: $generalFontColor;
-      font-size: 1.25rem;
-      line-height: 25px;
+      font-size: 1.5rem;
+      line-height: 28px;
       font-family: $fontStyleTwo;
-      padding: 0;
+      padding-bottom: 50px;
       margin: 0;
+      @media (max-width: 1840px) {
+        width: 250px;
+        padding-bottom: 40px;
+      }
+      @media (max-width: 1650px) {
+        width: 225px;
+        font-size: 1.25rem;
+        line-height: 25px;
+      }
     }
   }
 }
