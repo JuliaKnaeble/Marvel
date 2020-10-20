@@ -1,9 +1,10 @@
 @import "../../SassVariables.scss";
 
 .LoadMore {
-  @include contentFrame(0 1% 0 10%);
+  @include contentFrame(0 5% 0 10%);
   background-color: $generalBgColor;
   padding-top: 7%;
+  padding-bottom: 5%;
   .all-comics-available {
     color: $generalFontColor;
     text-transform: uppercase;
@@ -17,17 +18,19 @@
   }
 }
 .load-more {
-  padding: 10px 0 50px 0;
-  display: flex;
-  justify-content: center;
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   font-family: $fontStyleOne;
   color: $highlightedFontColor;
+  background-color: transparent;
+  border: none;
+  outline: transparent;
   font-size: 3rem;
-  position: relative;
-  right: 35px;
-  cursor: pointer;
   transition: all 0.2 ease-in-out;
   &:hover {
+    cursor: pointer;
     color: $generalFontColor;
   }
 }

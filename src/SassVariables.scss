@@ -44,8 +44,8 @@ $fontStyleTwo: "Libre Baskerville", serif;
 }
 
 @mixin imgHoverEffect {
-  cursor: pointer;
   &:hover {
+    cursor: pointer;
     .more {
       color: $generalFontColor;
       z-index: 10;

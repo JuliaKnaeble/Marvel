@@ -38,14 +38,14 @@ const AllComics = ({ hero, comic }) => {
           All comics: {hero.name} [{hero.comics.available}]
         </p>
         <AllComicsDetailContainer comicsToRender={comicsToShow} />
-        <p
+        <button
           className="load-more"
           onClick={() => {
             handleShowMoreComics();
           }}
         >
           LOAD MORE
-        </p>
+        </button>
       </div>
     </div>
   );

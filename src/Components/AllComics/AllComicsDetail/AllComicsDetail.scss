@@ -3,19 +3,17 @@
 .AllComics {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 3%;
+  margin-top: 0;
 
   .all-comics-container {
-    width: 300px;
-    height: auto;
-    margin-right: 110px;
+    margin-right: 108px;
     margin-bottom: 500px;
 
     .more {
       font-family: $fontStyleOne;
       position: relative;
       top: 200px;
-      left: 60px;
+      left: 58px;
       margin: 0;
       padding: 0;
       font-size: 3.5rem;
@@ -23,15 +21,18 @@
     }
 
     .comic-images {
+      width: 300px;
+      height: auto;
       position: absolute;
-      cursor: pointer;
     }
     @include imgHoverEffect;
   }
   .comic-title {
+    width: 300px;
     position: relative;
     color: $generalFontColor;
-    font-size: 1rem;
+    font-size: 1.25rem;
+    line-height: 25px;
     font-family: $fontStyleTwo;
     padding: 0;
     margin: 0;
