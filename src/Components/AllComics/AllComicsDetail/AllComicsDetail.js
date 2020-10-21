@@ -15,6 +15,7 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
         {comicsToRender.map((item, index) => {
           return (
             <div key={index} className="all-comics-container">
+              <span className="more">READ MORE</span>
               <img
                 className="comic-images"
                 src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
