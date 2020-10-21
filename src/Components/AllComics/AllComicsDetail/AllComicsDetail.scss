@@ -3,70 +3,24 @@
 .AllComics {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
+  margin-top: 3%;
 
-  .all-comics-title-container {
-    margin-right: 108px;
-    @media (max-width: 1920px) {
-      margin-right: 90px;
-    }
-    @media (max-width: 1840px) {
-      margin-right: 120px;
-    }
-    @media (max-width: 1750px) {
-      margin-right: 100px;
-    }
-    .all-comics-container {
-      margin-bottom: 470px;
-      @media (max-width: 1840px) {
-        margin-bottom: 395px;
-      }
-      @media (max-width: 1650px) {
-        margin-bottom: 355px;
-      }
+  .all-comics-container {
+    width: 25%;
+    margin-bottom: 5%;
 
-      .more {
-        font-family: $fontStyleOne;
-        position: relative;
-        top: 200px;
-        left: 58px;
-        margin: 0;
-        padding: 0;
-        font-size: 3.5rem;
-        color: transparent;
-      }
-
-      .comic-images {
-        width: 300px;
-        height: auto;
-        position: absolute;
-        @media (max-width: 1840px) {
-          width: 250px;
-        }
-        @media (max-width: 1650px) {
-          width: 225px;
-        }
-      }
-      @include imgHoverEffect;
+    .comic-images {
+      width: 80%;
     }
-
     .comic-title {
-      width: 300px;
+      width: 80%;
       color: $generalFontColor;
-      font-size: 1.5rem;
-      line-height: 28px;
       font-family: $fontStyleTwo;
-      padding-bottom: 50px;
-      margin: 0;
-      @media (max-width: 1840px) {
-        width: 250px;
-        padding-bottom: 40px;
-      }
-      @media (max-width: 1650px) {
-        width: 225px;
-        font-size: 1.25rem;
-        line-height: 25px;
-      }
+      font-size: 1.5rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
     }
   }
 }

@@ -14,19 +14,16 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
     <div className="AllComics">
         {comicsToRender.map((item, index) => {
           return (
-            <div className="all-comics-title-container">
             <div key={index} className="all-comics-container">
-              <p className="more">READ MORE</p>
               <img
                 className="comic-images"
                 src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
                 alt={item.title}
                 onClick={() => showComicDetail(index)}
               />
-              
+              <p className="comic-title">{item.title}</p>
             </div>
-            <p className="comic-title">{item.title}</p>
-            </div>
+            
           );
         })}
       </div>
