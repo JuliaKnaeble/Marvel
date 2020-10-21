@@ -3,6 +3,7 @@
 .AllComics {
   display: flex;
   flex-wrap: wrap;
+  max-width: 2000px;
 
   .all-comics-container {
     width: 25%;
@@ -10,12 +11,20 @@
 
     .comic-images {
       width: 80%;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.4;
+        -webkit-filter: grayscale(70%);
+        filter: grayscale(70%);
+        transition: 0.2s ease;
+      }
     }
     .comic-title {
       width: 80%;
+      margin: 10px 0 0 0;
       color: $generalFontColor;
       font-family: $fontStyleTwo;
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -26,9 +35,11 @@
       left: 20%;
       transform: translateX(-20%);
       top: 200px;
-      font-size: 3rem;
+      font-size: 2.5rem;
       color: $generalFontColor;
       font-family: $fontStyleOne;
+      z-index: 10;
+      transition: 0.2s ease;
     }
   }
 }
