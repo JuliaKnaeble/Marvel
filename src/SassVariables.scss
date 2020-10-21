@@ -51,9 +51,8 @@ $fontStyleTwo: "Libre Baskerville", serif;
       transition: 0.2s ease;
     }
     img {
-      opacity: 0.4;
-      -webkit-filter: grayscale(70%);
-      filter: grayscale(70%);
+      -webkit-filter: brightness(0.3);
+      filter: brightness(0.3);
       transition: 0.2s ease;
     }
   }
