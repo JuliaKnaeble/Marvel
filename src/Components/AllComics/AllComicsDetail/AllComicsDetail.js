@@ -12,23 +12,24 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
 
   return (
     <div className="AllComics">
-      <div className="all-comics-img-container">
         {comicsToRender.map((item, index) => {
           return (
-            <div key={index} className="all-comics-img">
-              <p className="more">READ MORE</p>
+            <div key={index} className="all-comics-container">
+              <div className="on-hover-container">
+              <span className="more">READ MORE</span>
               <img
                 className="comic-images"
                 src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
                 alt={item.title}
                 onClick={() => showComicDetail(index)}
               />
+              </div>
               <p className="comic-title">{item.title}</p>
             </div>
+            
           );
         })}
       </div>
-    </div>
   );
 };
 

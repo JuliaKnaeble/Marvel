@@ -1,97 +1,55 @@
 @import "../../../SassVariables.scss";
 
 .AllComics {
-  .all-comics-img-container {
-    padding-top: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    @media (max-width: 1500px) {
-      padding-top: 3px;
-    }
-    .all-comics-img {
-      margin-bottom: 35px;
-      @media (max-width: 1440px) {
-        margin-bottom: 15px;
-      }
-      @media (max-width: 1130px) {
-        margin-bottom: 5px;
-      }
+  display: flex;
+  flex-wrap: wrap;
+
+  .all-comics-container {
+    width: 25%;
+    margin-bottom: 5%;
+
+    .on-hover-container {
+      width: 70%;
+      @include imgHoverEffect;
       .comic-images {
+        width: 100%;
         cursor: pointer;
-        width: 300px;
-        height: auto;
-        padding-right: 120px;
-        @media (max-width: 1890px) {
-          width: 250px;
-        }
-        @media (max-width: 1670px) {
-          padding-right: 80px;
-        }
-        @media (max-width: 1500px) {
-          padding-right: 120px;
-          width: 200px;
-        }
-        @media (max-width: 1440px) {
-          padding-right: 80px;
-        }
-        @media (max-width: 1265px) {
-          padding-right: 50px;
-        }
-        @media (max-width: 1130px) {
-          width: 150px;
-          padding-right: 80px;
-        }
-        @media (max-width: 1130px) {
-          padding-right: 50px;
-        }
-      }
-      .comic-title {
-        color: $generalFontColor;
-        font-size: 1.5rem;
-        font-family: $fontStyleTwo;
-        padding: 25px 0 0 3px;
-        width: 300px;
-        margin: 0;
-        @media (max-width: 1890px) {
-          width: 250px;
-          font-size: 1rem;
-          padding-top: 15px;
-        }
-        @media (max-width: 1500px) {
-          width: 200px;
-        }
-        @media (max-width: 1440px) {
-          padding: 5px 0 0 1px;
-          font-size: 0.75rem;
-        }
-        @media (max-width: 1130px) {
-          width: 150px;
-          font-size: 0.5rem;
-        }
       }
       .more {
-        font-family: $fontStyleOne;
         position: relative;
-        margin: 0;
-        padding: 0;
-        font-size: 3rem;
-        top: 200px;
-        left: 62px;
+        left: 25%;
+        transform: translateX(-25%);
+        top: 180px;
+        font-size: 2.5rem;
         color: transparent;
-        @media (max-width: 1890px) {
-          left: 50px;
-        }
-        @media (max-width: 1500px) {
+        font-family: $fontStyleOne;
+        z-index: 10;
+        transition: 0.2s ease;
+        cursor: pointer;
+        @media (max-width: 1440px) {
           font-size: 2rem;
-          top: 125px;
+          top: 130px;
         }
-        @media (max-width: 1130px) {
+        @media (max-width: 1366px) {
           font-size: 1.75rem;
-          top: 100px;
-          left: 32px;
+          top: 120px;
         }
       }
-      @include imgHoverEffect;
+    }
+    .comic-title {
+      width: 70%;
+      margin: 10px 0 0 0;
+      color: $generalFontColor;
+      font-family: $fontStyleTwo;
+      font-size: 1.25rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      @media (max-width: 1366px) {
+        font-size: 1rem;
+        margin-top: 8px;
+      }
     }
   }
 }

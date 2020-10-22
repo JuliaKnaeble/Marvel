@@ -7,7 +7,7 @@
   padding-bottom: 60px;
   width: 85%;
   background-color: $generalBgColor;
-  p {
+  .see-all {
     padding-top: 80px;
     color: $generalFontColor;
     font-family: $fontStyleOne;
@@ -28,6 +28,7 @@
       top: 70px;
       left: 15px;
       color: transparent;
+      cursor: pointer;
       @media (max-width: 1600px) {
         font-size: 0.75rem;
         top: 50px;
