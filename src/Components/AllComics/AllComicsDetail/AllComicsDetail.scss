@@ -3,6 +3,7 @@
 .AllComics {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
 
   .all-comics-container {
     width: 25%;
@@ -10,16 +11,28 @@
 
     .on-hover-container {
       width: 70%;
+      position: relative;
+
       @include imgHoverEffect;
+
+      .read-more-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
       .comic-images {
         width: 100%;
         cursor: pointer;
       }
       .more {
         position: relative;
-        left: 25%;
-        transform: translateX(-25%);
-        top: 180px;
+        bottom: 60px;
         font-size: 2.5rem;
         color: transparent;
         font-family: $fontStyleOne;
@@ -28,11 +41,9 @@
         cursor: pointer;
         @media (max-width: 1440px) {
           font-size: 2rem;
-          top: 130px;
         }
         @media (max-width: 1366px) {
           font-size: 1.75rem;
-          top: 120px;
         }
       }
     }

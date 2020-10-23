@@ -100,7 +100,10 @@ export const requestHero = (hero) => {
       });
 };
 
-export const requestRandomHero = (number) => {
+export const requestRandomHero = () => {
+  const min = Math.ceil(9150);
+  const max = Math.floor(9799);
+  const number = Math.floor(Math.random() * (max - min) + min);
   const request = axios.get(
     `${marvel}/100${number}?ts=${ts}&apikey=${publicKey}&hash=${md5}`
   );
@@ -111,7 +114,7 @@ export const requestRandomHero = (number) => {
       })
       .catch((error) => {
         if (error.response.data.code === 404) {
-          return dispatch(fetchHeroFailure(`ERROR_RANDOM_SEARCH`));
+          return dispatch(requestRandomHero());
         }
         return dispatch(fetchHeroFailure(error.response.data.status));
       });

@@ -1,6 +1,5 @@
 import React from "react";
 import ErrorHeroSearch from "../Error/ErrorHeroSearch";
-import ErrorRandomSearch from "../Error/ErrorRandomSearch";
 import HeroDetail from "./HeroDetail";
 
 // props coming from the index
@@ -8,16 +7,9 @@ import HeroDetail from "./HeroDetail";
 const DetailPage = ({error, hero, comic}) => {
   return (
     <div>
-      {error ? (
-        error === `ERROR_RANDOM_SEARCH` ? (
-          <ErrorRandomSearch />
-        ) : (
-          <ErrorHeroSearch />
-        )
-      ) : (
-        <HeroDetail hero={hero} comic={comic} />
-      )}
+        {error === `ERROR_HERO_SEARCH` ? (<ErrorHeroSearch/>) : (<HeroDetail hero={hero} comic={comic} />)}
     </div>
+    
   );
 };
 
