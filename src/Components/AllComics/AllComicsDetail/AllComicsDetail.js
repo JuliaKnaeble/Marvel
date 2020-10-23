@@ -15,7 +15,7 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
         {comicsToRender.map((item, index) => {
           return (
             <div key={index} className="all-comics-container">
-              <div className="on-hover-container">{/* position: relative; */}
+              <div className="on-hover-container" onClick={() => showComicDetail(index)}>{/* position: relative; */}
                 <div className="read-more-container"> {/* position: absolute; width: 100%; height: 100%; top: 0; left: 0; display: flex; align-items: center; */}
                   <span className="more">READ MORE</span>
                 </div>
@@ -23,7 +23,6 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
                 className="comic-images"
                 src={`${item.thumbnail.path}/portrait_uncanny.${item.thumbnail.extension}`}
                 alt={item.title}
-                onClick={() => showComicDetail(index)}
               />
               </div>
               <p className="comic-title">{item.title}</p>

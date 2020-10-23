@@ -24,12 +24,11 @@ const Comics = ({ comic, requestComic, hero, requestComicDetail }) => {
       {comic.map((item, index) => {
         if (index < 5) {
           return (
-            <div className="comic-container" key={index}>
+            <div className="comic-container" key={index} onClick={() => showComicDetail(index)}>
               <p className="more">READ MORE</p>
               <img
                 src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
                 alt={item.title}
-                onClick={() => showComicDetail(index)}
               />
             </div>
           );

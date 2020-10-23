@@ -89,6 +89,7 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
               {Heroes.map((item, index) => {
                 return (
                   <div className="circle-hero-container" key={index}>
+                   <div className="hero-on-hover-container" onClick={() => showHero(item.search)}>
                       <div className="more-info-container">
                         <span className="more">MORE INFO</span>
                       </div>
@@ -97,9 +98,9 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
                       className="circle-hero-images"
                       src={require(`../../Assets/HeroesHome/${item.image}`)}
                       alt={item.name}
-                      onClick={() => showHero(item.search)}
                     />
-                    </div>
+                      </div>
+                   </div>
                     <p className="circle-hero-name">{item.name}</p>
                   </div>
                 );
