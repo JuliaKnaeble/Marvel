@@ -89,6 +89,9 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
               {Heroes.map((item, index) => {
                 return (
                   <div className="circle-hero-container" key={index}>
+                      <div className="more-info-container">
+                        <span className="more">MORE INFO</span>
+                      </div>
                     <img
                       className="circle-hero-images"
                       src={require(`../../Assets/HeroesHome/${item.image}`)}
