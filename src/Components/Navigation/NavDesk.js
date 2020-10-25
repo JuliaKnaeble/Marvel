@@ -17,7 +17,7 @@ const NavbarNew = ({ requestRandomHero, requestSearch }) => {
 
   return (
     <div>
-      <div className="NavbarNew">
+      <div className="NavDesk">
         <div onClick={() => history.push("/")}>
           <HomeButtonIcon className="logo nav-items" />
         </div>

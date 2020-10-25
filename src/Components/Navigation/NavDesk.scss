@@ -1,6 +1,6 @@
 @import "../../SassVariables.scss";
 
-.NavbarNew {
+.NavDesk {
   position: fixed;
   width: 100px;
   height: 100vh;
@@ -10,6 +10,9 @@
   border-right: 1px solid $highlightedFontColor;
   @media (max-width: 1600px) {
     width: 80px;
+  }
+  @media (max-width: 480px) {
+    display: none;
   }
   .nav-items {
     color: $highlightedFontColor;
