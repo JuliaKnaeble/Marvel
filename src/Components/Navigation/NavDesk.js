@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import HomeButtonIcon from "../../Assets/NavSvg/HomeButtonIcon";
 import SearchIcon from "../../Assets/NavSvg/SearchIcon";
 import RandomIcon from "../../Assets/NavSvg/RandomIcon";
-import "./NavbarNew.scss";
+import "./NavDesk.scss";
 
 //props coming from the index (in this case the action requestHero)
 

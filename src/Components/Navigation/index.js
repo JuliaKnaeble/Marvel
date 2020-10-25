@@ -8,7 +8,7 @@ import {
   requestRandomHero,
   requestSearch,
 } from "../../Redux/Actions";
-import NavbarNew from "./NavbarNew";
+import Nav from "./Nav";
 
 export const mapStateToProps = (state, ownProps) => {
   return {
@@ -30,7 +30,7 @@ const mapDispatchToProps = {
 const NavbarContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(NavbarNew);
+)(Nav);
 
 // connecting mapState and mapDispatch to the relevant component
 
