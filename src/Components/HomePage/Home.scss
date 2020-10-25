@@ -189,14 +189,15 @@
       .hero-suggestions {
         width: 70%;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
 
         .circle-hero-container {
           width: 16.66%;
-          position: relative;
 
           .hero-on-hover-container {
+            width: 100%;
+            position: relative;
+
             @include imgHoverEffect;
 
             .more-info-container {
@@ -225,7 +226,6 @@
 
             .more {
               position: relative;
-              bottom: 50px;
               font-size: 1rem;
               color: transparent;
               font-family: $fontStyleOne;
