@@ -19,9 +19,10 @@
 }
 
 .active-mobile-menu {
-  backdrop-filter: blur(5px);
   position: fixed;
-  background-color: rgba(45, 47, 45, 0.85);
+  background-color: $generalBgColor;
+  opacity: 0.85;
+  backdrop-filter: blur(5px);
   top: 0;
   height: 100%;
   width: 100%;

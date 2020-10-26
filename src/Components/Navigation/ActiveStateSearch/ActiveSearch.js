@@ -26,12 +26,14 @@ const ActiveSearch = ({ requestHero, clicked, requestSearch }) => {
       <div>
         <div className="menu-opene">
           <form onSubmit={handleSubmit}>
+            <div className="search-close">
             <img
-              className="close"
+              className="close-icon"
               src={require(`../../../Assets/close_x.png`)}
               alt=""
               onClick={closeMenu}
             />
+            </div>
             <input
               type="text"
               placeholder="Search your Hero..."
