@@ -6,24 +6,25 @@ import SearchIcon from "../../Assets/NavSvg/SearchIcon";
 import "./NavMobile.scss";
 
 const NavMobile = ({requestRandomHero, requestSearch}) => {
-    const [mobileMenuClicked, setMobileMenuClicked] = useState(false)
+    const [menuClicked, setMenuClicked] = useState(false)
     document.body.style.overflow = "visible";
     const history = useHistory();
 
       const showRandomHero = () => {
        requestRandomHero();
+       setMenuClicked(!menuClicked);
        history.push("/hero");
      };
 
     let menu;
-    if (mobileMenuClicked) {
+    if (menuClicked) {
        document.body.style.overflow = "hidden";
         menu = (
             <div className="active-mobile-menu">
-                <div onClick={()=> history.push("/")}>
+                <div onClick={()=> setMenuClicked(!menuClicked) & history.push("/")}>
                     <HomeButtonIcon/>
                 </div>
-                <div onClick={() => requestSearch(true)}>
+                <div onClick={() => setMenuClicked(!menuClicked) & requestSearch(true)}>
                     <SearchIcon />
                 </div>
                 <div onClick={showRandomHero}>
@@ -39,11 +40,11 @@ const NavMobile = ({requestRandomHero, requestSearch}) => {
             <img
                 className="menu-icon"
                 src={ 
-                    mobileMenuClicked 
+                    menuClicked 
                     ? require(`../../Assets/mobile_x.png`) 
                     : require(`../../Assets/mobile_ham.png`)}
                 alt="menu"
-                onClick= {() => setMobileMenuClicked(!mobileMenuClicked)}
+                onClick= {() => setMenuClicked(!menuClicked)}
               />
         </div>
     )
