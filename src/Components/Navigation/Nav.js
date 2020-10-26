@@ -7,7 +7,7 @@ const Nav = ({ requestRandomHero, requestSearch }) => {
     return(
     <div>
     <NavDesk requestRandomHero={requestRandomHero} requestSearch={requestSearch}/>
-    <NavMobile />
+    <NavMobile requestRandomHero={requestRandomHero} requestSearch={requestSearch}/>
     </div>
     )
 }

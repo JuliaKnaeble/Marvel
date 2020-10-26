@@ -8,12 +8,54 @@
   .NavMobile {
     display: flex;
     justify-content: flex-end;
-    margin-right: 5%;
-    padding-top: 5%;
 
     .menu-icon {
-      width: 45px;
+      padding: 7% 7% 0 0;
+      width: 35px;
       height: auto;
+      z-index: 11;
+    }
+  }
+}
+
+.active-mobile-menu {
+  position: fixed;
+  background-color: $generalBgColor;
+  opacity: 0.85;
+  backdrop-filter: blur(5px);
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  overflow-y: scroll;
+
+  .info {
+    padding: 7% 0 10% 7%;
+    font-family: $fontStyleOne;
+    font-size: 1.75rem;
+    a {
+      color: $highlightedFontColor;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        color: generalFontColor;
+      }
+    }
+
+    .api {
+      margin-right: 40px;
+    }
+  }
+
+  .mobile-icons {
+    color: $highlightedFontColor;
+    display: block;
+    margin: 20% auto 20% auto;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: generalFontColor;
     }
   }
 }

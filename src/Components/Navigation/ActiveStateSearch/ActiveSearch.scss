@@ -1,48 +1,66 @@
 @import "../../../SassVariables.scss";
 
 .menu-opene {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 12;
   height: 100vh;
   width: 100%;
   background-color: $generalBgColor;
-  opacity: 0.97;
-  .close {
-    width: 40px;
-    height: 40px;
-    position: relative;
-    top: 50px;
-    left: 95%;
-    cursor: pointer;
-    @media (max-width: 1600px) {
-      width: 30px;
-      height: 30px;
+  opacity: 0.85;
+  backdrop-filter: blur(5px);
+
+  .search-close {
+    display: flex;
+    justify-content: flex-end;
+    .close-icon {
+      padding: 3% 3% 0 0;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      @media (max-width: 1600px) {
+        width: 30px;
+        height: 30px;
+      }
+      @media (max-width: 480px) {
+        padding: 7% 7% 0 0;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
   input {
     caret-color: transparent;
     display: block;
     text-align: center;
-    margin: 15% 20% auto auto;
+    margin: 15% auto;
     border-color: transparent;
     outline: transparent;
     font-family: $fontStyleOne;
     font-size: 8rem;
+    padding-left: 4%;
     text-transform: uppercase;
     color: $generalFontColor;
     background-color: transparent;
     @media (max-width: 1600px) {
-      margin: 15% 18% auto auto;
+      margin: 15% auto;
       font-size: 6rem;
+    }
+    @media (max-width: 480px) {
+      padding-left: 0;
+      margin: 45% auto;
+      font-size: 2.5rem;
     }
     &::placeholder {
       color: $generalFontColor;
-      opacity: 0.4;
+      opacity: 0.6;
       font-family: $fontStyleOne;
       font-size: 8rem;
       text-transform: uppercase;
       @media (max-width: 1600px) {
         font-size: 6rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 2rem;
       }
     }
   }
