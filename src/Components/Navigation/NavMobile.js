@@ -21,14 +21,31 @@ const NavMobile = ({requestRandomHero, requestSearch}) => {
        document.body.style.overflow = "hidden";
         menu = (
             <div className="active-mobile-menu">
+                <div className="info">
+                   <a
+                     className="api"
+                     href="https://developer.marvel.com/"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                    API
+                   </a>
+                   <a
+                     href="https://github.com/JuliaKnaeble"
+                     target="_blank"
+                     rel="noopener noreferrer"
+                   >
+                    ABOUT
+                  </a>
+                </div>
                 <div onClick={()=> setMenuClicked(!menuClicked) & history.push("/")}>
-                    <HomeButtonIcon/>
+                    <HomeButtonIcon className="mobile-icons home-button"/>
                 </div>
                 <div onClick={() => setMenuClicked(!menuClicked) & requestSearch(true)}>
-                    <SearchIcon />
+                    <SearchIcon className="mobile-icons"/>
                 </div>
                 <div onClick={showRandomHero}>
-                    <RandomIcon />
+                    <RandomIcon className="mobile-icons"/>
                 </div>
             </div>
           )
