@@ -4,7 +4,6 @@
 import { connect } from "react-redux";
 // imports the action needs
 import {
-  requestHero,
   requestRandomHero,
   requestSearch,
 } from "../../Redux/Actions";
@@ -20,7 +19,6 @@ export const mapStateToProps = (state, ownProps) => {
 //and gives it back to the component as props
 
 const mapDispatchToProps = {
-  requestHero,
   requestRandomHero,
   requestSearch,
 };
