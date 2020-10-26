@@ -17,7 +17,7 @@
       width: 40px;
       height: 40px;
       cursor: pointer;
-      @media (max-width: 1600px) {
+      @media (max-width: 1440px) {
         width: 30px;
         height: 30px;
       }
@@ -41,7 +41,7 @@
     text-transform: uppercase;
     color: $generalFontColor;
     background-color: transparent;
-    @media (max-width: 1600px) {
+    @media (max-width: 1440px) {
       margin: 15% auto;
       font-size: 6rem;
     }
@@ -56,7 +56,7 @@
       font-family: $fontStyleOne;
       font-size: 8rem;
       text-transform: uppercase;
-      @media (max-width: 1600px) {
+      @media (max-width: 1440px) {
         font-size: 6rem;
       }
       @media (max-width: 480px) {
