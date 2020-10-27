@@ -25,7 +25,7 @@ const HeroDetail = ({hero, comic}) => {
             {comic[0] && comic[0].creators.items[0] ? comic[0].creators.items[0].name : "Unknown"}
           </span>
         </p>
-        <h2>{hero.name}</h2>
+        <h2>{hero.name ? hero.name : "CAPTAIN AMERICA"}</h2>
         <p className="hero-description-title">
           {hero.description
             ? `${hero.description} Find out more`
