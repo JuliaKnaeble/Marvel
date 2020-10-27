@@ -38,15 +38,12 @@
         &:hover {
           color: $generalFontColor;
         }
-        @media (max-width: 1440px) {
-          font-size: 1.25rem;
-        }
         @media (max-width: 1366px) {
-          font-size: 1rem;
+          font-size: 1.5rem;
         }
       }
       .api {
-        padding-right: 40px;
+        padding-right: 52px;
       }
     }
     .header {
@@ -64,10 +61,10 @@
         width: 100px;
         height: auto;
         @media (max-width: 1440px) {
-          width: 80px;
+          width: 85px;
         }
         @media (max-width: 480px) {
-          width: 55px;
+          width: 60px;
         }
       }
       h1 {
@@ -79,7 +76,7 @@
         font-size: 9rem;
         margin: 0;
         @media (max-width: 1440px) {
-          padding-top: 30px;
+          padding-top: 31px;
           font-size: 8rem;
           line-height: 119px;
         }
@@ -89,6 +86,7 @@
           line-height: 107px;
         }
         @media (max-width: 480px) {
+          padding-top: 15px;
           font-size: 3rem;
           line-height: 52px;
         }
@@ -101,17 +99,18 @@
         font-size: 1.25rem;
         line-height: 30px;
         @media (max-width: 1440px) {
-          padding: 14px 18% 103px 18%;
+          padding: 14px 14% 92px 14%;
           font-size: 1rem;
           line-height: 28px;
         }
         @media (max-width: 1366px) {
           font-size: 0.85rem;
-          line-height: 20px;
-          padding: 1% 22% 3% 22%;
+          line-height: 24px;
+          padding: 13px 16% 53px 16%;
         }
         @media (max-width: 480px) {
-          padding: 5% 6% 6% 6%;
+          line-height: 22px;
+          padding: 20px 6% 27px 6%;
         }
       }
     }
@@ -125,38 +124,45 @@
       color: $generalFontColor;
       font-family: $fontStyleOne;
       font-weight: 400;
-      opacity: 0.15;
-      font-size: 6rem;
+      opacity: 0.2;
+      font-size: 6.5rem;
       margin: 0;
       @media (max-width: 1800px) {
         font-size: 5rem;
       }
       @media (max-width: 1440px) {
-        font-size: 4rem;
+        font-size: 5.25rem;
       }
       @media (max-width: 1366px) {
-        font-size: 3.25rem;
+        font-size: 4.5rem;
       }
       @media (max-width: 480px) {
-        font-size: 2.75rem;
+        font-size: 3rem;
+        line-height: 52px;
       }
     }
     .vertical-line {
-      margin: 40px 0 40px 0;
+      margin: 40px 0 20px 0;
       display: flex;
       justify-content: center;
       text-align: center;
       @media (max-width: 1366px) {
-        margin: 25px 0 25px 0;
+        margin: 25px 0 15px 0;
+      }
+      @media (max-width: 480px) {
+        margin: 18px 0 10px 0;
       }
       span {
         border-left: 1px solid $highlightedFontColor;
-        height: 100px;
+        height: 111px;
+        @media (max-width: 1440px) {
+          height: 90px;
+        }
         @media (max-width: 1366px) {
-          height: 80px;
+          height: 77px;
         }
         @media (max-width: 480px) {
-          height: 65px;
+          height: 82px;
         }
       }
     }
