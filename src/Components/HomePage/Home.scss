@@ -32,7 +32,7 @@
       a {
         color: $highlightedFontColor;
         text-decoration: none;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-family: $fontStyleOne;
         transition: all 0.2s ease-in;
         &:hover {
@@ -71,43 +71,39 @@
         }
       }
       h1 {
-        padding-top: 40px;
-        line-height: 120px;
+        padding-top: 37px;
+        line-height: 140px;
         font-family: $fontStyleOne;
         font-weight: 400;
         color: $generalFontColor;
-        font-size: 8rem;
+        font-size: 9rem;
         margin: 0;
-        @media (max-width: 1800px) {
-          padding-top: 30px;
-          font-size: 7rem;
-          line-height: 105px;
-        }
         @media (max-width: 1440px) {
           padding-top: 30px;
-          font-size: 6rem;
-          line-height: 95px;
+          font-size: 8rem;
+          line-height: 119px;
         }
         @media (max-width: 1366px) {
           padding-top: 20px;
-          font-size: 5rem;
-          line-height: 80px;
+          font-size: 7rem;
+          line-height: 107px;
         }
         @media (max-width: 480px) {
-          font-size: 2.75rem;
-          line-height: 45px;
+          font-size: 3rem;
+          line-height: 52px;
         }
       }
       .home-description {
         margin: 0;
-        padding: 1% 20% 3% 20%;
+        padding: 24px 18% 103px 18%;
         color: $generalFontColor;
         font-family: $fontStyleTwo;
         font-size: 1.25rem;
         line-height: 30px;
         @media (max-width: 1440px) {
+          padding: 14px 18% 103px 18%;
           font-size: 1rem;
-          line-height: 25px;
+          line-height: 28px;
         }
         @media (max-width: 1366px) {
           font-size: 0.85rem;

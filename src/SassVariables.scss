@@ -64,10 +64,10 @@ $fontStyleTwo: "Libre Baskerville", serif;
   color: $highlightedFontColor;
   font-family: $fontStyleOne;
   font-weight: 400;
-  font-size: 1.75rem;
+  font-size: 2rem;
   background-color: transparent;
   border: 3px solid $highlightedFontColor;
-  padding: 6px 20px 5px 20px;
+  padding: 10px 25px 8px 25px;
   border-radius: 30px;
   outline: transparent;
   transition: all 0.2s ease-in;
@@ -76,8 +76,9 @@ $fontStyleTwo: "Libre Baskerville", serif;
     background-color: $highlightedFontColor;
     color: $generalFontColor;
   }
-  @media (max-width: 1300px) {
-    font-size: 1.25rem;
+  @media (max-width: 1440px) {
+    padding: 8px 22px 6px 22px;
+    font-size: 1.5rem;
   }
   @media (max-width: 480px) {
     margin: 0 auto;
