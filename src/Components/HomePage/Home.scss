@@ -17,8 +17,10 @@
   }
 
   .home-container {
-    min-height: 100vh;
-    margin: 0 7% 0 5%;
+    margin: 0 5% 0 5%;
+    @media (max-width: 1440px) {
+      margin: 0 4% 0 4%;
+    }
     @media (max-width: 480px) {
       margin: 0 3% 0 3%;
     }
@@ -171,9 +173,12 @@
       flex-direction: row;
       justify-content: space-between;
       color: $generalFontColor;
-      padding: 50px 0 200px 0;
+      padding: 50px 0 158px 0;
       @media (max-width: 1440px) {
-        padding: 30px 0 150px 0;
+        padding: 30px 0 177px 0;
+      }
+      @media (max-width: 1366px) {
+        padding: 30px 0 135px 0;
       }
       @media (max-width: 480px) {
         flex-direction: column;
@@ -181,9 +186,12 @@
       }
 
       .learn-more {
-        width: 30%;
-        margin: 0 8% 0 2%;
+        width: 33%;
+        margin: 0 5% 0 2%;
         @media (max-width: 1440px) {
+          margin: 0 4% 0 2%;
+        }
+        @media (max-width: 1366px) {
           margin: 0 5% 0 2%;
         }
         @media (max-width: 480px) {
@@ -194,30 +202,43 @@
         }
 
         .header-learn {
-          line-height: 63px;
+          line-height: 75px;
           font-family: $fontStyleOne;
           font-weight: 400;
-          font-size: 4rem;
+          font-size: 4.25rem;
           margin: 0;
           @media (max-width: 1440px) {
-            font-size: 3rem;
-            line-height: 50px;
+            font-size: 3.25rem;
+            line-height: 60px;
           }
           @media (max-width: 1366px) {
-            font-size: 2.75rem;
-            line-height: 45px;
+            font-size: 3rem;
+            line-height: 54px;
+          }
+          @media (max-width: 480px) {
+            font-size: 2.5rem;
+            line-height: 44px;
           }
         }
         .paragraph-learn {
-          padding: 20px 0 45px 0;
+          padding: 18px 0 45px 0;
           margin: 0;
           font-family: $fontStyleTwo;
-          font-size: 1.5rem;
-          line-height: 33px;
+          font-size: 1.25rem;
+          line-height: 30px;
           @media (max-width: 1440px) {
-            font-size: 1.25rem;
-            line-height: 30px;
-            padding: 15px 0 35px 0;
+            font-size: 1rem;
+            line-height: 28px;
+            padding: 14px 0 39px 0;
+          }
+          @media (max-width: 1440px) {
+            font-size: 0.85rem;
+            line-height: 24px;
+            padding: 14px 0 35px 0;
+          }
+          @media (max-width: 480px) {
+            line-height: 22px;
+            padding: 15px 0 25px 0;
           }
         }
         .someone-random {
@@ -225,7 +246,7 @@
         }
       }
       .hero-suggestions {
-        width: 70%;
+        width: 67%;
         display: flex;
         flex-wrap: wrap;
         @media (max-width: 480px) {
@@ -287,9 +308,16 @@
             color: $generalFontColor;
             font-family: $fontStyleTwo;
             font-size: 1rem;
-            margin: 10px 20px 70px 20px;
+            margin: 17px 0 68px 0;
             @media (max-width: 1440px) {
-              margin: 10px 20px 50px 20px;
+              margin: 17px 8px 45px 8px;
+              font-size: 0.85rem;
+            }
+            @media (max-width: 1366px) {
+              margin: 13px 8px 31px 8px;
+            }
+            @media (max-width: 480px) {
+              margin: 13px 8px 44px 8px;
             }
           }
         }
