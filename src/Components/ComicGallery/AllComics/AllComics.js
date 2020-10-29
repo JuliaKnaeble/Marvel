@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import "./AllComicsDetail.scss";
+import "./AllComics.scss";
 
 const AllComics = ({ requestComicDetail, comicsToRender }) => {
   const history = useHistory();

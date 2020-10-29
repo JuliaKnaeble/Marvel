@@ -17,16 +17,16 @@ const HeroDetail = ({hero, comic}) => {
   );
 
   return (
-    <div className="DetailNew">
-      <div className="hero-description">
+    <div className="HeroDetail">
+      <div className="hero-detail-container">
         <p className="label">
           <span className="label-border">Marvel</span>
           <span className="label-border label-creator">
             {comic[0] && comic[0].creators.items[0] ? comic[0].creators.items[0].name : "Unknown"}
           </span>
         </p>
-        <h2>{hero.name ? hero.name : "CAPTAIN AMERICA"}</h2>
-        <p className="hero-description-title">
+        <h2 className="hero-name">{hero.name ? hero.name : "CAPTAIN AMERICA"}</h2>
+        <p className="hero-detail-description">
           {hero.description
             ? `${hero.description} Find out more`
             : `Sadly this hero has no description. If you are interested in finding out more about ${hero.name}, you can do so`}

@@ -3,7 +3,7 @@
 
 import { connect } from "react-redux";
 import { requestComicDetail } from "../../Redux/Actions/index";
-import AllComics from "./AllComics";
+import ComicGallery from "./ComicGallery";
 
 export const mapStateToProps = (state, ownProps) => {
   return {
@@ -22,7 +22,7 @@ const mapDispatchToProps = {
 const ComicGalleryContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(AllComics);
+)(ComicGallery);
 
 // connecting mapState and mapDispatch to the relevant component
 

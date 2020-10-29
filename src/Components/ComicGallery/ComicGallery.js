@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
-import "./AllComics.scss";
+import "./ComicGallery.scss";
 
 import AllComicsContainer from "./AllComics/index";
 
-const AllComics = ({ hero, comic }) => {
+const ComicGallery = ({ hero, comic }) => {
   const history = useHistory();
   const [comicsToShow, setComicsToShow] = useState([]);
   const comicsPerLoad = 8;
@@ -28,8 +28,8 @@ const AllComics = ({ hero, comic }) => {
   };
 
   return (
-    <div className="LoadMore">
-      <div className="all-comics-container">
+    <div className="ComicGallery">
+      <div>
         <p onClick={() => history.push("/hero")} className="back">
           {" "}
           ◁ BACK TO PROFILE
@@ -51,4 +51,4 @@ const AllComics = ({ hero, comic }) => {
   );
 };
 
-export default AllComics;
+export default ComicGallery;
