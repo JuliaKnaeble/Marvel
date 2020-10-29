@@ -49,36 +49,36 @@ export const requestComicDetail = (indexKey) => {
   };
 };
 
-// HTTPS REQUESTS
+// HTTPS REQUEST
 
 let ts = "blobby";
 let privateKey = `9e03dafe762937ad20491330b0bcd5beb486280b`;
 let publicKey = "5094ba4401702d0e3ae3bcf66339e50a";
 let md = require("md5");
 let md5 = md(`${ts}${privateKey}${publicKey}`);
-let name = "spider-man";
-let characterID = `1009610`;
 let marvel = "https://gateway.marvel.com/v1/public/characters";
 
-export const fetchHero = () => {
+
+export const requestRandomHero = () => {
+  const min = Math.ceil(9150);
+  const max = Math.floor(9799);
+  const number = Math.floor(Math.random() * (max - min) + min);
   const request = axios.get(
-    `${marvel}?ts=${ts}&apikey=${publicKey}&hash=${md5}&name=${name}`
+    `${marvel}/100${number}?ts=${ts}&apikey=${publicKey}&hash=${md5}`
   );
   return (dispatch) =>
-    request.then((response) =>
-      dispatch(fetchHeroSuccess(response.data.data.results[0]))
-    );
+    request
+      .then((response) => {
+        return dispatch(fetchHeroSuccess(response.data.data.results[0]));
+      })
+      .catch((error) => {
+        if (error.response.data.code === 404) {
+          return dispatch(requestRandomHero());
+        }
+        return dispatch(fetchHeroFailure(error.response.data.status));
+      });
 };
 
-export const fetchComic = () => {
-  const request = axios.get(
-    `${marvel}/${characterID}/comics?ts=${ts}&apikey=${publicKey}&hash=${md5}`
-  );
-  return (dispatch) =>
-    request.then((response) =>
-      dispatch(fetchComicSuccess(response.data.data.results[0]))
-    );
-};
 
 // action that receives parameter (hero(name), comic(characterID))
 
@@ -100,25 +100,6 @@ export const requestHero = (hero) => {
       });
 };
 
-export const requestRandomHero = () => {
-  const min = Math.ceil(9150);
-  const max = Math.floor(9799);
-  const number = Math.floor(Math.random() * (max - min) + min);
-  const request = axios.get(
-    `${marvel}/100${number}?ts=${ts}&apikey=${publicKey}&hash=${md5}`
-  );
-  return (dispatch) =>
-    request
-      .then((response) => {
-        return dispatch(fetchHeroSuccess(response.data.data.results[0]));
-      })
-      .catch((error) => {
-        if (error.response.data.code === 404) {
-          return dispatch(requestRandomHero());
-        }
-        return dispatch(fetchHeroFailure(error.response.data.status));
-      });
-};
 
 export const requestComic = (characterID) => {
   const request = axios.get(
