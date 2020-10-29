@@ -4,11 +4,11 @@ import "./App.scss";
 
 //importing the index, container components
 
-import HomeContainer from "./Components/HomePage";
+import HomeContainer from "./Components/Home";
 import NavbarContainer from "./Components/Navigation/index";
-import DetailPageContainer from "./Components/DetailPage/index";
+import HeroDetailContainer from "./Components/HeroDetail/index";
 import ComicsDetailContainer from "./Components/ComicsDetail/index";
-import AllComicsContainer from "./Components/AllComics/index";
+import ComicGalleryContainer from "./Components/ComicGallery/index";
 import ActiveSearchContainer from "./Components/Navigation/ActiveStateSearch/index";
 
 function App() {
@@ -18,9 +18,9 @@ function App() {
         <ActiveSearchContainer />
         <NavbarContainer />
         <Route path="/" exact component={HomeContainer} />
-        <Route path="/hero" exact component={DetailPageContainer} />
+        <Route path="/hero" exact component={HeroDetailContainer} />
         <Route path="/comics" exact component={ComicsDetailContainer} />
-        <Route path="/allcomics" exact component={AllComicsContainer} />
+        <Route path="/allcomics" exact component={ComicGalleryContainer} />
       </Router>
     </div>
   );

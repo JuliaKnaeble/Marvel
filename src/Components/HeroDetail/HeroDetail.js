@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroDetail.scss";
-import ComicsContainer from "../Comics/index";
+import ComicsContainer from "../HeroDetail/Comics/index";
 
 // props coming from DetailPage
 

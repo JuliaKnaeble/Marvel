@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import "./AllComics.scss";
 
-import AllComicsDetailContainer from "../AllComics/AllComicsDetail/index";
+import AllComicsContainer from "./AllComics/index";
 
 const AllComics = ({ hero, comic }) => {
   const history = useHistory();
@@ -37,7 +37,7 @@ const AllComics = ({ hero, comic }) => {
         <p className="all-comics-available">
           All comics: {hero.name} [{hero.comics.available}]
         </p>
-        <AllComicsDetailContainer comicsToRender={comicsToShow} />
+        <AllComicsContainer comicsToRender={comicsToShow} />
         <button
           className="load-more"
           onClick={() => {

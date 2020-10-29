@@ -22,11 +22,11 @@ const mapDispatchToProps = {
 
 // mapDispatchToProps, for importing the action
 
-const DetailPageContainer = connect(
+const HeroDetailContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(DetailPage);
 
 // connecting mapState and mapDispatch to the relevant component
 
-export default DetailPageContainer;
+export default HeroDetailContainer;
