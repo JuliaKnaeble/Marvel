@@ -40,7 +40,7 @@ const HeroDetail = ({hero, comic}) => {
           src={
             hero.thumbnail
               ? `${hero.thumbnail.path}/portrait_incredible.${hero.thumbnail.extension}`
-              : require(`../../Assets/portrait_incredible.jpg`)
+              : require(`../../Assets/hero_placeholder.jpg`)
           }
           alt=""
         />
