@@ -2,13 +2,33 @@
 
 .HeroDetail {
   @include contentFrame(0 5% 0 10%);
+  @media (max-width: 480px) {
+    @include contentFrame(0 0 0 15%);
+  }
+
+  .hero-image-mobile {
+    display: none;
+  }
+  .hero-image-mobile {
+    @media (max-width: 480px) {
+      height: 80vh;
+      background: $colorMarvelRed;
+      img {
+        height: 100%;
+        -webkit-filter: grayscale(100%);
+        margin-bottom: 20px;
+        filter: grayscale(100%);
+        opacity: 0.5;
+      }
+    }
+  }
 
   .hero-detail-container {
     margin-top: 10%;
     margin-right: 10%;
     display: flex;
     flex-direction: column;
-    @media (max-width: 1600px) {
+    @media (max-width: 1440px) {
       margin-top: 8%;
     }
     .label {
@@ -26,13 +46,21 @@
       font-family: $fontStyleOne;
       font-size: 5rem;
       margin: 0;
-      @media (max-width: 1600px) {
+      @media (max-width: 1440px) {
         font-size: 4rem;
+      }
+      @media (max-width: 480px) {
+        font-size: 3rem;
       }
     }
     .hero-detail-description {
       @include hero-ComicDescription;
       margin: 15px 0 0 0;
+      @media (max-width: 480px) {
+        font-size: 0.85rem;
+        line-height: 22px;
+        margin-right: 20px;
+      }
     }
     .hero-reference-link {
       color: $highlightedFontColor;
@@ -40,7 +68,7 @@
     }
   }
 
-  .hero-image {
+  .hero-image-desktop {
     margin-top: 6%;
     background: $colorMarvelRed;
     height: 80vh;
@@ -51,11 +79,17 @@
       filter: grayscale(100%);
       opacity: 0.5;
     }
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 
   .copy-right {
     color: $highlightedFontColor;
     display: flex;
     justify-content: flex-end;
+    @media (max-width: 480px) {
+      display: none;
+    }
   }
 }

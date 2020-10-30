@@ -18,6 +18,16 @@ const HeroDetail = ({hero, comic}) => {
 
   return (
     <div className="HeroDetail">
+       <div className="hero-image-mobile">
+        <img
+          src={
+            hero.thumbnail
+              ? `${hero.thumbnail.path}/portrait_incredible.${hero.thumbnail.extension}`
+              : require(`../../Assets/hero_placeholder.jpg`)
+          }
+          alt=""
+        />
+        </div>
       <div className="hero-detail-container">
         <p className="label">
           <span className="label-border">Marvel</span>
@@ -35,7 +45,7 @@ const HeroDetail = ({hero, comic}) => {
         </p>
         <ComicsContainer />
       </div>
-      <div className="hero-image">
+      <div className="hero-image-desktop">
         <img
           src={
             hero.thumbnail

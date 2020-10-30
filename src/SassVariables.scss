@@ -19,7 +19,7 @@ $fontStyleTwo: "Libre Baskerville", serif;
 
 @mixin label {
   color: $generalFontColor;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin: 0 0 15px 0;
   font-family: $fontStyleOne;
   text-transform: uppercase;
@@ -27,7 +27,7 @@ $fontStyleTwo: "Libre Baskerville", serif;
 
 @mixin labelBG {
   background-color: $highlightedFontColor;
-  padding: 1px 10px;
+  padding: 3px 10px 1px 10px;
   border-radius: 15px;
 }
 

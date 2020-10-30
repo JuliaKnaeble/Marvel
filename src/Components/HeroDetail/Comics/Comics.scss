@@ -7,18 +7,30 @@
   padding-bottom: 60px;
   width: 85%;
   background-color: $generalBgColor;
+  @media (max-width: 480px) {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
   .see-all {
     padding-top: 80px;
     color: $generalFontColor;
     font-family: $fontStyleOne;
     font-size: 1rem;
     cursor: pointer;
-    @media (max-width: 1600px) {
+    @media (max-width: 1440px) {
       padding-top: 50px;
       font-size: 0.75rem;
     }
+    @media (max-width: 480px) {
+      margin-left: 10%;
+    }
   }
   .comic-container {
+    @media (max-width: 480px) {
+      width: 33%;
+    }
     .more {
       font-family: $fontStyleOne;
       position: relative;
@@ -29,17 +41,25 @@
       left: 15px;
       color: transparent;
       cursor: pointer;
-      @media (max-width: 1600px) {
+      @media (max-width: 1440px) {
         font-size: 0.75rem;
         top: 50px;
+      }
+      @media (max-width: 480px) {
+        display: none;
       }
     }
     img {
       position: absolute;
       cursor: pointer;
-      @media (max-width: 1600px) {
-        width: 70px;
+      @media (max-width: 1440px) {
+        width: 5%;
+      }
+      @media (max-width: 480px) {
+        width: 75%;
         height: auto;
+        position: relative;
+        padding-bottom: 26px;
       }
     }
     @include imgHoverEffect;
