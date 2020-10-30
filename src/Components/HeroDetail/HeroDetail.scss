@@ -8,12 +8,10 @@
 
   .hero-image-mobile {
     display: none;
-  }
-  .hero-image-mobile {
     @media (max-width: 480px) {
-      height: 80vh;
+      width: 100%;
       background: $colorMarvelRed;
-      img {
+      .mobile-image {
         height: 100%;
         -webkit-filter: grayscale(100%);
         margin-bottom: 20px;
