@@ -6,7 +6,7 @@ import AllComicsContainer from "./AllComics/index";
 
 const ComicGallery = ({ hero, comic }) => {
   const history = useHistory();
-  const [comicsToShow, setComicsToShow] = useState([]);
+  const [comicsToShow, setComicsToShow] = useState([]); 
   const comicsPerLoad = 8;
   const ref = useRef(comicsPerLoad);
 
@@ -25,6 +25,8 @@ const ComicGallery = ({ hero, comic }) => {
 
   const handleShowMoreComics = () => {
     loopWithSlice(ref.current, ref.current + comicsPerLoad);
+    ref.current += comicsPerLoad;
+    console.log(ref.current);
   };
 
   return (
