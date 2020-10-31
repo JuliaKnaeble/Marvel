@@ -40,7 +40,7 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
               <span className="detail">
                 {comic[indexKey].prices[0].price &&
                 comic[indexKey].prices[0].price > 0
-                  ? comic[indexKey].prices[0].price
+                  ? `${comic[indexKey].prices[0].price} $`
                   : `⎻⎻`}
               </span>
             </span>
