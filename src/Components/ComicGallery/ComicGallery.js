@@ -15,7 +15,6 @@ const ComicGallery = ({ hero, comic }) => {
     const slicedComics = comic.slice(start, end);
     let arrayConcat = arrayForHoldingComics.concat(slicedComics);
     setComicsToShow([...comicsToShow, ...arrayConcat]);
-    console.log(slicedComics);
   };
 
   useEffect(() => {
@@ -26,7 +25,6 @@ const ComicGallery = ({ hero, comic }) => {
   const handleShowMoreComics = () => {
     loopWithSlice(ref.current, ref.current + comicsPerLoad);
     ref.current += comicsPerLoad;
-    console.log(ref.current);
   };
 
   return (
