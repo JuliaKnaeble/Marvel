@@ -6,21 +6,6 @@
     @include contentFrame(0 0 0 10%);
   }
 
-  .hero-image-mobile {
-    display: none;
-    @media (max-width: 480px) {
-      width: 100%;
-      background: $colorMarvelRed;
-      .mobile-image {
-        height: 100%;
-        -webkit-filter: grayscale(100%);
-        margin-bottom: 20px;
-        filter: grayscale(100%);
-        opacity: 0.5;
-      }
-    }
-  }
-
   .hero-detail-container {
     margin-top: 10%;
     margin-right: 10%;
