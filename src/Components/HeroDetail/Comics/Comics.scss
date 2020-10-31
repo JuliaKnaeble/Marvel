@@ -3,10 +3,13 @@
 .Comics {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
-  padding-bottom: 60px;
-  width: 85%;
+  margin-top: 40px;
+  width: 95%;
   background-color: $generalBgColor;
+
+  @media (max-width: 1440px) {
+    margin-top: 30px;
+  }
   @media (max-width: 480px) {
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -14,17 +17,15 @@
   }
 
   .see-all {
-    padding-top: 80px;
+    padding-top: 55px;
+    padding-left: 20px;
     color: $generalFontColor;
     font-family: $fontStyleOne;
-    font-size: 1rem;
+    font-size: 1.85rem;
     cursor: pointer;
     @media (max-width: 1440px) {
-      padding-top: 50px;
-      font-size: 0.75rem;
-    }
-    @media (max-width: 480px) {
-      margin-left: 8%;
+      padding-top: 30px;
+      font-size: 1.5rem;
     }
   }
   .comic-container {
@@ -52,8 +53,9 @@
     img {
       position: absolute;
       cursor: pointer;
+      width: 5%;
       @media (max-width: 1440px) {
-        width: 5%;
+        width: 4.7%;
       }
       @media (max-width: 480px) {
         width: 75%;

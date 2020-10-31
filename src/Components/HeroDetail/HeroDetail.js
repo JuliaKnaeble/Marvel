@@ -44,7 +44,6 @@ const HeroDetail = ({hero, comic}) => {
           }
           alt=""
         />
-        <span className="copy-right">© 2020 MARVEL</span>
       </div>
     </div>
   );

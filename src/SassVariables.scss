@@ -18,17 +18,31 @@ $fontStyleTwo: "Libre Baskerville", serif;
 }
 
 @mixin label {
+  font-size: 1.5rem;
   color: $generalFontColor;
-  font-size: 1rem;
   margin: 0 0 15px 0;
   font-family: $fontStyleOne;
   text-transform: uppercase;
+  @media (max-width: 1440px) {
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+  }
+  @media (max-width: 1366px) {
+    font-size: 1rem;
+    margin: 0 0 15px 0;
+  }
 }
 
 @mixin labelBG {
-  background-color: $highlightedFontColor;
-  padding: 3px 10px 1px 10px;
   border-radius: 15px;
+  background-color: $highlightedFontColor;
+  padding: 3px 15px 1px 15px;
+  @media (max-width: 1440px) {
+    padding: 3px 12px 1px 12px;
+  }
+  @media (max-width: 1366px) {
+    padding: 3px 10px 1px 10px;
+  }
 }
 
 @mixin backTo {
@@ -88,10 +102,14 @@ $fontStyleTwo: "Libre Baskerville", serif;
 @mixin hero-ComicDescription {
   color: $generalFontColor;
   font-family: $fontStyleTwo;
-  font-size: 1.5rem;
-  line-height: 35px;
-  @media (max-width: 1600px) {
+  font-size: 1.25rem;
+  line-height: 30px;
+  @media (max-width: 1440px) {
     font-size: 1rem;
-    line-height: 25px;
+    line-height: 28px;
+  }
+  @media (max-width: 1366px) {
+    font-size: 0.85rem;
+    line-height: 24px;
   }
 }
