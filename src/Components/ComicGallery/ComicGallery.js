@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import "./ComicGallery.scss";
 
@@ -8,13 +8,11 @@ const ComicGallery = ({ hero, comic }) => {
   const history = useHistory();
   const [comicsToShow, setComicsToShow] = useState([]); 
   const comicsPerLoad = 8;
-  const ref = useRef(comicsPerLoad);
+  const [totalComics, setTotalComics] = useState(comicsPerLoad);
 
   const loopWithSlice = (start, end) => {
-    let arrayForHoldingComics = [];
     const slicedComics = comic.slice(start, end);
-    let arrayConcat = arrayForHoldingComics.concat(slicedComics);
-    setComicsToShow([...comicsToShow, ...arrayConcat]);
+    setComicsToShow([...comicsToShow, ...slicedComics]);
   };
 
   useEffect(() => {
@@ -23,8 +21,8 @@ const ComicGallery = ({ hero, comic }) => {
   }, []);
 
   const handleShowMoreComics = () => {
-    loopWithSlice(ref.current, ref.current + comicsPerLoad);
-    ref.current += comicsPerLoad;
+    loopWithSlice(totalComics, totalComics + comicsPerLoad);
+    setTotalComics(totalComics + comicsPerLoad);
   };
 
   return (
