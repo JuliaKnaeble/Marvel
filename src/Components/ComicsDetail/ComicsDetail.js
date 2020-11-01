@@ -18,7 +18,7 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
           src={
             comic[indexKey].thumbnail
               ? `${comic[indexKey].thumbnail.path}/portrait_incredible.${comic[indexKey].thumbnail.extension}`
-              : require(`../../Assets/hero_placeholder.jpg`)
+              : require(`../../Assets/default_comic.jpg`)
           }
           alt=""
         ></img>

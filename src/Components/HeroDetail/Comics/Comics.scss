@@ -53,9 +53,12 @@
     img {
       position: absolute;
       cursor: pointer;
-      width: 5%;
+      width: 4.7%;
       @media (max-width: 1440px) {
-        width: 4.7%;
+        width: 4.5%;
+      }
+      @media (max-width: 1366px) {
+        width: 4.5%;
       }
       @media (max-width: 480px) {
         width: 75%;

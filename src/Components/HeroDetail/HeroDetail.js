@@ -39,8 +39,8 @@ const HeroDetail = ({hero, comic}) => {
         <img
           src={
             hero.thumbnail
-              ? `${hero.thumbnail.path}/portrait_incredible.${hero.thumbnail.extension}`
-              : require(`../../Assets/hero_placeholder.jpg`)
+              ? `${hero.thumbnail.path}/standard_xlarge.${hero.thumbnail.extension}`
+              : require(`../../Assets/default_hero.jpg`)
           }
           alt=""
         />
