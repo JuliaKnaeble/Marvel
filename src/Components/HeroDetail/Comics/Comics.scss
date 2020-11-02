@@ -39,12 +39,15 @@
       padding: 0;
       font-size: 1.25rem;
       top: 70px;
-      left: 15px;
+      left: 12px;
       color: transparent;
       cursor: pointer;
       @media (max-width: 1440px) {
         font-size: 0.75rem;
         top: 50px;
+      }
+      @media (max-width: 1366px) {
+        left: 11px;
       }
       @media (max-width: 480px) {
         display: none;

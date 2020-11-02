@@ -21,8 +21,8 @@ const ComicGallery = ({ hero, comic }) => {
   }, []);
 
   const handleShowMoreComics = () => {
-    loopWithSlice(totalComics, totalComics + comicsPerLoad);
-    setTotalComics(totalComics + comicsPerLoad);
+    loopWithSlice(totalComics, comicsPerLoad + totalComics);
+    setTotalComics(comicsPerLoad + totalComics);
   };
 
   return (
