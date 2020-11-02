@@ -10,9 +10,9 @@ const ComicGallery = ({ hero, comic }) => {
   const comicsPerLoad = 8;
   const [totalComics, setTotalComics] = useState(comicsPerLoad);
 
-  const loopWithSlice = (start, end) => {
-    const slicedComics = comic.slice(start, end);
-    setComicsToShow([...comicsToShow, ...slicedComics]);
+  const loopWithSlice = (start, end) => { 
+    const slicedComics = comic.slice(start, end); // reducer looking at index 8 till 15 
+    setComicsToShow([...comicsToShow, ...slicedComics]); // spread operator combines the arrays 
   };
 
   useEffect(() => {
@@ -21,8 +21,8 @@ const ComicGallery = ({ hero, comic }) => {
   }, []);
 
   const handleShowMoreComics = () => {
-    loopWithSlice(totalComics, comicsPerLoad + totalComics);
-    setTotalComics(comicsPerLoad + totalComics);
+    loopWithSlice(totalComics, comicsPerLoad + totalComics); // on first click 8, 8 + 8 
+    setTotalComics(comicsPerLoad + totalComics); // on first click 8 + 8 (16)
   };
 
   return (
