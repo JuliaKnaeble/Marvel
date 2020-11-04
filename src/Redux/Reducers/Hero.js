@@ -6,7 +6,6 @@ const initialState = {
 };
 
 const hero = (state = initialState, action) => {
-  console.log(action);
   switch (action.type) {
     case `FETCH_HERO_SUCCESS`:
       return {
