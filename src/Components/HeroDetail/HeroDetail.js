@@ -17,8 +17,20 @@ const HeroDetail = ({hero, comic}) => {
   );
 
   return (
-    <div className="HeroDetail">
+    <div className="HeroDetail">   
       <div className="hero-detail-container">
+        <div className="hero-image-mobile">
+        <img
+          src={
+            hero.thumbnail
+              ? `${hero.thumbnail.path}/landscape_medium.${hero.thumbnail.extension}`
+              : require(`../../Assets/default_mobile_hero.jpg`)
+          }
+          alt=""
+        />
+        <div className="overlay">
+        </div>
+      </div>
         <p className="label">
           <span className="label-border">Marvel</span>
           <span className="label-border label-creator">
