@@ -25,6 +25,7 @@
         position: relative;
         background: $colorMarvelRed;
         margin-bottom: 30px;
+        margin-top: -70px;
         img {
           width: 100%;
           height: 245px;
@@ -69,6 +70,7 @@
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
+      font-weight: 400;
       @media (max-width: 1440px) {
         font-size: 6rem;
         line-height: 90px;
