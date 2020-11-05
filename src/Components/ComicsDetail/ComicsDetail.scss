@@ -12,12 +12,23 @@
   .comic-image {
     margin-top: 7%;
     height: 68vh;
+
+    @media (max-width: 480px) {
+      height: auto;
+    }
+
     .back {
       @include backTo;
     }
     img {
       padding-top: 60px;
       height: 100%;
+
+      @media (max-width: 480px) {
+        padding-top: 25px;
+        width: 93%;
+        height: auto;
+      }
     }
   }
   .comic-details {
@@ -27,7 +38,7 @@
     flex-direction: column;
 
     @media (max-width: 480px) {
-      margin: 35% 0 0 0;
+      margin: 15% 0 0 0;
     }
 
     .label {
