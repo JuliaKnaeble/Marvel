@@ -4,6 +4,11 @@
   @include contentFrame(0 5% 0 10%);
   background-color: $generalBgColor;
   padding-top: 7%;
+
+  @media (max-width: 480px) {
+    @include contentFrame(0 0 0 10%);
+  }
+
   .all-comics-available {
     color: $generalFontColor;
     text-transform: uppercase;
@@ -31,5 +36,9 @@
   &:hover {
     cursor: pointer;
     color: $generalFontColor;
+  }
+  @media (max-width: 480px) {
+    margin: 5% 25% 15% 35%;
+    font-size: 1.25rem;
   }
 }

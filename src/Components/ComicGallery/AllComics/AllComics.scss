@@ -9,9 +9,18 @@
     width: 25%;
     margin-bottom: 5%;
 
+    @media (max-width: 480px) {
+      width: 50%;
+      margin-bottom: 15%;
+    }
+
     .on-hover-container {
       width: 70%;
       position: relative;
+
+      @media (max-width: 480px) {
+        width: 80%;
+      }
 
       @include imgHoverEffect;
 
@@ -59,6 +68,9 @@
       @media (max-width: 1366px) {
         font-size: 1rem;
         margin-top: 8px;
+      }
+      @media (max-width: 480px) {
+        font-size: 0.85rem;
       }
     }
   }
