@@ -23,7 +23,7 @@ const HeroDetail = ({hero, comic}) => {
         <img
           src={
             hero.thumbnail
-              ? `${hero.thumbnail.path}/landscape_medium.${hero.thumbnail.extension}`
+              ? `${hero.thumbnail.path}/landscape_incredible.${hero.thumbnail.extension}`
               : require(`../../Assets/default_mobile_hero.jpg`)
           }
           alt=""

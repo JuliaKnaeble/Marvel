@@ -28,7 +28,7 @@
         margin-top: -70px;
         img {
           width: 100%;
-          height: 245px;
+          height: 260px;
           object-fit: cover;
           -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -40,10 +40,10 @@
         background-image: linear-gradient(
           to top,
           $generalBgColor 10%,
-          transparent 100%
+          transparent 80%
         );
         width: 100%;
-        height: 250px;
+        height: 261px;
       }
     }
 
