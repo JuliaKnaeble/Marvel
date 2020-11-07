@@ -2,7 +2,7 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 import "./AllComics.scss";
 
-const AllComics = ({ requestComicDetail, comicsToRender }) => {
+const AllComics = ({ requestComicDetail, totalNumber }) => {
   const history = useHistory();
 
   const showComicDetail = (indexKey) => {
@@ -12,7 +12,7 @@ const AllComics = ({ requestComicDetail, comicsToRender }) => {
 
   return (
     <div className="AllComics">
-        {comicsToRender.map((item, index) => {
+        {totalNumber.map((item, index) => {
           return (
             <div key={index} className="all-comics-container">
               <div className="on-hover-container" onClick={() => showComicDetail(index)}>{/* position: relative; */}

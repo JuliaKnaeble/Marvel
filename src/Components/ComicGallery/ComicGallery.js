@@ -4,11 +4,15 @@ import "./ComicGallery.scss";
 
 import AllComicsContainer from "./AllComics/index";
 
-const ComicGallery = ({ hero, comic }) => {
+const ComicGallery = ({ hero, comic, requestTotalComics}) => {
   const history = useHistory();
   const [comicsToShow, setComicsToShow] = useState([]); 
   const comicsPerLoad = 8;
   const [totalComics, setTotalComics] = useState(comicsPerLoad);
+
+  useEffect (() => {
+    requestTotalComics(comicsToShow);
+  }, [comicsToShow, requestTotalComics]);
 
   const loopWithSlice = (start, end) => { 
     const slicedComics = comic.slice(start, end); // reducer looking at index 8 till 15 
@@ -35,7 +39,7 @@ const ComicGallery = ({ hero, comic }) => {
         <p className="all-comics-available">
           All comics: {hero.name} [{hero.comics.available}]
         </p>
-        <AllComicsContainer comicsToRender={comicsToShow} />
+        <AllComicsContainer />
         <button
           className="load-more"
           onClick={() => {

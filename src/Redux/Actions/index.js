@@ -5,6 +5,16 @@ const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
 const FETCH_COMIC_SUCCESS = `FETCH_COMIC_SUCCESS`;
 const FETCH_COMIC_DETAIL_SUCCESS = `FETCH_COMIC_DETAIL_SUCCESS`;
 const FETCH_SEARCH = `FETCH_SEARCH`;
+const FETCH_TOTAL_NUMBER = `FETCH_TOTAL_NUMBER`
+
+// ACTION CREATOR TOTAL COMICS
+
+export const requestTotalComics = (totalNumber) => {
+  return {
+    type: FETCH_TOTAL_NUMBER,
+    payload: totalNumber,
+  }
+}
 
 // ACTION CREATOR SEARCH
 

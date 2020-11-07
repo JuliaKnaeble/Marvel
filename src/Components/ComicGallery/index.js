@@ -2,13 +2,14 @@
 // connect reducer with component
 
 import { connect } from "react-redux";
-import { requestComicDetail } from "../../Redux/Actions/index";
+import { requestTotalComics } from "../../Redux/Actions/index";
 import ComicGallery from "./ComicGallery";
 
 export const mapStateToProps = (state, ownProps) => {
   return {
     hero: state.hero.hero,
     comic: state.comic.comic,
+    totalNumber: state.totalComicsToShow.totalNumber
   };
 };
 
@@ -16,7 +17,7 @@ export const mapStateToProps = (state, ownProps) => {
 //and gives it back to the component as props
 
 const mapDispatchToProps = {
-  requestComicDetail,
+  requestTotalComics,
 };
 
 const ComicGalleryContainer = connect(
