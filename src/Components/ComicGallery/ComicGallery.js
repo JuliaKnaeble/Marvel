@@ -9,7 +9,6 @@ const ComicGallery = ({ hero, comic, requestTotalComics}) => {
   const [comicsToShow, setComicsToShow] = useState([]); 
   const comicsPerLoad = 8;
   const [totalComics, setTotalComics] = useState(comicsPerLoad);
-  console.log(totalComics);
 
   useEffect (() => {
     requestTotalComics(comicsToShow);
