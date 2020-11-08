@@ -34,7 +34,7 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              ABOUT
+              GitHub
             </a>
           </div>
           <div className="header">
