@@ -9,7 +9,8 @@ export const mapStateToProps = (state, ownProps) => {
   return {
     hero: state.hero.hero,
     comic: state.comic.comic,
-    totalNumber: state.totalComicsToShow.totalNumber
+    totalNumber: state.totalComicsToShow.totalNumber,
+    comicsToShow: ownProps.comicsToShow,
   };
 };
 
