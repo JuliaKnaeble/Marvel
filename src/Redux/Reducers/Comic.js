@@ -1,3 +1,5 @@
+import { FETCH_COMIC_SUCCESS } from ".";
+
 const initialState = {
   loading: false,
   comic: [],
@@ -6,7 +8,7 @@ const initialState = {
 
 const comic = (state = initialState, action) => {
   switch (action.type) {
-    case `FETCH_COMIC_SUCCESS`:
+    case FETCH_COMIC_SUCCESS:
       return {
         loading: false,
         comic: action.payload,
