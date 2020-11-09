@@ -107,6 +107,7 @@ const Home = ({ requestHero, requestRandomHero, requestSearch }) => {
               })}
             </div>
           </div>
+          <footer>© All images belong to their respective owners</footer>
         </div>
       </div>
     </div>

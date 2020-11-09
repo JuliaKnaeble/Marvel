@@ -2,7 +2,7 @@
 // connect reducer with component
 
 import { connect } from "react-redux";
-import { requestComic } from "../../Redux/Actions";
+import { requestComic, resetTotalComics } from "../../Redux/Actions";
 import DetailPage from "./DetailPage";
 
 export const mapStateToProps = (state, ownProps) => {
@@ -18,6 +18,7 @@ export const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = {
   requestComic,
+  resetTotalComics,
 };
 
 // mapDispatchToProps, for importing the action

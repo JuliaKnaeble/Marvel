@@ -4,29 +4,24 @@ import "./ComicGallery.scss";
 
 import AllComicsContainer from "./AllComics/index";
 
-const ComicGallery = ({ hero, comic, requestTotalComics}) => {
+const ComicGallery = ({ hero, comic, totalNumber, requestTotalComics }) => {
   const history = useHistory();
-  const [comicsToShow, setComicsToShow] = useState([]); 
+  const [comicsToShow, setComicsToShow] = useState([]);
   const comicsPerLoad = 8;
-  const [totalComics, setTotalComics] = useState(comicsPerLoad);
 
-  useEffect (() => {
-    requestTotalComics(comicsToShow);
-  }, [comicsToShow, requestTotalComics]);
-
-  const loopWithSlice = (start, end) => { 
-    const slicedComics = comic.slice(start, end); // reducer looking at index 8 till 15 
-    setComicsToShow([...comicsToShow, ...slicedComics]); // spread operator combines the arrays 
+  const loopWithSlice = (start, end) => {
+    const slicedComics = comic.slice(start, end); // reducer looking at index 8 till 15
+    setComicsToShow([...comicsToShow, ...slicedComics]); // spread operator combines the arrays
   };
 
   useEffect(() => {
-    loopWithSlice(0, comicsPerLoad);
+    loopWithSlice(0, totalNumber);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleShowMoreComics = () => {
-    loopWithSlice(totalComics, comicsPerLoad + totalComics); // on first click 8, 8 + 8 
-    setTotalComics(comicsPerLoad + totalComics); // on first click 8 + 8 (16)
+    loopWithSlice(totalNumber, totalNumber + comicsPerLoad); // on first click 8, 8 + 8
+    requestTotalComics(totalNumber + comicsPerLoad); // on first click 8 + 8 (16)
   };
 
   return (
@@ -39,7 +34,7 @@ const ComicGallery = ({ hero, comic, requestTotalComics}) => {
         <p className="all-comics-available">
           All comics: {hero.name} [{hero.comics.available}]
         </p>
-        <AllComicsContainer />
+        <AllComicsContainer comicsToShow={comicsToShow} />
         <button
           className="load-more"
           onClick={() => {

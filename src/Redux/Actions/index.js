@@ -1,11 +1,14 @@
 import axios from "axios";
 
-const FETCH_HERO_SUCCESS = `FETCH_HERO_SUCCESS`;
-const FETCH_HERO_FAILURE = `FETCH_HERO_FAILURE`;
-const FETCH_COMIC_SUCCESS = `FETCH_COMIC_SUCCESS`;
-const FETCH_COMIC_DETAIL_SUCCESS = `FETCH_COMIC_DETAIL_SUCCESS`;
-const FETCH_SEARCH = `FETCH_SEARCH`;
-const FETCH_TOTAL_NUMBER = `FETCH_TOTAL_NUMBER`
+import {
+  FETCH_HERO_SUCCESS,
+  FETCH_HERO_FAILURE,
+  FETCH_COMIC_SUCCESS,
+  FETCH_COMIC_DETAIL_SUCCESS,
+  FETCH_SEARCH,
+  FETCH_TOTAL_NUMBER,
+  RESET_TOTAL_NUMBER,
+} from "../Reducers";
 
 // ACTION CREATOR TOTAL COMICS
 
@@ -13,8 +16,14 @@ export const requestTotalComics = (totalNumber) => {
   return {
     type: FETCH_TOTAL_NUMBER,
     payload: totalNumber,
-  }
-}
+  };
+};
+
+export const resetTotalComics = () => {
+  return {
+    type: RESET_TOTAL_NUMBER,
+  };
+};
 
 // ACTION CREATOR SEARCH
 
@@ -68,7 +77,6 @@ let md = require("md5");
 let md5 = md(`${ts}${privateKey}${publicKey}`);
 let marvel = "https://gateway.marvel.com/v1/public/characters";
 
-
 export const requestRandomHero = () => {
   const min = Math.ceil(9150);
   const max = Math.floor(9799);
@@ -89,7 +97,6 @@ export const requestRandomHero = () => {
       });
 };
 
-
 // action that receives parameter (hero(name), comic(characterID))
 
 export const requestHero = (hero) => {
@@ -109,7 +116,6 @@ export const requestHero = (hero) => {
         dispatch(fetchHeroFailure(error.message));
       });
 };
-
 
 export const requestComic = (characterID) => {
   const request = axios.get(

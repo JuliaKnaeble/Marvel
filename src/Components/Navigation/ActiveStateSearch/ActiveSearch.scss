@@ -29,21 +29,24 @@
     }
   }
   input {
-    caret-color: transparent;
+    caret-color: $highlightedFontColor;
     display: block;
     text-align: center;
     margin: 15% auto;
     border-color: transparent;
     outline: transparent;
     font-family: $fontStyleOne;
-    font-size: 8rem;
-    padding-left: 4%;
+    font-size: 7rem;
+    padding-left: 6%;
     text-transform: uppercase;
     color: $generalFontColor;
     background-color: transparent;
     @media (max-width: 1440px) {
-      margin: 15% auto;
-      font-size: 6rem;
+      padding-left: 7%;
+      font-size: 5.5rem;
+    }
+    @media (max-width: 1366px) {
+      font-size: 5rem;
     }
     @media (max-width: 480px) {
       padding-left: 0;
@@ -54,10 +57,13 @@
       color: $generalFontColor;
       opacity: 0.6;
       font-family: $fontStyleOne;
-      font-size: 8rem;
+      font-size: 7rem;
       text-transform: uppercase;
       @media (max-width: 1440px) {
-        font-size: 6rem;
+        font-size: 5.5rem;
+      }
+      @media (max-width: 1366px) {
+        font-size: 5rem;
       }
       @media (max-width: 480px) {
         font-size: 2rem;

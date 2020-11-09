@@ -10,7 +10,7 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
   return (
     <div className="ComicsDetail">
       <div className="comic-image">
-        <p onClick={() => history.goBack()} className="back">
+        <p onClick={() => history.goBack()} className="back"> {/* */}
           {" "}
           ◁ BACK TO PROFILE
         </p>
