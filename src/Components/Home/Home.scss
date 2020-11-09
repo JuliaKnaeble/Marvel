@@ -50,7 +50,7 @@
         color: $highlightedFontColor;
         text-decoration: none;
         font-size: 1.75rem;
-        font-family: $fontStyleOne;
+        @include fontOne;
         transition: all 0.2s ease-in;
         &:hover {
           color: $generalFontColor;
@@ -87,8 +87,7 @@
       h1 {
         padding-top: 37px;
         line-height: 140px;
-        font-family: $fontStyleOne;
-        font-weight: 400;
+        @include fontOne;
         color: $generalFontColor;
         font-size: 9rem;
         margin: 0;
@@ -139,8 +138,7 @@
       justify-content: center;
       text-align: center;
       color: $generalFontColor;
-      font-family: $fontStyleOne;
-      font-weight: 400;
+      @include fontOne;
       opacity: 0.2;
       font-size: 6.5rem;
       margin: 0;
@@ -218,7 +216,7 @@
 
         .header-learn {
           line-height: 75px;
-          font-family: $fontStyleOne;
+          @include fontOne;
           font-weight: 400;
           font-size: 4.25rem;
           margin: 0;
@@ -309,7 +307,7 @@
               position: relative;
               font-size: 1rem;
               color: transparent;
-              font-family: $fontStyleOne;
+              @include fontOne;
               transition: 0.2s ease;
               cursor: pointer;
             }

@@ -31,7 +31,7 @@
 
   .info {
     padding: 7% 0 10% 7%;
-    font-family: $fontStyleOne;
+    @include fontOne;
     font-size: 1.75rem;
     a {
       color: $highlightedFontColor;

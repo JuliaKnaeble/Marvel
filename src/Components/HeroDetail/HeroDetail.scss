@@ -64,7 +64,7 @@
     .hero-name {
       color: $generalFontColor;
       text-transform: uppercase;
-      font-family: $fontStyleOne;
+      @include fontOne;
       font-size: 7.5rem;
       line-height: 125px;
       margin: 0;

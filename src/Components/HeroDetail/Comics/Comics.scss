@@ -21,7 +21,7 @@
     padding-top: 55px;
     padding-left: 20px;
     color: $generalFontColor;
-    font-family: $fontStyleOne;
+    @include fontOne;
     font-size: 1.85rem;
     cursor: pointer;
     @media (max-width: 1440px) {
@@ -34,7 +34,7 @@
       width: 33%;
     }
     .more {
-      font-family: $fontStyleOne;
+      @include fontOne;
       position: relative;
       margin: 0;
       padding: 0;

@@ -35,7 +35,7 @@
     margin: 15% auto;
     border-color: transparent;
     outline: transparent;
-    font-family: $fontStyleOne;
+    @include fontOne;
     font-size: 7rem;
     padding-left: 6%;
     text-transform: uppercase;
@@ -56,7 +56,7 @@
     &::placeholder {
       color: $generalFontColor;
       opacity: 0.6;
-      font-family: $fontStyleOne;
+      @include fontOne;
       font-size: 7rem;
       text-transform: uppercase;
       @media (max-width: 1440px) {
