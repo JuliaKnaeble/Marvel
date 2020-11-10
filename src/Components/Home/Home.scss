@@ -17,15 +17,16 @@
   }
 
   footer {
-    color: $highlightedFontColor;
-    margin-left: 35px;
+    color: $generalFontColor;
+    opacity: 0.4;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
     padding-bottom: 50px;
-    font-size: 1rem;
+    font-size: 0.75rem;
 
-    @media (max-width: 1440px) {
-      font-size: 0.75rem;
-    }
     @media (max-width: 480px) {
+      display: block;
       margin: 0 auto;
       text-align: center;
     }
@@ -186,16 +187,11 @@
       flex-direction: row;
       justify-content: space-between;
       color: $generalFontColor;
-      padding: 50px 0 108px 0;
-      @media (max-width: 1440px) {
-        padding: 30px 0 127px 0;
-      }
-      @media (max-width: 1366px) {
-        padding: 30px 0 85px 0;
-      }
+      padding: 50px 0 88px 0;
+
       @media (max-width: 480px) {
         flex-direction: column;
-        padding: 15px 0 80px 0;
+        padding: 15px 0 50px 0;
       }
 
       .learn-more {
