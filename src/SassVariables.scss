@@ -11,6 +11,11 @@ $fontStyleTwo: "Libre Baskerville", serif;
   font-weight: 400;
 }
 
+@mixin fontTwo {
+  font-family: $fontStyleTwo;
+  font-weight: 400;
+}
+
 @mixin contentFrame($margin) {
   min-height: 100vh;
   display: flex;
@@ -98,8 +103,7 @@ $fontStyleTwo: "Libre Baskerville", serif;
 
 @mixin hero-ComicDescription {
   color: $generalFontColor;
-  font-family: $fontStyleTwo;
-  font-weight: 400;
+  @include fontTwo;
   font-size: 1.25rem;
   line-height: 30px;
   @media (max-width: 1440px) {

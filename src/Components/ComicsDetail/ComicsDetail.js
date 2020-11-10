@@ -33,8 +33,8 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
             ? comic[indexKey].description
             : `Sadly this comic has no description.`}
         </h4>
-        <div className="comic-dates">
-          <p>
+        <div>
+          <p className="comic-dates">
             <span className="label-border">
               ORIGINAL PRICE:
               <span className="detail">

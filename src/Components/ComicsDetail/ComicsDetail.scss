@@ -67,13 +67,18 @@
     @include hero-ComicDescription;
   }
   .comic-dates {
-    color: $generalFontColor;
-
+    @media (max-width: 480px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
     .label-border {
       color: $highlightedFontColor;
       font-size: 1.25rem;
       @include fontOne;
       margin-right: 40px;
+      @media (max-width: 1366px) {
+        font-size: 1rem;
+      }
       .detail {
         margin-left: 8px;
         color: $generalFontColor;
@@ -86,21 +91,36 @@
       font-size: 1.25rem;
       @include fontOne;
       margin-bottom: 0;
-      line-height: 36px;
+      line-height: 27px;
+
+      @media (max-width: 1366px) {
+        font-size: 1rem;
+        line-height: 21px;
+      }
     }
     .contributors-container {
+      font-size: 1.25rem;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       color: $generalFontColor;
       text-transform: uppercase;
-      line-height: 36px;
+      line-height: 27px;
       @include fontOne;
       margin-right: 15%;
       padding-bottom: 60px;
+
+      @media (max-width: 1366px) {
+        font-size: 1rem;
+        line-height: 21px;
+      }
       .names {
         display: flex;
         flex-direction: column;
+
+        .names-mobile {
+          margin-left: 50px;
+        }
         p {
           margin: 0;
           padding: 0;

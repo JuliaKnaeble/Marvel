@@ -18,6 +18,7 @@
 
   footer {
     color: $generalFontColor;
+    @include fontTwo;
     opacity: 0.4;
     display: flex;
     justify-content: flex-end;
@@ -112,7 +113,7 @@
         margin: 0;
         padding: 24px 18% 103px 18%;
         color: $generalFontColor;
-        font-family: $fontStyleTwo;
+        @include fontTwo;
         font-size: 1.25rem;
         line-height: 30px;
         @media (max-width: 1440px) {
@@ -232,7 +233,7 @@
         .paragraph-learn {
           padding: 18px 0 45px 0;
           margin: 0;
-          font-family: $fontStyleTwo;
+          @include fontTwo;
           font-size: 1.25rem;
           line-height: 30px;
           @media (max-width: 1440px) {
@@ -315,7 +316,7 @@
             justify-content: center;
             text-align: center;
             color: $generalFontColor;
-            font-family: $fontStyleTwo;
+            @include fontTwo;
             font-size: 1rem;
             margin: 17px 0 68px 0;
             @media (max-width: 1440px) {
