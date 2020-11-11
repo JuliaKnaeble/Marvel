@@ -14,6 +14,12 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
         <div onClick={() => history.goBack()}>
           <BackArrow className="back" />
         </div>
+        <div className="mobile-container">
+          <p className="label">
+            <span>{hero.name}</span>
+          </p>
+          <p className="mobile-comic-title">{comic[indexKey].title}</p>
+        </div>
         <img
           src={
             comic[indexKey].thumbnail
