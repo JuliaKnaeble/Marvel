@@ -277,14 +277,7 @@
             @include imgHoverEffect;
 
             .more-info-container {
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+              @include readMoreContainer;
             }
             .circle-hero-border {
               border: 4px solid $highlightedFontColor;
@@ -301,12 +294,8 @@
             }
 
             .more {
-              position: relative;
+              @include readMore;
               font-size: 1rem;
-              color: transparent;
-              @include fontOne;
-              transition: 0.2s ease;
-              cursor: pointer;
             }
           }
 

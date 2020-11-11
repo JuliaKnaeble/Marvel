@@ -70,13 +70,12 @@ export const requestComicDetail = (indexKey) => {
 
 // HTTPS REQUEST
 
-let ts = "blobby";
-let privateKey = `9e03dafe762937ad20491330b0bcd5beb486280b`;
-let publicKey = "5094ba4401702d0e3ae3bcf66339e50a";
-let md = require("md5");
-let md5 = md(`${ts}${privateKey}${publicKey}`);
-console.log(md5);
-let marvel = "https://gateway.marvel.com/v1/public/characters";
+const ts = "blobby";
+const privateKey = `9e03dafe762937ad20491330b0bcd5beb486280b`;
+const publicKey = "5094ba4401702d0e3ae3bcf66339e50a";
+const md = require("md5");
+const md5 = md(`${ts}${privateKey}${publicKey}`);
+const marvel = "https://gateway.marvel.com/v1/public/characters";
 
 export const requestRandomHero = () => {
   const min = Math.ceil(9150);
