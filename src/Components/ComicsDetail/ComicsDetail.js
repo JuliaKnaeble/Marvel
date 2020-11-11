@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import BackArrow from "../../Assets/NavSvg/BackArrow";
 import "./ComicsDetail.scss";
 
 const ComicsDetail = ({ comic, hero, indexKey }) => {
@@ -10,10 +11,15 @@ const ComicsDetail = ({ comic, hero, indexKey }) => {
   return (
     <div className="ComicsDetail">
       <div className="comic-image">
-        <p onClick={() => history.goBack()} className="back">
-          {" "}
-          ◁ BACK TO PROFILE
-        </p>
+        <div onClick={() => history.goBack()}>
+          <BackArrow className="back" />
+        </div>
+        <div className="mobile-container">
+          <p className="label">
+            <span>{hero.name}</span>
+          </p>
+          <p className="mobile-comic-title">{comic[indexKey].title}</p>
+        </div>
         <img
           src={
             comic[indexKey].thumbnail
