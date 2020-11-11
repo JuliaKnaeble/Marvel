@@ -24,12 +24,20 @@ const Comics = ({ comic, requestComic, hero, requestComicDetail }) => {
       {comic.map((item, index) => {
         if (index < 5) {
           return (
-            <div className="comic-container" key={index} onClick={() => showComicDetail(index)}>
-              <p className="more">READ MORE</p>
-              <img
-                src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
-                alt={item.title}
-              />
+            <div className="comic-container" key={index}>
+              <div
+                className="comic-on-hover-container"
+                onClick={() => showComicDetail(index)}
+              >
+                <div className="read-more-container">
+                  <span className="more">READ MORE</span>
+                </div>
+                <img
+                  className="comic-image"
+                  src={`${item.thumbnail.path}/portrait_medium.${item.thumbnail.extension}`}
+                  alt={item.title}
+                />
+              </div>
             </div>
           );
         }

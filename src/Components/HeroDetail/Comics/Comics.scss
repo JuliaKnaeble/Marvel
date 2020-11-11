@@ -2,10 +2,8 @@
 
 .Comics {
   display: flex;
-  justify-content: space-between;
   margin-top: 40px;
   width: 95%;
-  background-color: $generalBgColor;
 
   @media (max-width: 1440px) {
     margin-top: 30px;
@@ -14,63 +12,66 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 90%;
-    margin-left: 10%;
+    margin-left: 9%;
+    margin-bottom: 35px;
   }
 
-  .see-all {
-    padding-top: 55px;
-    padding-left: 20px;
-    color: $generalFontColor;
-    @include fontOne;
-    font-size: 1.85rem;
-    cursor: pointer;
-    @media (max-width: 1440px) {
-      padding-top: 30px;
-      font-size: 1.5rem;
-    }
-  }
   .comic-container {
+    width: 17%;
+
     @media (max-width: 480px) {
+      margin-bottom: 30px;
       width: 33%;
     }
-    .more {
-      @include fontOne;
+
+    .comic-on-hover-container {
       position: relative;
-      margin: 0;
-      padding: 0;
-      font-size: 1.25rem;
-      top: 70px;
-      left: 12px;
-      color: transparent;
-      cursor: pointer;
-      @media (max-width: 1440px) {
-        font-size: 0.75rem;
-        top: 50px;
+      width: 78%;
+
+      @include imgHoverEffect;
+
+      .read-more-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
-      @media (max-width: 1366px) {
-        left: 11px;
+
+      .comic-image {
+        width: 100%;
+        cursor: pointer;
       }
-      @media (max-width: 480px) {
-        display: none;
-      }
-    }
-    img {
-      position: absolute;
-      cursor: pointer;
-      width: 4.7%;
-      @media (max-width: 1440px) {
-        width: 4.5%;
-      }
-      @media (max-width: 1366px) {
-        width: 4.5%;
-      }
-      @media (max-width: 480px) {
-        width: 75%;
-        height: auto;
+
+      .more {
         position: relative;
-        padding-bottom: 26px;
+        bottom: 35px;
+        font-size: 1.25rem;
+        color: transparent;
+        @include fontOne;
+        transition: 0.2s ease;
+        cursor: pointer;
+
+        @media (max-width: 1440px) {
+          bottom: 25px;
+          font-size: 1rem;
+        }
       }
     }
-    @include imgHoverEffect;
+  }
+  .see-all {
+    font-size: 1.5rem;
+    margin: 8% auto;
+    color: $generalFontColor;
+    @include fontOne;
+    cursor: pointer;
+
+    @media (max-width: 1440px) {
+      margin: 5% 48% auto auto;
+      font-size: 1.25rem;
+    }
   }
 }
