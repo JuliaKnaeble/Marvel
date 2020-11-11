@@ -31,14 +31,7 @@
       @include imgHoverEffect;
 
       .read-more-container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include readMoreContainer;
       }
 
       .comic-image {
@@ -47,13 +40,9 @@
       }
 
       .more {
-        position: relative;
+        @include readMore;
         bottom: 35px;
         font-size: 1.25rem;
-        color: transparent;
-        @include fontOne;
-        transition: 0.2s ease;
-        cursor: pointer;
 
         @media (max-width: 1440px) {
           bottom: 25px;
