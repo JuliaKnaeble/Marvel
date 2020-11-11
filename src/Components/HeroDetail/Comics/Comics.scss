@@ -70,8 +70,10 @@
     cursor: pointer;
 
     @media (max-width: 1440px) {
-      margin: 5% 48% auto auto;
       font-size: 1.25rem;
+    }
+    @media (max-width: 480px) {
+      margin: 5% 48% auto auto;
     }
   }
 }
