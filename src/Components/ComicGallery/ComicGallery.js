@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import "./ComicGallery.scss";
-
 import AllComicsContainer from "./AllComics/index";
+import BackArrow from "../../Assets/NavSvg/BackArrow";
+import "./ComicGallery.scss";
 
 const ComicGallery = ({ hero, comic, totalNumber, requestTotalComics }) => {
   const history = useHistory();
@@ -27,10 +27,9 @@ const ComicGallery = ({ hero, comic, totalNumber, requestTotalComics }) => {
   return (
     <div className="ComicGallery">
       <div>
-        <p onClick={() => history.push("/hero")} className="back">
-          {" "}
-          ◁ BACK TO PROFILE
-        </p>
+        <div onClick={() => history.push("/hero")}>
+          <BackArrow className="back" />
+        </div>
         <p className="all-comics-available">
           All comics: {hero.name} [{hero.comics.available}]
         </p>
