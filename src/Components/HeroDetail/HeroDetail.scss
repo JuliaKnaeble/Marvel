@@ -30,7 +30,7 @@
         margin-top: -73px;
         img {
           width: 100%;
-          height: 260px;
+          height: 329px;
           object-fit: cover;
           -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -41,11 +41,11 @@
         position: absolute;
         background-image: linear-gradient(
           to top,
-          $generalBgColor 10%,
-          transparent 80%
+          $generalBgColor 7%,
+          transparent 85%
         );
         width: 100%;
-        height: 261px;
+        height: 330px;
       }
     }
 
