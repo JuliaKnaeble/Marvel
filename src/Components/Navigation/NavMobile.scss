@@ -32,7 +32,7 @@
   overflow-y: scroll;
 
   .info {
-    padding: 7% 0 10% 7%;
+    padding: 25px 0 10% 7%;
     @include fontOne;
     font-size: 1.75rem;
     a {
@@ -59,5 +59,9 @@
     &:hover {
       color: generalFontColor;
     }
+  }
+  .home-button {
+    width: 55px;
+    height: auto;
   }
 }
