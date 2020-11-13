@@ -38,9 +38,7 @@ const HeroDetail = ({ hero, comic }) => {
               : "Unknown"}
           </span>
         </p>
-        <h2 className="hero-name">
-          {hero.name ? hero.name : "CAPTAIN AMERICA"}
-        </h2>
+        <h2 className="hero-name">{hero.name ? hero.name : "UNKNOWN"}</h2>
         <p className="hero-detail-description">
           {hero.description
             ? `${hero.description} Find out more`
