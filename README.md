@@ -12,3 +12,4 @@ Browse from over 70 years worth of Marvel comic history. Look up your favorite h
 - Scss
 - React Routing
 - Official Marvel Api
+- Create React App
