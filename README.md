@@ -1,4 +1,4 @@
-## MARVEL Archive
+## MARVEL ARCHIVE
 
 A Marvel Comics Character Archive.
 Browse from over 70 years worth of Marvel comic history. Look up your favorite hero and check out all their relevant information, or use the randomizer if you feel like being surprised with a hero you've never even heard of.
