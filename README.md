@@ -38,3 +38,6 @@ $ git clone https://github.com/JuliaKnaeble/Marvel.git
 # Run the app
 $ npm start
 ```
+
+## A Preview
+![smaller_gif](https://user-images.githubusercontent.com/65905635/99558894-7c429800-29c4-11eb-82db-02596be7de8c.gif)
