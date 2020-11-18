@@ -4,7 +4,7 @@
   display: none;
 }
 
-@media (max-width: $mobile) {
+@media (max-width: $mobile_tablet) {
   .NavMobile {
     display: flex;
     justify-content: flex-end;

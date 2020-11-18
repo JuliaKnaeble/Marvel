@@ -2,7 +2,7 @@
 
 .HeroDetail {
   @include contentFrame(0 0 0 10%);
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile_tablet) {
     @include contentFrame(0 0 0 0);
   }
 
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile_tablet) {
       width: 100%;
       margin-right: 0;
       margin-top: 0;
@@ -21,7 +21,7 @@
 
     .hero-image-mobile {
       display: none;
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -53,7 +53,7 @@
     }
     .label-border {
       @include labelBG;
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         margin-left: 10%;
       }
     }
@@ -80,7 +80,7 @@
         font-size: 5.25rem;
         line-height: 85px;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         font-size: 3rem;
         line-height: 54px;
         margin-left: 10%;
@@ -93,7 +93,7 @@
       @media (max-width: $largeLaptop) {
         margin: 10px 0 0 0;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         margin: 14px 0 0 0;
         font-size: 0.85rem;
         line-height: 22px;
@@ -123,7 +123,7 @@
       filter: grayscale(100%);
       opacity: 0.5;
     }
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile_tablet) {
       display: none;
     }
   }

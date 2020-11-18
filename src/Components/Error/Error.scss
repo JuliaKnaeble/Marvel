@@ -1,12 +1,24 @@
 @import "../../SassVariables.scss";
 
 .Error {
-  @include contentFrame(0 5% 0 10%);
+  @include contentFrame(0 5% 0 15%);
+  padding-top: 80px;
+  @media (max-width: $mobile_tablet) {
+    @include contentFrame(15% 5% 0 5%);
+  }
 
   p {
     @include fontOne;
-    font-size: 5rem;
+    font-size: 5.5rem;
     color: $generalFontColor;
     text-transform: uppercase;
+    @media (max-width: $largeLaptop) {
+      font-size: 4rem;
+    }
+    @media (max-width: $mobile_tablet) {
+      font-size: 2rem;
+      margin: 0 auto;
+      text-align: center;
+    }
   }
 }

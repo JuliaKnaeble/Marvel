@@ -5,7 +5,7 @@
   background-color: $generalBgColor;
   padding-top: 7%;
 
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile_tablet) {
     @include contentFrame(0 0 0 10%);
   }
 
@@ -37,7 +37,7 @@
     cursor: pointer;
     color: $generalFontColor;
   }
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile_tablet) {
     margin: 5% 25% 15% 35%;
     font-size: 1.25rem;
   }

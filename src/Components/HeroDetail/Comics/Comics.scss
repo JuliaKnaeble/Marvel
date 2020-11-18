@@ -8,7 +8,7 @@
   @media (max-width: $largeLaptop) {
     margin-top: 30px;
   }
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile_tablet) {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 90%;
@@ -19,7 +19,7 @@
   .comic-container {
     width: 17%;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile_tablet) {
       margin-bottom: 30px;
       width: 33%;
     }
@@ -61,7 +61,7 @@
     @media (max-width: $largeLaptop) {
       font-size: 1.25rem;
     }
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile_tablet) {
       margin: 5% 48% auto auto;
     }
   }

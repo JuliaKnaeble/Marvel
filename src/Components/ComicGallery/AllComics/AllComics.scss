@@ -9,7 +9,7 @@
     width: 25%;
     margin-bottom: 5%;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile_tablet) {
       width: 50%;
       margin-bottom: 15%;
     }
@@ -18,7 +18,7 @@
       width: 70%;
       position: relative;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         width: 80%;
       }
 
@@ -59,7 +59,7 @@
         font-size: 1rem;
         margin-top: 8px;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         font-size: 0.85rem;
       }
     }

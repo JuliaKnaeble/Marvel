@@ -12,8 +12,8 @@ $fontStyleTwo: "Libre Baskerville", serif;
 
 $largeLaptop: 1440px;
 $laptop: 1366px;
-$tablet: 1000px;
-$mobile: 480px;
+$mobile_tablet: 1000px;
+//$mobile: 480px;
 
 //Mixin
 
@@ -107,7 +107,7 @@ $mobile: 480px;
     padding: 7px 20px 5px 20px;
     font-size: 1.5rem;
   }
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile_tablet) {
     margin: 0 auto;
   }
 }

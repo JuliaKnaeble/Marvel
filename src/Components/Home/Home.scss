@@ -11,7 +11,7 @@
   @media (max-width: $largeLaptop) {
     margin-left: 80px;
   }
-  @media (max-width: $mobile) {
+  @media (max-width: $mobile_tablet) {
     margin-left: 0;
   }
 
@@ -25,7 +25,7 @@
     padding-bottom: 50px;
     font-size: 0.75rem;
 
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile_tablet) {
       display: block;
       margin: 0 auto;
       text-align: center;
@@ -37,14 +37,14 @@
     @media (max-width: $largeLaptop) {
       margin: 0 4% 0 4%;
     }
-    @media (max-width: $mobile) {
+    @media (max-width: $mobile_tablet) {
       margin: 0 3% 0 3%;
     }
     .info {
       padding-top: 4%;
       display: flex;
       justify-content: flex-end;
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         display: none;
       }
       a {
@@ -70,7 +70,7 @@
       justify-content: center;
       text-align: center;
       padding-top: 5%;
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         padding-top: 30%;
       }
       .marvel-label {
@@ -81,7 +81,7 @@
         @media (max-width: $largeLaptop) {
           width: 85px;
         }
-        @media (max-width: $mobile) {
+        @media (max-width: $mobile_tablet) {
           width: 60px;
         }
       }
@@ -102,7 +102,7 @@
           font-size: 7rem;
           line-height: 107px;
         }
-        @media (max-width: $mobile) {
+        @media (max-width: $mobile_tablet) {
           padding-top: 15px;
           font-size: 3rem;
           line-height: 52px;
@@ -125,7 +125,7 @@
           line-height: 24px;
           padding: 13px 16% 53px 16%;
         }
-        @media (max-width: $mobile) {
+        @media (max-width: $mobile_tablet) {
           line-height: 22px;
           padding: 20px 6% 27px 6%;
         }
@@ -150,7 +150,7 @@
       @media (max-width: $laptop) {
         font-size: 4.5rem;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         font-size: 3rem;
         line-height: 52px;
       }
@@ -163,7 +163,7 @@
       @media (max-width: $laptop) {
         margin: 25px 0 15px 0;
       }
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         margin: 18px 0 10px 0;
       }
       span {
@@ -175,7 +175,7 @@
         @media (max-width: $laptop) {
           height: 77px;
         }
-        @media (max-width: $mobile) {
+        @media (max-width: $mobile_tablet) {
           height: 82px;
         }
       }
@@ -187,7 +187,7 @@
       color: $generalFontColor;
       padding: 50px 0 88px 0;
 
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile_tablet) {
         flex-direction: column;
         padding: 15px 0 50px 0;
       }
@@ -201,7 +201,7 @@
         @media (max-width: $laptop) {
           margin: 0 5% 0 2%;
         }
-        @media (max-width: $mobile) {
+        @media (max-width: $mobile_tablet) {
           justify-content: center;
           text-align: center;
           width: auto;
@@ -222,7 +222,7 @@
             font-size: 3rem;
             line-height: 54px;
           }
-          @media (max-width: $mobile) {
+          @media (max-width: $mobile_tablet) {
             font-size: 2.5rem;
             line-height: 44px;
           }
@@ -243,7 +243,7 @@
             line-height: 24px;
             padding: 14px 0 35px 0;
           }
-          @media (max-width: $mobile) {
+          @media (max-width: $mobile_tablet) {
             line-height: 22px;
             padding: 15px 0 25px 0;
           }
@@ -256,14 +256,14 @@
         width: 67%;
         display: flex;
         flex-wrap: wrap;
-        @media (max-width: $mobile) {
+        @media (max-width: $mobile_tablet) {
           width: 100%;
           margin: 50px auto 0 auto;
         }
 
         .circle-hero-container {
           width: 16.66%;
-          @media (max-width: $mobile) {
+          @media (max-width: $mobile_tablet) {
             width: 33.33%;
           }
 
@@ -312,7 +312,7 @@
             @media (max-width: $laptop) {
               margin: 13px 8px 31px 8px;
             }
-            @media (max-width: $mobile) {
+            @media (max-width: $mobile_tablet) {
               margin: 13px 8px 44px 8px;
             }
           }
