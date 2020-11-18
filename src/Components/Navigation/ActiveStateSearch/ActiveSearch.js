@@ -24,15 +24,15 @@ const ActiveSearch = ({ requestHero, clicked, requestSearch }) => {
     document.body.style.overflow = "hidden";
     return (
       <div>
-        <div className="menu-opene">
+        <div className="menu-open">
           <form onSubmit={handleSubmit}>
             <div className="search-close">
-            <img
-              className="close-icon"
-              src={require(`../../../Assets/close_x.png`)}
-              alt=""
-              onClick={closeMenu}
-            />
+              <img
+                className="close-icon"
+                src={require(`../../../Assets/close_x.png`)}
+                alt=""
+                onClick={closeMenu}
+              />
             </div>
             <input
               type="text"

@@ -5,10 +5,10 @@
   margin-top: 40px;
   width: 95%;
 
-  @media (max-width: 1440px) {
+  @media (max-width: $largeLaptop) {
     margin-top: 30px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: $mobile) {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 90%;
@@ -19,7 +19,7 @@
   .comic-container {
     width: 17%;
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
       margin-bottom: 30px;
       width: 33%;
     }
@@ -44,7 +44,7 @@
         bottom: 35px;
         font-size: 1.25rem;
 
-        @media (max-width: 1440px) {
+        @media (max-width: $largeLaptop) {
           bottom: 25px;
           font-size: 1rem;
         }
@@ -58,10 +58,10 @@
     @include fontOne;
     cursor: pointer;
 
-    @media (max-width: 1440px) {
+    @media (max-width: $largeLaptop) {
       font-size: 1.25rem;
     }
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
       margin: 5% 48% auto auto;
     }
   }

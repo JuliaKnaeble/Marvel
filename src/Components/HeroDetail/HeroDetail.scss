@@ -2,7 +2,7 @@
 
 .HeroDetail {
   @include contentFrame(0 0 0 10%);
-  @media (max-width: 480px) {
+  @media (max-width: $mobile) {
     @include contentFrame(0 0 0 0);
   }
 
@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
       width: 100%;
       margin-right: 0;
       margin-top: 0;
@@ -21,7 +21,7 @@
 
     .hero-image-mobile {
       display: none;
-      @media (max-width: 480px) {
+      @media (max-width: $mobile) {
         display: flex;
         flex-direction: column;
         position: relative;
@@ -53,7 +53,7 @@
     }
     .label-border {
       @include labelBG;
-      @media (max-width: 480px) {
+      @media (max-width: $mobile) {
         margin-left: 10%;
       }
     }
@@ -72,15 +72,15 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
       font-weight: 400;
-      @media (max-width: 1440px) {
+      @media (max-width: $largeLaptop) {
         font-size: 6rem;
         line-height: 90px;
       }
-      @media (max-width: 1366px) {
+      @media (max-width: $laptop) {
         font-size: 5.25rem;
         line-height: 85px;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile) {
         font-size: 3rem;
         line-height: 54px;
         margin-left: 10%;
@@ -90,10 +90,10 @@
       @include hero-ComicDescription;
       margin: 12px 0 0 0;
 
-      @media (max-width: 1440px) {
+      @media (max-width: $largeLaptop) {
         margin: 10px 0 0 0;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile) {
         margin: 14px 0 0 0;
         font-size: 0.85rem;
         line-height: 22px;
@@ -123,7 +123,7 @@
       filter: grayscale(100%);
       opacity: 0.5;
     }
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
       display: none;
     }
   }

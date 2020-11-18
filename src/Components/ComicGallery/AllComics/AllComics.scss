@@ -9,7 +9,7 @@
     width: 25%;
     margin-bottom: 5%;
 
-    @media (max-width: 480px) {
+    @media (max-width: $mobile) {
       width: 50%;
       margin-bottom: 15%;
     }
@@ -18,7 +18,7 @@
       width: 70%;
       position: relative;
 
-      @media (max-width: 480px) {
+      @media (max-width: $mobile) {
         width: 80%;
       }
 
@@ -37,10 +37,10 @@
         bottom: 60px;
         font-size: 2.5rem;
 
-        @media (max-width: 1440px) {
+        @media (max-width: $largeLaptop) {
           font-size: 2rem;
         }
-        @media (max-width: 1366px) {
+        @media (max-width: $laptop) {
           font-size: 1.75rem;
         }
       }
@@ -55,11 +55,11 @@
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      @media (max-width: 1366px) {
+      @media (max-width: $laptop) {
         font-size: 1rem;
         margin-top: 8px;
       }
-      @media (max-width: 480px) {
+      @media (max-width: $mobile) {
         font-size: 0.85rem;
       }
     }
