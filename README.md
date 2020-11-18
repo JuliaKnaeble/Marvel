@@ -29,7 +29,7 @@ The Marvel Comic Character Archive allows you to browse through 70 years worth o
 
 ## How To Use
 
-To clone and run this application, you'll need Git and Node.js (which comes with npm) installed on your computer. From your command line:
+To clone and run this application, you'll need **Git** and **Node.js** (which comes with **npm**) installed on your computer. From your command line:
 ```
 # Clone the repository
 $ git clone https://github.com/JuliaKnaeble/Marvel.git
