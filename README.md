@@ -3,7 +3,7 @@
 ## Description
 
 The Marvel Comic Character Archive allows you to browse through 70 years worth of Marvel comic history. You can look up your favorite hero and check out all their relevant information, or use the randomizer if you feel like being surprised with a character you've never even heard of.
-[You can view it here](https://www.marvelarchive.net).
+[You can view it here](https://ecstatic-brahmagupta-5eab95.netlify.app/).
 
 
 ## Key Features
